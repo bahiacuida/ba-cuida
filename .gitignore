@@ -19,3 +19,6 @@ tmp*
 .DS_Store
 coverage**
 .next
+
+# tmp files
+tmp*
