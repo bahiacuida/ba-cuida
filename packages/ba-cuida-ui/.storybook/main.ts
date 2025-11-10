@@ -15,6 +15,7 @@ const config: StorybookConfig = {
   "stories": [
     "../components/**/*.stories.@(js|jsx|mjs|ts|tsx)"
   ],
+  staticDirs: ['../public'],
   "addons": [],
   "framework": {
     "name": getAbsolutePath('@storybook/nextjs'),

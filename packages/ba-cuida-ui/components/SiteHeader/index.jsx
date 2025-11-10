@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { AppHeader, Flex } from '@orioro/react-ui-core'
 import { BaCuidaLogo } from '../BaCuidaLogo'
@@ -8,13 +10,31 @@ import { mdiClose, mdiMenu } from '@mdi/js'
 
 export function SiteHeader() {
   return (
-    <AppHeader.Root>
+    <AppHeader.Root
+      maxWidth="var(--container-4)"
+      px={{
+        xs: '4',
+        md: '9',
+      }}
+      height={{
+        xs: 60,
+        md: 80,
+      }}
+      style={{
+        backgroundColor: 'white',
+      }}
+    >
       <AppHeader.Logo
         style={{
           height: '95%',
         }}
       >
-        <Link href="/">
+        <Link
+          href="/"
+          style={{
+            marginLeft: '-20px',
+          }}
+        >
           <BaCuidaLogo />
         </Link>
       </AppHeader.Logo>

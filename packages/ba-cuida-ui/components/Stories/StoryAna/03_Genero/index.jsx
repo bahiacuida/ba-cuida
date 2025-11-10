@@ -1,0 +1,174 @@
+import { Box, Flex, Markdown } from '@orioro/react-ui-core'
+import { SiteWidthContainer } from '@/components/SiteWidthContainer'
+import { PaperFramedSection } from '@/components/PaperFramedSection'
+import { PaperCard } from '@/components/PaperCard'
+import { Text } from '@radix-ui/themes'
+
+export function Genero() {
+  return (
+    <>
+      <SiteWidthContainer>
+        <Flex
+          py="5"
+          direction="column"
+          gap="4"
+          alignItems="center"
+          maxWidth="750px"
+          style={{
+            margin: 'auto',
+            textAlign: 'center',
+          }}
+        >
+          <img
+            style={{
+              height: 300,
+            }}
+            src="/assets/home/03_capitulo_ana/ilustracoes_ana/Ana_03.svg"
+          />
+          <Markdown
+            style={{ fontSize: '1.25rem', fontWeight: 300 }}
+            children={
+              'Ana é quem realiza quase todos os afazeres domésticos, ' +
+              'e o seu marido não faz nem metade das tarefas que Ana faz.'
+            }
+          />
+        </Flex>
+      </SiteWidthContainer>
+      <PaperFramedSection style={{ position: 'relative', overflow: 'hidden' }}>
+        <SiteWidthContainer>
+          <Flex
+            py="7"
+            direction={{
+              xs: 'column',
+              md: 'row',
+            }}
+            gap="9"
+            alignItems="center"
+            style={{
+              position: 'relative',
+              zIndex: 2,
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              color: 'white',
+            }}
+          >
+            <Box
+              style={{
+                transform: {
+                  md: 'translate(0, -50%)',
+                },
+                maxWidth: '400px',
+                fontSize: '1.5rem',
+                textAlign: 'center',
+              }}
+            >
+              <div>Na Bahia, as mulheres gastam</div>
+              <strong
+                style={{
+                  background: '#E6DAEC',
+                  color: 'var(--marrom-texto)',
+                  padding: '0 20px',
+                  marginLeft: '-20px',
+                  marginRight: '-20px',
+                }}
+              >
+                mais do que o dobro de horas
+              </strong>{' '}
+              <div>
+                do que os homens em tarefas domésticas e de cuidado de pessoas.
+              </div>
+            </Box>
+
+            <div
+              style={{
+                flexGrow: 1,
+                position: 'relative',
+              }}
+            >
+              <PaperCard
+                style={{
+                  width: '70%',
+                  position: 'relative',
+                  zIndex: 2,
+                }}
+              >
+                <img
+                  src="/assets/home/03_capitulo_ana/graficos_ana/Ana_Grafico_03.svg"
+                  style={{
+                    width: '100%',
+                    position: 'relative',
+                    zIndex: 2,
+                  }}
+                />
+                <cite
+                  style={{
+                    position: 'absolute',
+                    top: '80%',
+                    left: 'calc(100% + 20px)',
+                    width: '150px',
+                  }}
+                >
+                  Fonte: IBGE - Pesquisa Nacional por Amostra de Domicílios
+                  Contínua Anual - 5ª visita - 2022.
+                </cite>
+              </PaperCard>
+
+              <img
+                src="/assets/home/03_capitulo_ana/montagens_ana/Ana_Montagem_04.png"
+                style={{
+                  width: '50%',
+                  position: 'absolute',
+                  zIndex: 1000,
+                  right: '83%',
+                  top: '15%',
+                  zIndex: 3,
+                  // transform: 'translate(50%, 0)',
+                }}
+              />
+              <img
+                src="/assets/home/03_capitulo_ana/montagens_ana/Ana_Montagem_05.png"
+                style={{
+                  width: '30%',
+                  position: 'absolute',
+                  zIndex: 1000,
+                  left: '65%',
+                  top: '-12%',
+                  zIndex: 1,
+                  transform: 'rotate(15deg)',
+                }}
+              />
+            </div>
+          </Flex>
+        </SiteWidthContainer>
+      </PaperFramedSection>
+      <SiteWidthContainer>
+        <Flex
+          py="5"
+          direction="column"
+          gap="4"
+          alignItems="center"
+          maxWidth="600px"
+          style={{
+            margin: 'auto',
+            textAlign: 'center',
+          }}
+        >
+          <img
+            style={{
+              height: 300,
+            }}
+            src="/assets/home/03_capitulo_ana/ilustracoes_ana/Ana_04.svg"
+          />
+          <Markdown
+            style={{ fontSize: '1.25rem', fontWeight: 300 }}
+            children={
+              'Por conta da sobrecarga dos trabalhos dos cuidados, ' +
+              'Ana precisou deixar o seu emprego formal, pois não consegue ' +
+              'cumprir todos os horários exigidos.'
+            }
+          />
+        </Flex>
+      </SiteWidthContainer>
+    </>
+  )
+}
