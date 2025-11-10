@@ -1,0 +1,66 @@
+"use strict";(self.webpackChunk_orioro_ba_cuida_ui=self.webpackChunk_orioro_ba_cuida_ui||[]).push([[283],{"../../node_modules/@radix-ui/themes/dist/esm/components/heading.js":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.d(__webpack_exports__,{D:()=>r});var react=__webpack_require__("../../node_modules/next/dist/compiled/react/index.js"),classnames=__webpack_require__("../../node_modules/classnames/index.js"),classnames_default=__webpack_require__.n(classnames),dist=__webpack_require__("../../node_modules/@radix-ui/react-slot/dist/index.mjs"),as_child_prop=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/props/as-child.prop.js"),color_prop=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/props/color.prop.js"),high_contrast_prop=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/props/high-contrast.prop.js"),leading_trim_prop=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/props/leading-trim.prop.js"),text_align_prop=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/props/text-align.prop.js"),text_wrap_prop=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/props/text-wrap.prop.js"),truncate_prop=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/props/truncate.prop.js"),weight_prop=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/props/weight.prop.js");const heading_props_n={as:{type:"enum",values:["h1","h2","h3","h4","h5","h6"],default:"h1"},...as_child_prop.f,size:{type:"enum",className:"rt-r-size",values:["1","2","3","4","5","6","7","8","9"],default:"6",responsive:!0},...weight_prop.L,...text_align_prop.b,...leading_trim_prop.$,...truncate_prop.J,...text_wrap_prop.G,...color_prop._s,...high_contrast_prop.Z};var extract_props=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/helpers/extract-props.js"),margin_props=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/props/margin.props.js");const r=react.forwardRef((p,t)=>{const{children:e,className:s,asChild:a,as:n="h1",color:i,...m}=(0,extract_props.o)(p,heading_props_n,margin_props.y);return react.createElement(dist.bL,{"data-accent-color":i,...m,ref:t,className:classnames_default()("rt-Heading",s)},a?e:react.createElement(n,null,e))});r.displayName="Heading"},"./components/PaperCard/index.jsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.d(__webpack_exports__,{v:()=>PaperCard});var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__("../../node_modules/next/dist/compiled/react/jsx-runtime.js"),_orioro_react_ui_core__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__("../../node_modules/@orioro/react-ui-core/dist/index.mjs");let t;const Card=(0,__webpack_require__("../../node_modules/styled-components/dist/styled-components.browser.esm.js").Ay)(_orioro_react_ui_core__WEBPACK_IMPORTED_MODULE_1__.azJ)(t||(t=(t=>t)`
+  background-color: #f9efd9;
+  padding: 10px 40px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 600px) {
+    padding: 10px;
+  }
+`));function PaperCard({children,...props}){return(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Card,{...props,children})}PaperCard.__docgenInfo={description:"",methods:[],displayName:"PaperCard"}},"./components/PaperFramedSection/index.jsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.d(__webpack_exports__,{P:()=>PaperFramedSection});var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__("../../node_modules/next/dist/compiled/react/jsx-runtime.js"),styled_components__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__("../../node_modules/styled-components/dist/styled-components.browser.esm.js");let t,t1,t2,_=t=>t;const Container=styled_components__WEBPACK_IMPORTED_MODULE_1__.Ay.section(t||(t=_`
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+`)),TopImg=styled_components__WEBPACK_IMPORTED_MODULE_1__.Ay.div(t1||(t1=_`
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+
+  > img {
+    width: 100%;
+
+    @media (max-width: 600px) {
+      width: 200%;
+    }
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 65%;
+    width: 100%;
+    background-color: white;
+  }
+`)),BottomImg=styled_components__WEBPACK_IMPORTED_MODULE_1__.Ay.div(t2||(t2=_`
+  position: absolute;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+
+  > img {
+    width: 100%;
+
+    @media (max-width: 600px) {
+      width: 200%;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+  }
+`));function PaperFramedSection({style={},children}){return(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Container,{style:{backgroundImage:'url("/assets/paper_framed_section/noise.png")',backgroundSize:"100%",backgroundRepeat:"repeat",backgroundColor:"var(--marrom)",color:"white",backgroundBlendMode:"hard-light",...style},children:[(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TopImg,{children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img",{src:"/assets/paper_framed_section/top_1.png"})}),children,(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BottomImg,{children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img",{src:"/assets/paper_framed_section/bottom_1.png"})})]})}PaperFramedSection.__docgenInfo={description:"",methods:[],displayName:"PaperFramedSection",props:{style:{defaultValue:{value:"{}",computed:!1},required:!1}}}},"./components/PaperScrap/index.jsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.d(__webpack_exports__,{S:()=>PaperScrap});var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__("../../node_modules/next/dist/compiled/react/jsx-runtime.js"),_orioro_react_ui_core__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__("../../node_modules/@orioro/react-ui-core/dist/index.mjs");function PaperScrap({children,style={},...props}){return(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_orioro_react_ui_core__WEBPACK_IMPORTED_MODULE_1__.azJ,{style:{position:"relative",...style},p:"7",...props,children:[(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img",{style:{position:"absolute",zIndex:1,top:0,left:0,width:"100%",height:"100%"},src:"/assets/home/03_capitulo_ana/montagens_ana/Ana_Montagem_03.png"}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div",{style:{position:"relative",zIndex:2},children})]})}PaperScrap.__docgenInfo={description:"",methods:[],displayName:"PaperScrap",props:{style:{defaultValue:{value:"{}",computed:!1},required:!1}}}},"./components/SiteWidthContainer/index.jsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.d(__webpack_exports__,{z:()=>SiteWidthContainer});var jsx_runtime=__webpack_require__("../../node_modules/next/dist/compiled/react/jsx-runtime.js"),react=__webpack_require__("../../node_modules/next/dist/compiled/react/index.js"),classnames=__webpack_require__("../../node_modules/classnames/index.js"),classnames_default=__webpack_require__.n(classnames),dist=__webpack_require__("../../node_modules/@radix-ui/react-slot/dist/index.mjs");const container_props_n={...__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/props/as-child.prop.js").f,size:{type:"enum",className:"rt-r-size",values:["1","2","3","4"],default:"4",responsive:!0},display:{type:"enum",className:"rt-r-display",values:["none","initial"],parseValue:function a(e){return"initial"===e?"flex":e},responsive:!0},align:{type:"enum",className:"rt-r-ai",values:["left","center","right"],parseValue:function i(e){return"left"===e?"start":"right"===e?"end":e},responsive:!0}};var extract_props=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/helpers/extract-props.js"),get_subtree=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/helpers/get-subtree.js"),height_props=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/props/height.props.js"),layout_props=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/props/layout.props.js"),margin_props=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/props/margin.props.js"),width_props=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/props/width.props.js");const container_p=react.forwardRef(({width:n,minWidth:s,maxWidth:i,height:m,minHeight:a,maxHeight:f,...P},l)=>{const{asChild:r,children:C,className:c,...y}=(0,extract_props.o)(P,container_props_n,layout_props.i,margin_props.y),{className:d,style:h}=(0,extract_props.o)({width:n,minWidth:s,maxWidth:i,height:m,minHeight:a,maxHeight:f},width_props.w,height_props.B),u=r?dist.bL:"div";return react.createElement(u,{...y,ref:l,className:classnames_default()("rt-Container",c)},(0,get_subtree.T)({asChild:r,children:C},v=>react.createElement("div",{className:classnames_default()("rt-ContainerInner",d),style:h},v)))});container_p.displayName="Container";const SiteWidthContainer=(0,react.forwardRef)(function SiteWidthContainerInner(props,ref){return(0,jsx_runtime.jsx)(container_p,{px:{initial:"5",md:"9"},ref,...props})});SiteWidthContainer.__docgenInfo={description:"",methods:[],displayName:"SiteWidthContainer"}},"./components/Stories/StoryEugenia/index.stories.jsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{Basic:()=>Basic,__namedExportsOrder:()=>__namedExportsOrder,default:()=>__WEBPACK_DEFAULT_EXPORT__});const __WEBPACK_DEFAULT_EXPORT__={title:"StoryEugenia",component:__webpack_require__("./components/Stories/StoryEugenia/index.jsx").G,parameters:{layout:"fullscreen"}},Basic={},__namedExportsOrder=["Basic"]}}]);
+//# sourceMappingURL=Stories-StoryEugenia-index-stories.22fc0ffa.iframe.bundle.js.map

@@ -1,0 +1,10 @@
+"use strict";(self.webpackChunk_orioro_ba_cuida_ui=self.webpackChunk_orioro_ba_cuida_ui||[]).push([[762],{"./components/PaperCard/index.jsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.d(__webpack_exports__,{v:()=>PaperCard});var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__("../../node_modules/next/dist/compiled/react/jsx-runtime.js"),_orioro_react_ui_core__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__("../../node_modules/@orioro/react-ui-core/dist/index.mjs");let t;const Card=(0,__webpack_require__("../../node_modules/styled-components/dist/styled-components.browser.esm.js").Ay)(_orioro_react_ui_core__WEBPACK_IMPORTED_MODULE_1__.azJ)(t||(t=(t=>t)`
+  background-color: #f9efd9;
+  padding: 10px 40px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 600px) {
+    padding: 10px;
+  }
+`));function PaperCard({children,...props}){return(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Card,{...props,children})}PaperCard.__docgenInfo={description:"",methods:[],displayName:"PaperCard"}},"./components/PaperCard/index.stories.jsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{Basic:()=>Basic,__namedExportsOrder:()=>__namedExportsOrder,default:()=>__WEBPACK_DEFAULT_EXPORT__});var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__("../../node_modules/next/dist/compiled/react/jsx-runtime.js"),_radix_ui_themes__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__("../../node_modules/@radix-ui/themes/dist/esm/components/text.js");const __WEBPACK_DEFAULT_EXPORT__={title:"PaperCard",component:__webpack_require__("./components/PaperCard/index.jsx").v},Basic={args:{children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_radix_ui_themes__WEBPACK_IMPORTED_MODULE_1__.E,{style:{fontWeight:"bold",fontSize:"2rem",color:"var(--marrom-texto)"},children:"mulheres, negras, de 25 a 49 anos"})}},__namedExportsOrder=["Basic"]}}]);
+//# sourceMappingURL=PaperCard-index-stories.02e76f0c.iframe.bundle.js.map

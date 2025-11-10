@@ -1,0 +1,42 @@
+"use strict";(self.webpackChunk_orioro_ba_cuida_ui=self.webpackChunk_orioro_ba_cuida_ui||[]).push([[472],{"./components/LargeToggleBlock/index.jsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.d(__webpack_exports__,{j:()=>LargeToggleBlock});var jsx_runtime=__webpack_require__("../../node_modules/next/dist/compiled/react/jsx-runtime.js"),react=__webpack_require__("../../node_modules/next/dist/compiled/react/index.js"),dist=__webpack_require__("../../node_modules/@radix-ui/primitive/dist/index.mjs"),react_context_dist=__webpack_require__("../../node_modules/@radix-ui/react-context/dist/index.mjs"),react_use_controllable_state_dist=__webpack_require__("../../node_modules/@radix-ui/react-use-controllable-state/dist/index.mjs"),react_use_layout_effect_dist=__webpack_require__("../../node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs"),react_compose_refs_dist=__webpack_require__("../../node_modules/@radix-ui/react-compose-refs/dist/index.mjs"),react_primitive_dist=__webpack_require__("../../node_modules/@radix-ui/react-primitive/dist/index.mjs"),react_presence_dist=__webpack_require__("../../node_modules/@radix-ui/react-presence/dist/index.mjs"),react_id_dist=__webpack_require__("../../node_modules/@radix-ui/react-id/dist/index.mjs"),[createCollapsibleContext,createCollapsibleScope]=(0,react_context_dist.A)("Collapsible"),[CollapsibleProvider,useCollapsibleContext]=createCollapsibleContext("Collapsible"),Collapsible=react.forwardRef((props,forwardedRef)=>{const{__scopeCollapsible,open:openProp,defaultOpen,disabled,onOpenChange,...collapsibleProps}=props,[open,setOpen]=(0,react_use_controllable_state_dist.i)({prop:openProp,defaultProp:defaultOpen??!1,onChange:onOpenChange,caller:"Collapsible"});return(0,jsx_runtime.jsx)(CollapsibleProvider,{scope:__scopeCollapsible,disabled,contentId:(0,react_id_dist.B)(),open,onOpenToggle:react.useCallback(()=>setOpen(prevOpen=>!prevOpen),[setOpen]),children:(0,jsx_runtime.jsx)(react_primitive_dist.sG.div,{"data-state":getState(open),"data-disabled":disabled?"":void 0,...collapsibleProps,ref:forwardedRef})})});Collapsible.displayName="Collapsible";var CollapsibleTrigger=react.forwardRef((props,forwardedRef)=>{const{__scopeCollapsible,...triggerProps}=props,context=useCollapsibleContext("CollapsibleTrigger",__scopeCollapsible);return(0,jsx_runtime.jsx)(react_primitive_dist.sG.button,{type:"button","aria-controls":context.contentId,"aria-expanded":context.open||!1,"data-state":getState(context.open),"data-disabled":context.disabled?"":void 0,disabled:context.disabled,...triggerProps,ref:forwardedRef,onClick:(0,dist.mK)(props.onClick,context.onOpenToggle)})});CollapsibleTrigger.displayName="CollapsibleTrigger";var CollapsibleContent=react.forwardRef((props,forwardedRef)=>{const{forceMount,...contentProps}=props,context=useCollapsibleContext("CollapsibleContent",props.__scopeCollapsible);return(0,jsx_runtime.jsx)(react_presence_dist.C,{present:forceMount||context.open,children:({present})=>(0,jsx_runtime.jsx)(CollapsibleContentImpl,{...contentProps,ref:forwardedRef,present})})});CollapsibleContent.displayName="CollapsibleContent";var CollapsibleContentImpl=react.forwardRef((props,forwardedRef)=>{const{__scopeCollapsible,present,children,...contentProps}=props,context=useCollapsibleContext("CollapsibleContent",__scopeCollapsible),[isPresent,setIsPresent]=react.useState(present),ref=react.useRef(null),composedRefs=(0,react_compose_refs_dist.s)(forwardedRef,ref),heightRef=react.useRef(0),height=heightRef.current,widthRef=react.useRef(0),width=widthRef.current,isOpen=context.open||isPresent,isMountAnimationPreventedRef=react.useRef(isOpen),originalStylesRef=react.useRef(void 0);return react.useEffect(()=>{const rAF=requestAnimationFrame(()=>isMountAnimationPreventedRef.current=!1);return()=>cancelAnimationFrame(rAF)},[]),(0,react_use_layout_effect_dist.N)(()=>{const node=ref.current;if(node){originalStylesRef.current=originalStylesRef.current||{transitionDuration:node.style.transitionDuration,animationName:node.style.animationName},node.style.transitionDuration="0s",node.style.animationName="none";const rect=node.getBoundingClientRect();heightRef.current=rect.height,widthRef.current=rect.width,isMountAnimationPreventedRef.current||(node.style.transitionDuration=originalStylesRef.current.transitionDuration,node.style.animationName=originalStylesRef.current.animationName),setIsPresent(present)}},[context.open,present]),(0,jsx_runtime.jsx)(react_primitive_dist.sG.div,{"data-state":getState(context.open),"data-disabled":context.disabled?"":void 0,id:context.contentId,hidden:!isOpen,...contentProps,ref:composedRefs,style:{"--radix-collapsible-content-height":height?`${height}px`:void 0,"--radix-collapsible-content-width":width?`${width}px`:void 0,...props.style},children:isOpen&&children})});function getState(open){return open?"open":"closed"}var Root=Collapsible,Trigger=CollapsibleTrigger,Content=CollapsibleContent,styled_components_browser_esm=__webpack_require__("../../node_modules/styled-components/dist/styled-components.browser.esm.js"),Icon=__webpack_require__("../../node_modules/@mdi/react/Icon.js"),mdi=__webpack_require__("../../node_modules/@mdi/js/mdi.js");let t,t1,t2,_=t=>t;const LargeToggleBlock_Trigger=(0,styled_components_browser_esm.Ay)(Trigger)(t||(t=_`
+  width: 100%;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  text-align: left;
+  border: none;
+  border-radius: 24px;
+  padding: 8px 24px;
+  min-height: 100px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e9e9e9;
+  }
+`)),TriggerLabel=styled_components_browser_esm.Ay.div(t1||(t1=_`
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+
+  > span:nth-child(1) {
+    font-size: 2.5rem;
+    margin-right: 10px;
+  }
+
+  > span:nth-child(2) {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+  }
+`)),ToggleIcon=styled_components_browser_esm.Ay.div(t2||(t2=_`
+  margin-left: 20px;
+  background-color: #8c7d7d;
+  border-radius: 8px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`));function LargeToggleBlock({number,label,children,color,...props}){const[open,setOpen]=(0,react.useState)(!1);return(0,jsx_runtime.jsxs)(Root,{open,onOpenChange:setOpen,children:[(0,jsx_runtime.jsxs)(LargeToggleBlock_Trigger,{...props,children:[(0,jsx_runtime.jsxs)(TriggerLabel,{children:[(0,jsx_runtime.jsxs)("span",{children:[number,". "]}),(0,jsx_runtime.jsx)("span",{children:label})]}),(0,jsx_runtime.jsx)(ToggleIcon,{children:(0,jsx_runtime.jsx)(Icon.Icon,{style:{transition:"transform .3s ease",transform:open?"rotate(180deg)":""},path:mdi._Sc,size:"48px",color:"white"})})]}),(0,jsx_runtime.jsx)(Content,{children})]})}LargeToggleBlock.__docgenInfo={description:"",methods:[],displayName:"LargeToggleBlock"}},"./components/LargeToggleBlock/index.stories.jsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{Basic:()=>Basic,__namedExportsOrder:()=>__namedExportsOrder,default:()=>__WEBPACK_DEFAULT_EXPORT__});var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__("../../node_modules/next/dist/compiled/react/jsx-runtime.js");const __WEBPACK_DEFAULT_EXPORT__={title:"LargeToggleBlock",component:__webpack_require__("./components/LargeToggleBlock/index.jsx").j},Basic={args:{number:"1",label:"ANA, UMA CUIDADORA NÃO REMUNERADA E INVISIBILIZADA",children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div",{children:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim odio eget eleifend tincidunt. Morbi id diam vel nunc laoreet rutrum. Nam pulvinar nulla dui, a elementum lacus egestas aliquam. Etiam mollis fringilla fringilla. Sed non quam ut nulla pellentesque viverra eget vel elit. Mauris cursus suscipit felis, non pellentesque eros volutpat ullamcorper. Proin elementum ante eget tortor tristique, quis vulputate mi feugiat. Duis volutpat auctor lorem, non dictum nisl auctor a."})}},__namedExportsOrder=["Basic"]}}]);
+//# sourceMappingURL=LargeToggleBlock-index-stories.f7657c95.iframe.bundle.js.map
