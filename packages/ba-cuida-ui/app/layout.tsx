@@ -5,7 +5,7 @@ import '@/app/globals.css'
 import '@radix-ui/themes/styles.css'
 import { GlobalProviders } from '@/components/GlobalProviders'
 import { StyledComponentsRegistry } from './StyledComponentsRegistry'
-const sora = Sora({ subsets: ['latin'] })
+const sora = Sora({ subsets: ['latin'], weight: ['400', '700'] })
 
 export default function RootLayout({
   children,

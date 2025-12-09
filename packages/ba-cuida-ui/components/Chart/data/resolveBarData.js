@@ -1,41 +1,27 @@
 import { resolveDataSrc } from './resolveDataSrc'
-import { applyFilter, applyGroupBy, applyTransposeBy } from './util'
+import { applyFilter, applyAggregate, applyTransposeBy } from './util'
 
 export async function resolveBarData({
   src,
   valueKey,
-  labelKey,
   filter,
-  groupBy,
+  aggregate,
   transpose,
 }) {
-  console.log({
-    src,
-    valueKey,
-    filter,
-  })
-
   let data = await resolveDataSrc({ src, numericKeys: [valueKey] })
 
   data = !filter ? data : applyFilter(data, filter)
 
-  data = !groupBy
+  data = !aggregate
     ? data
-    : applyGroupBy(data, { ...groupBy, sumKeys: [valueKey] })
+    : applyAggregate(data, { ...aggregate, sumKeys: [valueKey] })
 
   data = !transpose
     ? data
     : applyTransposeBy(data, {
-        ...transpose,
         valueKey,
-        labelKey,
+        ...transpose,
       })
 
   return data
-
-  // return Object.fromEntries(
-  //   data.map((entry) => [entry[labelKey], entry[valueKey]]),
-  // )
-
-  // return data
 }

@@ -25,13 +25,12 @@ const HeaderLink = styled(Link)`
 const ITEMS = [
   {
     label: 'Quem cuida na Bahia',
-    active: true,
-    href: '',
+    href: '/',
   },
-  // {
-  //   label: 'Dados',
-  //   href: '',
-  // },
+  {
+    label: 'Dados',
+    href: '/dados',
+  },
   // {
   //   label: 'Cuidados',
   //   href: '',
@@ -52,7 +51,7 @@ const ITEMS = [
 
 export function HeaderMenu() {
   return (
-    <Flex direction="row" gap="5">
+    <Flex direction={{ xs: 'column', md: 'row' }} gap="5">
       {ITEMS.map((item, idx) => (
         <HeaderLink
           key={idx}

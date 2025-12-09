@@ -1,5 +1,5 @@
 body {
-  font-family: 'Sora', sans-serif;
+  font-family: var(--font-sora), sans-serif;
   line-height: 1.5;
   margin: 0;
 }
@@ -31,7 +31,7 @@ img {
 .light,
 .light-theme,
 .radix-themes {
-  --default-font-family: 'Sora', sans-serif !important;
+  --default-font-family: var(--font-sora), sans-serif !important;
   --marrom: #7a5b51;
   --marrom-texto: #523a30;
   --roxo: #7c5c8b;

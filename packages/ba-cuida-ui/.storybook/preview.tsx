@@ -6,7 +6,7 @@ import '@radix-ui/themes/styles.css'
 import { GlobalProviders } from '@/components/GlobalProviders'
 import { useEffect } from 'react'
 
-const sora = Sora({ subsets: ['latin'] })
+const sora = Sora({ subsets: ['latin'], weight: ['400', '700'] })
 
 //
 // https://github.com/recharts/recharts/issues/3615

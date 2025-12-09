@@ -12,9 +12,9 @@ export function applyFilter(data, filter) {
   )
 }
 
-export function applyGroupBy(data, { keys: groupByKeys, sumKeys = [] }) {
+export function applyAggregate(data, { groupByKeys, sumKeys = [] }) {
   const groups = groupBy(data, (entry) =>
-    groupByKeys.map((key) => entry[key] + '').join('_'),
+    groupByKeys.map((key) => key + '_' + entry[key]).join('_'),
   )
 
   return Object.values(groups).map((group) => {
@@ -36,15 +36,18 @@ export function applyGroupBy(data, { keys: groupByKeys, sumKeys = [] }) {
   })
 }
 
-export function applyTransposeBy(data, { groupByKeys, labelKey, valueKey }) {
+export function applyTransposeBy(
+  data,
+  { groupByKeys, transposeToColumnKey, valueKey },
+) {
   const groups = groupBy(data, (entry) =>
-    groupByKeys.map((key) => entry[key] + '').join('_'),
+    groupByKeys.map((key) => key + '_' + entry[key]).join('_'),
   )
 
   return Object.values(groups).map((group) => ({
     ...pick(group[0], groupByKeys),
     ...Object.fromEntries(
-      group.map((entry) => [entry[labelKey], entry[valueKey]]),
+      group.map((entry) => [entry[transposeToColumnKey], entry[valueKey]]),
     ),
   }))
 }

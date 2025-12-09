@@ -24,7 +24,7 @@ export function DataPageMain() {
               >
                 Painel de dados
               </Tabs.Trigger>
-              <Tabs.Trigger
+              {/*<Tabs.Trigger
                 value="mapa"
                 style={{
                   fontSize: '1rem',
@@ -39,7 +39,7 @@ export function DataPageMain() {
                 }}
               >
                 Infográfico
-              </Tabs.Trigger>
+              </Tabs.Trigger>*/}
             </Tabs.List>
 
             <Box pb="100px">
@@ -47,13 +47,13 @@ export function DataPageMain() {
                 <DataPageIndicators />
               </Tabs.Content>
 
-              <Tabs.Content value="mapa">
+{/*              <Tabs.Content value="mapa">
                 Access and update your documents.
               </Tabs.Content>
 
               <Tabs.Content value="infografico">
                 Edit your profile or update contact
-              </Tabs.Content>
+              </Tabs.Content>*/}
             </Box>
           </Flex>
         </Tabs.Root>

@@ -1,27 +1,147 @@
 import { PieChart } from './PieChart'
 import { BarChart } from './BarChart'
 import { useDataQuery } from './data'
+import {
+  Box,
+  Button,
+  Flex,
+  Input,
+  LoadingOverlay,
+  Markdown,
+  ShadowExpandable,
+} from '@orioro/react-ui-core'
+import { Heading } from '@radix-ui/themes'
+import { useQuery } from '@tanstack/react-query'
+import { resolveDataSrc } from './data/resolveDataSrc'
+import { useState } from 'react'
+import { pick, uniq } from 'lodash-es'
+import { Icon } from '@mdi/react'
+import { mdiDownload } from '@mdi/js'
 
-const CHART_COMPONENTS = {
+const CHART_RENDERERS = {
   pie: PieChart,
   bar: BarChart,
 }
 
-export function Chart({ type, data, ...props }) {
-  const Component = CHART_COMPONENTS[type]
+function _fmtLabel(str) {
+  if (!str) return ''
+  const withSpaces = str.replace(/_/g, ' ')
+  return withSpaces.charAt(0).toUpperCase() + withSpaces.slice(1)
+}
 
-  if (!Component) {
+export function Chart({
+  title,
+  description,
+  source,
+  type,
+  userFilterSpec = [],
+  data,
+  ...props
+}) {
+  const ChartRenderer = CHART_RENDERERS[type]
+
+  if (!ChartRenderer) {
     throw new TypeError(`Could not find chart of type ${type}`)
   }
 
-  const dataQuery = useDataQuery({
-    type,
-    options: data,
+  const dataSrcQuery = useQuery({
+    queryKey: [data.src],
+    queryFn: () =>
+      resolveDataSrc({ src: data.src, numericKeys: [data.valueKey] }),
+    placeholderData: (previousData) => previousData,
   })
 
-  console.log(dataQuery.data)
+  const [userFilterValue, setUserFilterValue] = useState(
+    pick(data.filter || {}, userFilterSpec),
+  )
 
-  return dataQuery.status === 'success' ? (
-    <Component data={dataQuery.data} {...props} />
-  ) : null
+  const dataQuery = useDataQuery({
+    type,
+    options: {
+      ...data,
+      src: dataSrcQuery.data,
+      filter: {
+        ...(data.filter || {}),
+        ...userFilterValue,
+      },
+    },
+    enabled: Array.isArray(dataSrcQuery.data),
+    placeholderData: (previousData) => previousData,
+  })
+
+  return (
+    <Flex direction="column" gap="4">
+      <Heading
+        as="h3"
+        size="4"
+        style={{
+          color: '#FF6219',
+        }}
+      >
+        {title}
+      </Heading>
+
+      {userFilterSpec.length > 0 && dataSrcQuery.data && (
+        <Flex direction="row" gap="3">
+          {userFilterSpec.map((filterKey) => (
+            <Input
+              key={filterKey}
+              value={userFilterValue[filterKey]}
+              onSetValue={(nextValue) =>
+                setUserFilterValue((curr) => ({
+                  ...curr,
+                  [filterKey]: nextValue || data.filter?.[filterKey],
+                }))
+              }
+              schema={{
+                type: 'select',
+                clearable: false,
+                label: _fmtLabel(filterKey),
+                options: uniq(
+                  dataSrcQuery.data.map((entry) => entry[filterKey]),
+                )
+                  .sort()
+                  .map((value) => ({
+                    label: _fmtLabel(value),
+                    value,
+                  })),
+              }}
+            />
+          ))}
+        </Flex>
+      )}
+
+      <Box
+        style={{
+          minHeight: '300px',
+          position: 'relative',
+        }}
+      >
+        {dataQuery.status === 'pending' && <LoadingOverlay />}
+        {dataQuery.data && <ChartRenderer data={dataQuery.data} {...props} />}
+      </Box>
+
+      <Flex direction="row" gap="3">
+        {description && (
+          <Box
+            style={{
+              background: '#F8F0ED',
+              borderRadius: '20px',
+            }}
+            p="4"
+          >
+            <ShadowExpandable>
+              <Markdown children={description} />
+            </ShadowExpandable>
+          </Box>
+        )}
+        <Button href={data.src} target="_blank">
+          <span>Baixar dados</span>
+          <Icon path={mdiDownload} size="24px" />
+        </Button>
+      </Flex>
+
+      {source && <cite>Fonte: {source}</cite>}
+    </Flex>
+  )
 }

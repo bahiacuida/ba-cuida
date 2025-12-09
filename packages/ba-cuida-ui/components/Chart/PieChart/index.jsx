@@ -1,17 +1,8 @@
 import { useMemo } from 'react'
-import { Cell, Legend, Pie, PieChart as PieChart_ } from 'recharts'
+import { Cell, Legend, Pie, PieChart as PieChart_, Tooltip } from 'recharts'
+import { CHART_COLORS } from '../constants'
 
 const RADIAN = Math.PI / 180
-const COLORS = [
-  '#0088FE',
-  '#00C49F',
-  '#FFBB28',
-  '#FF8042',
-  'red',
-  'blue',
-  'green',
-  'skyblue',
-]
 
 const renderCustomizedLabel = ({
   cx,
@@ -56,14 +47,19 @@ export function PieChart({ isAnimationActive = true, data, dataLabelKey }) {
       throw new TypeError(`Invalid data format ${data}`)
     }
 
-    return parsedData.sort((a, b) => (a.value <= b.value ? 1 : -1))
+    return parsedData
+      .sort((a, b) => (a.value <= b.value ? 1 : -1))
+      .map((entry, index) => ({
+        ...entry,
+        __order: index,
+      }))
   }, [data])
 
   return (
     <PieChart_
       style={{
         width: '100%',
-        maxWidth: '500px',
+        maxWidth: '700px',
         maxHeight: '80vh',
         aspectRatio: 1,
       }}
@@ -80,11 +76,17 @@ export function PieChart({ isAnimationActive = true, data, dataLabelKey }) {
         {_data.map((entry, index) => (
           <Cell
             key={`cell-${entry.name}`}
-            fill={COLORS[index % COLORS.length]}
+            fill={CHART_COLORS[index % CHART_COLORS.length]}
           />
         ))}
       </Pie>
-      <Legend layout="vertical" verticalAlign="middle" align="right" />
+      <Legend
+        itemSorter={(item) => item.__order}
+        layout="vertical"
+        verticalAlign="middle"
+        align="right"
+      />
+      <Tooltip itemSorter={(item) => item.__order} />
     </PieChart_>
   )
 }

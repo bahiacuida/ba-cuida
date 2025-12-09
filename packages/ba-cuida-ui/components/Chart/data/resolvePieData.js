@@ -1,20 +1,20 @@
 import { resolveDataSrc } from './resolveDataSrc'
-import { applyFilter, applyGroupBy } from './util'
+import { applyFilter, applyAggregate } from './util'
 
 export async function resolvePieData({
   src,
   labelKey = 'label',
   valueKey = 'value',
   filter,
-  groupBy,
+  aggregate,
 }) {
   let data = await resolveDataSrc({ src, numericKeys: [valueKey] })
 
   data = !filter ? data : applyFilter(data, filter)
 
-  data = !groupBy
+  data = !aggregate
     ? data
-    : applyGroupBy(data, { ...groupBy, sumKeys: [valueKey] })
+    : applyAggregate(data, { ...aggregate, sumKeys: [valueKey] })
 
   return Object.fromEntries(
     data.map((entry) => [entry[labelKey], entry[valueKey]]),

@@ -15,6 +15,7 @@
   "dependencies": {
     "@mdi/js": "^7.4.47",
     "@mdi/react": "^1.6.1",
+    "@orioro/react-dialogs": "^0.0.10",
     "@orioro/react-ui-core": "^0.0.6",
     "@radix-ui/react-collapsible": "^1.1.12",
     "@radix-ui/themes": "^3.2.1",

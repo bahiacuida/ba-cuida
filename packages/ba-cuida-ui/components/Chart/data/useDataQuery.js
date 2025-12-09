@@ -7,7 +7,7 @@ const RESOLVERS = {
   pie: resolvePieData,
 }
 
-export function useDataQuery({ type, options }) {
+export function useDataQuery({ type, options, ...props }) {
   const resolver = RESOLVERS[type]
 
   if (!resolver) {
@@ -19,5 +19,6 @@ export function useDataQuery({ type, options }) {
     queryFn: () => resolver(options),
     retry: process.env.NODE_ENV === 'production',
     throwOnError: process.env.NODE_ENV !== 'production',
+    ...props,
   })
 }
