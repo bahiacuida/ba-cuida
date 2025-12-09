@@ -5,6 +5,7 @@ const Container = styled.section`
   padding-top: 50px;
   padding-bottom: 50px;
 `
+
 const TopImg = styled.div`
   position: absolute;
   z-index: 999;
@@ -60,7 +61,12 @@ const BottomImg = styled.div`
   }
 `
 
-export function PaperFramedSection({ style = {}, children }) {
+export function PaperFramedSection({
+  style = {},
+  children,
+  topFrame = true,
+  bottomFrame = true,
+}) {
   return (
     <Container
       style={{
@@ -74,13 +80,17 @@ export function PaperFramedSection({ style = {}, children }) {
         ...style,
       }}
     >
-      <TopImg>
-        <img src="/assets/paper_framed_section/top_1.png" />
-      </TopImg>
+      {topFrame && (
+        <TopImg>
+          <img src="/assets/paper_framed_section/top_1.png" />
+        </TopImg>
+      )}
       {children}
-      <BottomImg>
-        <img src="/assets/paper_framed_section/bottom_1.png" />
-      </BottomImg>
+      {bottomFrame && (
+        <BottomImg>
+          <img src="/assets/paper_framed_section/bottom_1.png" />
+        </BottomImg>
+      )}
     </Container>
   )
 }
