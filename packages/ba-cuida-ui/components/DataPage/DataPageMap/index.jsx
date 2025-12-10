@@ -1,6 +1,5 @@
-import { resolveDataSrc } from '@/components/Chart/data/resolveDataSrc'
 import { LayeredMap, useHover, HoverTooltip } from '@orioro/react-maplibre-util'
-import { Flex, Input } from '@orioro/react-ui-core'
+import { Flex, Input, Markdown } from '@orioro/react-ui-core'
 import { useQuery } from '@tanstack/react-query'
 import { keyBy } from 'lodash-es'
 import { useState } from 'react'
@@ -241,7 +240,18 @@ export function DataPageMap() {
     )
 
   return (
-    <Flex direction="column" gap="3">
+    <Flex direction="column" alignItems="center" gap="6">
+      <Markdown
+        style={{
+          maxWidth: '600px',
+          textAlign: 'center',
+        }}
+        children={
+          'Explore e conheça os **dados georreferenciados da Bahia**. ' +
+          'Selecione a população prioritária e os equipamentos para ' +
+          'visualizar o cruzamento destes dados disponíveis em cada região.'
+        }
+      />
       <Flex direction="row" justifyContent="center" gap="3">
         <Input
           schema={{
@@ -276,7 +286,7 @@ export function DataPageMap() {
             latitude: -13.15,
             zoom: 4.7,
           }}
-          mapStyle={`https://api.maptiler.com/maps/dataviz/style.json?key=${process.env.STORYBOOK_MAP_TILER_API_KEY}`}
+          mapStyle={`https://api.maptiler.com/maps/dataviz/style.json?key=${process.env.NEXT_PUBLIC_MAP_TILER_API_KEY}`}
           style={{
             height: '70vh',
             width: '100%',
