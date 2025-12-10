@@ -15,33 +15,57 @@ const PCT_FMT = new Intl.NumberFormat('pt-BR', {
   maximumFractionDigits: 2,
 })
 
+const BASIC_NUM_FMT = new Intl.NumberFormat('pt-BR', {
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 2,
+})
+
 const CENSO_VARIABLES = [
   {
     id: 'qtd_criancas_pct',
     label: '% crianças na população',
     selectLabel: 'Crianças (0-9 anos)',
-    fmt: (value) => PCT_FMT.format(value),
+    tooltipEntries: (feature) => [
+      [
+        'Crianças (0-9 anos)',
+        `${BASIC_NUM_FMT.format(feature.properties.qtd_criancas)} (${PCT_FMT.format(feature.properties.qtd_criancas_pct)} da população do município)`,
+      ],
+    ],
   },
   {
     id: 'qtd_adolescentes_pct',
     label: '% adolescentes na população',
     selectLabel: 'Adolescentes (10-19 anos)',
-    fmt: (value) => PCT_FMT.format(value),
+    tooltipEntries: (feature) => [
+      [
+        'Adolescentes (10-19 anos)',
+        `${BASIC_NUM_FMT.format(feature.properties.qtd_adolescentes)} (${PCT_FMT.format(feature.properties.qtd_adolescentes_pct)} da população do município)`,
+      ],
+    ],
   },
   {
     id: 'qtd_idosos_pct',
     label: '% pessoas idosas na população',
     selectLabel: 'Pessoas idosas (60+ anos)',
-    fmt: (value) => PCT_FMT.format(value),
+    tooltipEntries: (feature) => [
+      [
+        'Pessoas idosas (60+ anos)',
+        `${BASIC_NUM_FMT.format(feature.properties.qtd_idosos)} (${PCT_FMT.format(feature.properties.qtd_idosos_pct)} da população do município)`,
+      ],
+    ],
   },
   {
     id: 'renda_media_responsavel',
     label: 'Renda média responsável',
-    fmt: (value) =>
-      new Intl.NumberFormat('pt-BR', {
-        style: 'currency',
-        currency: 'BRL',
-      }).format(value),
+    tooltipEntries: (feature) => [
+      [
+        'Renda média responsável',
+        new Intl.NumberFormat('pt-BR', {
+          style: 'currency',
+          currency: 'BRL',
+        }).format(feature.properties.renda_media_responsavel),
+      ],
+    ],
   },
 ]
 
@@ -147,8 +171,6 @@ export function DataPageMap() {
           }))
         })
 
-      console.log('censoData', censoData)
-
       // const censoData = await resolveDataSrc({
       //   src: '/data/ba-municipios-censo-2022.csv',
       //   numericKeys: CENSO_VARIABLES.map((v) => v.id),
@@ -215,12 +237,11 @@ export function DataPageMap() {
           const tooltipDataSections = features
             .flatMap((feature) => {
               return {
+                title: feature.properties.nm_mun,
                 entries: [
-                  ['Município', feature.properties.nm_mun],
-                  ...CENSO_VARIABLES.map((cvar) => [
-                    cvar.label,
-                    cvar.fmt(feature.properties[cvar.id]),
-                  ]),
+                  ...CENSO_VARIABLES.map((cvar) =>
+                    cvar.tooltipEntries(feature),
+                  ).flat(),
                 ],
               }
             })

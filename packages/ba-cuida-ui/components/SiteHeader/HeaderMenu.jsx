@@ -51,7 +51,19 @@ const ITEMS = [
 
 export function HeaderMenu() {
   return (
-    <Flex direction={{ xs: 'column', md: 'row' }} gap="5">
+    <Flex
+      direction={{ xs: 'column', md: 'row' }}
+      style={{ backgroundColor: 'white' }}
+      gap="5"
+      px={{
+        xs: '4',
+        md: '0',
+      }}
+      py={{
+        xs: '4',
+        md: '0',
+      }}
+    >
       {ITEMS.map((item, idx) => (
         <HeaderLink
           key={idx}

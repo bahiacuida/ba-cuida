@@ -20,9 +20,20 @@
 SELECT
   bas.cd_mun,
   bas.nm_mun,
+
+  -- Crianças
+  util.safe_sum(v01031, v01032) AS qtd_criancas,
   (util.safe_sum(v01031, v01032) / bas.v0001) AS qtd_criancas_pct,
+
+  -- Adolescentes
+  util.safe_sum(v01033, v01034) AS qtd_adolescentes,
   (util.safe_sum(v01033, v01034) / bas.v0001) AS qtd_adolescentes_pct,
+
+  -- Pessoas idosas
+  util.safe_sum(v01040, v01041) AS qtd_idosos,
   (util.safe_sum(v01040, v01041) / bas.v0001) AS qtd_idosos_pct,
+
+  -- Renda
   ren.v06004 AS renda_media_responsavel
 FROM
   ibge.censo_2022_basico_agg_cd_mun AS bas
