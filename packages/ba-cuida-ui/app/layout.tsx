@@ -3,6 +3,8 @@ import { Sora } from 'next/font/google'
 
 import '@/app/globals.css'
 import '@radix-ui/themes/styles.css'
+import 'maplibre-gl/dist/maplibre-gl.css'
+
 import { GlobalProviders } from '@/components/GlobalProviders'
 import { StyledComponentsRegistry } from './StyledComponentsRegistry'
 const sora = Sora({ subsets: ['latin'], weight: ['400', '700'] })

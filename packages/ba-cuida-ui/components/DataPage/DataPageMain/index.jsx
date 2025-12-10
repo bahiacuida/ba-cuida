@@ -2,6 +2,7 @@ import { Tabs } from '@radix-ui/themes'
 import { Box, Flex } from '@orioro/react-ui-core'
 import { SiteWidthContainer } from '../../SiteWidthContainer'
 import { DataPageIndicators } from '../DataPageIndicators'
+import { DataPageMap } from '../DataPageMap'
 
 export function DataPageMain() {
   return (
@@ -24,7 +25,7 @@ export function DataPageMain() {
               >
                 Painel de dados
               </Tabs.Trigger>
-              {/*<Tabs.Trigger
+              <Tabs.Trigger
                 value="mapa"
                 style={{
                   fontSize: '1rem',
@@ -32,7 +33,7 @@ export function DataPageMain() {
               >
                 Mapa georreferenciado
               </Tabs.Trigger>
-              <Tabs.Trigger
+              {/*<Tabs.Trigger
                 value="infografico"
                 style={{
                   fontSize: '1rem',
@@ -47,13 +48,11 @@ export function DataPageMain() {
                 <DataPageIndicators />
               </Tabs.Content>
 
-{/*              <Tabs.Content value="mapa">
-                Access and update your documents.
+              <Tabs.Content value="mapa">
+                <DataPageMap />
               </Tabs.Content>
 
-              <Tabs.Content value="infografico">
-                Edit your profile or update contact
-              </Tabs.Content>*/}
+              <Tabs.Content value="infografico">Infográfico</Tabs.Content>
             </Box>
           </Flex>
         </Tabs.Root>
