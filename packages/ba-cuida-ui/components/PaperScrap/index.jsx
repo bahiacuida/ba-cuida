@@ -5,12 +5,18 @@ export function PaperScrap({ children, style = {}, ...props }) {
     <Box
       style={{
         position: 'relative',
+
+        backgroundImage:
+          'url("/assets/home/03_capitulo_ana/montagens_ana/Ana_Montagem_03.png")',
+        backgroundSize: '100% 100%',
+        backgroundRepeat: 'no-repeat',
         ...style,
       }}
       p="7"
       {...props}
     >
-      <img
+      {children}
+      {/* <img
         style={{
           position: 'absolute',
           zIndex: 1,
@@ -18,19 +24,20 @@ export function PaperScrap({ children, style = {}, ...props }) {
           left: 0,
           width: '100%',
           height: '100%',
+          // background: 'white',
         }}
         alt=""
         role="presentation"
         src="/assets/home/03_capitulo_ana/montagens_ana/Ana_Montagem_03.png"
-      />
-      <div
+      />*/}
+      {/*<div
         style={{
           position: 'relative',
           zIndex: 2,
         }}
       >
         {children}
-      </div>
+      </div>*/}
     </Box>
   )
 }

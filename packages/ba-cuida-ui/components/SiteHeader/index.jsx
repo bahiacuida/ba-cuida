@@ -55,7 +55,7 @@ export function SiteHeader() {
       <AppHeader.OverlayMenu
         hideAt="md"
         trigger={({ menuOpen }) => (
-          <IconButton variant="ghost" size="1" highContrast>
+          <IconButton aria-label="Menu" variant="ghost" size="1" highContrast>
             <Icon path={menuOpen ? mdiClose : mdiMenu} size="24px" />
           </IconButton>
         )}

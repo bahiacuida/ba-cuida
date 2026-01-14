@@ -74,6 +74,7 @@ export function PaperFramedSection({
         backgroundSize: '100%',
         backgroundRepeat: 'repeat',
         /* Apply a solid color on top */
+        // backgroundColor: 'var(--marrom)',
         backgroundColor: 'var(--marrom)',
         color: 'white',
         backgroundBlendMode: 'hard-light',

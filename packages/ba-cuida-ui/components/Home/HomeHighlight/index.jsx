@@ -10,6 +10,14 @@ export function HomeHighlight() {
   return (
     <section
       style={{
+        // backgroundImage: 'url("/assets/paper_framed_section/noise.png")',
+        // backgroundSize: '100%',
+        // backgroundRepeat: 'repeat',
+        // backgroundColor: 'var(--marrom)',
+        // color: 'white',
+        // backgroundBlendMode: 'hard-light',
+
+        backgroundColor: 'var(--marrom)',
         backgroundImage: 'url("/assets/home/01_banner/Banner-Home_BG.png")',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center center',

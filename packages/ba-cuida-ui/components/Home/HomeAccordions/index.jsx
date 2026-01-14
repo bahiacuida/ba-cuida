@@ -4,7 +4,7 @@ import { LargeToggleBlock } from '@/components/LargeToggleBlock'
 import { StoryAna } from '@/components/Stories/StoryAna'
 import { StoryEugenia } from '@/components/Stories/StoryEugenia'
 import { StoryCriseDosCuidados } from '@/components/Stories/StoryCriseDosCuidados'
-import { Heading } from '@radix-ui/themes'
+import { Heading, Text } from '@radix-ui/themes'
 
 export function HomeAccordions() {
   return (
@@ -38,7 +38,7 @@ export function HomeAccordions() {
               },
             }}
           >
-            <Heading as="h2">Conheça quem cuida na Bahia</Heading>
+            <Text size="6">Conheça quem cuida na Bahia</Text>
             <Markdown
               children={
                 'Para compartilhar essa história, vamos contar com a ajuda de ' +
