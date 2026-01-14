@@ -47,7 +47,9 @@ export function PessoasIdosas() {
               }}
             >
               O cuidado das{' '}
-              <strong style={{ color: '#FF8A67' }}>pessoas idosas</strong>
+              <strong style={{ color: 'var(--orange-text-dark-bg)' }}>
+                pessoas idosas
+              </strong>
             </Heading>
             <Flex
               direction={{
@@ -80,7 +82,7 @@ export function PessoasIdosas() {
                     position: 'relative',
                   }}
                 >
-                  <Box p="6">
+                  <Box>
                     <Heading
                       as="h3"
                       style={{
@@ -151,11 +153,11 @@ export function PessoasIdosas() {
               }}
             >
               Quando o{' '}
-              <strong style={{ color: '#FF8A67' }}>
+              <strong style={{ color: 'var(--orange-text-dark-bg)' }}>
                 Estado não assume sua parte nos cuidados
               </strong>
               , ele transfere a responsabilidade para as famílias,{' '}
-              <strong style={{ color: '#FF8A67' }}>
+              <strong style={{ color: 'var(--orange-text-dark-bg)' }}>
                 sobrecarregando ainda mais as mulheres
               </strong>
               .

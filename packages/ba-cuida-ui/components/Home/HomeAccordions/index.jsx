@@ -51,46 +51,44 @@ export function HomeAccordions() {
           </Flex>
         </Flex>
       </SiteWidthContainer>
-      <SiteWidthContainer pb="200px">
-        <Flex direction="column" gap="5" width="100%">
-          <LargeToggleBlock
-            number="1"
-            label="Ana, uma cuidadora não remunerada e invisibilizada"
-            style={{
-              maxWidth: 'var(--container-4)',
-              marginLeft: 'auto',
-              marginRight: 'auto',
-            }}
-            color="#8C7D7D"
-          >
-            <StoryAna />
-          </LargeToggleBlock>
-          <LargeToggleBlock
-            number="2"
-            label="Eugênia, uma cuidadora remunerada"
-            style={{
-              maxWidth: 'var(--container-4)',
-              marginLeft: 'auto',
-              marginRight: 'auto',
-            }}
-            color="#816188"
-          >
-            <StoryEugenia />
-          </LargeToggleBlock>
-          <LargeToggleBlock
-            number="3"
-            label="A Crise dos Cuidados"
-            style={{
-              maxWidth: 'var(--container-4)',
-              marginLeft: 'auto',
-              marginRight: 'auto',
-            }}
-            color="#72937E"
-          >
-            <StoryCriseDosCuidados />
-          </LargeToggleBlock>
-        </Flex>
-      </SiteWidthContainer>
+      <Flex direction="column" gap="5" width="100%">
+        <LargeToggleBlock
+          number="1"
+          label="Ana, uma cuidadora não remunerada e invisibilizada"
+          style={{
+            maxWidth: 'var(--container-4)',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          }}
+          color="#8C7D7D"
+        >
+          <StoryAna />
+        </LargeToggleBlock>
+        <LargeToggleBlock
+          number="2"
+          label="Eugênia, uma cuidadora remunerada"
+          style={{
+            maxWidth: 'var(--container-4)',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          }}
+          color="#816188"
+        >
+          <StoryEugenia />
+        </LargeToggleBlock>
+        <LargeToggleBlock
+          number="3"
+          label="A Crise dos Cuidados"
+          style={{
+            maxWidth: 'var(--container-4)',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          }}
+          color="#72937E"
+        >
+          <StoryCriseDosCuidados />
+        </LargeToggleBlock>
+      </Flex>
     </Flex>
   )
 }

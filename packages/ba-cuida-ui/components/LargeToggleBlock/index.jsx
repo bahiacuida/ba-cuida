@@ -4,6 +4,7 @@ import { Icon } from '@mdi/react'
 import { mdiMenuDown } from '@mdi/js'
 import { useEffect, useRef, useState } from 'react'
 import { Heading } from '@radix-ui/themes'
+import { SiteWidthContainer } from '../SiteWidthContainer'
 
 const TRANSITION_DURATION = '300ms'
 
@@ -95,29 +96,31 @@ export function LargeToggleBlock({ number, label, children, color, ...props }) {
   }, [open])
   return (
     <Collapsible.Root open={open} onOpenChange={setOpen}>
-      <Heading as="h2" ref={contentRef} style={{ scrollMarginTop: 20 }}>
-        <Trigger {...props}>
-          <TriggerLabel>
-            <span>{number}. </span>
-            <span>{label}</span>
-          </TriggerLabel>
-          <ToggleIcon
-            style={{
-              backgroundColor: color,
-            }}
-          >
-            <Icon
+      <SiteWidthContainer>
+        <Heading as="h2" ref={contentRef} style={{ scrollMarginTop: 20 }}>
+          <Trigger {...props}>
+            <TriggerLabel>
+              <span>{number}. </span>
+              <span>{label}</span>
+            </TriggerLabel>
+            <ToggleIcon
               style={{
-                transition: `transform ${TRANSITION_DURATION} ease-out`,
-                transform: open ? 'rotate(180deg)' : '',
+                backgroundColor: color,
               }}
-              path={mdiMenuDown}
-              size="48px"
-              color="white"
-            />
-          </ToggleIcon>
-        </Trigger>
-      </Heading>
+            >
+              <Icon
+                style={{
+                  transition: `transform ${TRANSITION_DURATION} ease-out`,
+                  transform: open ? 'rotate(180deg)' : '',
+                }}
+                path={mdiMenuDown}
+                size="48px"
+                color="white"
+              />
+            </ToggleIcon>
+          </Trigger>
+        </Heading>
+      </SiteWidthContainer>
       <CollapsibleContent tabIndex={open ? '0' : '-1'} forceMount={true}>
         {children}
       </CollapsibleContent>

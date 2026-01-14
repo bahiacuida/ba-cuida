@@ -123,7 +123,7 @@ export function StoryCriseDosCuidados() {
                 alt=""
                 role="presentation"
               />
-              <img
+              {/*<img
                 style={{
                   position: 'relative',
                   zIndex: 2,
@@ -131,17 +131,19 @@ export function StoryCriseDosCuidados() {
                 src="/assets/home/05_capitulo_crise_dos_cuidados/Conclusao_Montagem_04.png"
                 alt=""
                 role="presentation"
-              />
+              />*/}
 
               <Box
                 style={{
-                  position: 'absolute',
-                  top: '30%',
-                  left: '10%',
-                  right: '10%',
+                  position: 'relative',
+                  // top: '30%',
+                  // left: '10%',
+                  // right: '10%',
                   zIndex: 3,
                   color: 'var(--marrom-texto)',
+                  background: 'white',
                 }}
+                p="6"
               >
                 <Heading as="h3">
                   Cuidado é uma necessidade de todas as pessoas:

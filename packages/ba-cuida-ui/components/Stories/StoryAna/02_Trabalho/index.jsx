@@ -34,9 +34,9 @@ export function Trabalho() {
           >
             <Heading as="h3">
               Você sabia que esse{' '}
-              <strong style={{ color: 'var(--orange-9)' }}>"cuidar"</strong>{' '}
+              <strong style={{ color: 'var(--orange-text-dark-bg)' }}>"cuidar"</strong>{' '}
               realizado pela Ana é, na verdade,{' '}
-              <strong style={{ color: 'var(--orange-9)' }}>um trabalho</strong>?
+              <strong style={{ color: 'var(--orange-text-dark-bg)' }}>um trabalho</strong>?
             </Heading>
             <Markdown
               children={
@@ -67,8 +67,8 @@ export function Trabalho() {
                 marginLeft: 'auto',
                 marginRight: 'auto',
               }}
-              py="100px"
-              px="100px"
+              py="30px"
+              px="30px"
               justifyContent="center"
               alignItems="center"
               gap="6"

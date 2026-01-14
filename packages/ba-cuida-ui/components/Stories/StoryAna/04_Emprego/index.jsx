@@ -52,7 +52,7 @@ export function Emprego() {
               >
                 Na Bahia, o 2o maior motivo para mulheres não procurarem emprego
                 é{' '}
-                <strong style={{ color: '#FF8A67' }}>
+                <strong style={{ color: 'var(--orange-text-dark-bg)' }}>
                   cuidar dos afazeres domésticos e de seus filhos.
                 </strong>
               </Heading>

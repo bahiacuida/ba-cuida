@@ -80,9 +80,11 @@ export function CarteiraAssinada() {
                   }}
                 >
                   No Brasil,{' '}
-                  <strong style={{ color: '#FF8A67' }}>7 em cada 10</strong>
-                  trabalhadoras dos cuidados não possuem{' '}
-                  <strong style={{ color: '#FF8A67' }}>
+                  <strong style={{ color: 'var(--orange-text-dark-bg)' }}>
+                    7 em cada 10
+                  </strong>
+                  {' '}trabalhadoras dos cuidados não possuem{' '}
+                  <strong style={{ color: 'var(--orange-text-dark-bg)' }}>
                     carteira assinada
                   </strong>
                   .
@@ -112,7 +114,7 @@ export function CarteiraAssinada() {
               </Flex>
             </Flex>
             <PaperScrap>
-              <Box p="8">
+              <Box p="4">
                 <Text
                   as="div"
                   style={{

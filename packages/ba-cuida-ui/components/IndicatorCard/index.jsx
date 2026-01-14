@@ -75,7 +75,8 @@ export function IndicatorCard({
                 style={{
                   margin: 0,
                   fontSize: '13px',
-                  color: '#523A30',
+                  // color: '#523A30',
+                  color: 'var(--orange-9)',
                   textAlign: 'left',
                 }}
               >
@@ -99,7 +100,8 @@ export function IndicatorCard({
           <Text
             style={{
               fontSize: '13px',
-              color: '#523A30',
+              // color: '#523A30',
+              color: 'var(--orange-9)',
             }}
           >
             {cardDescription}

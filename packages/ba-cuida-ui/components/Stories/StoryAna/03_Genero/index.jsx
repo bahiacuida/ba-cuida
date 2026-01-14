@@ -110,6 +110,8 @@ export function Genero() {
                     position: 'absolute',
                     top: '80%',
                     left: 'calc(100% + 20px)',
+                    background: 'var(--marrom)',
+                    padding: 5,
                     width: '150px',
                   }}
                 >

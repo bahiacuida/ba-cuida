@@ -1,8 +1,7 @@
-import { Box, color, Flex, Markdown } from '@orioro/react-ui-core'
+import { Box, Flex, Markdown } from '@orioro/react-ui-core'
 import { SiteWidthContainer } from '@/components/SiteWidthContainer'
 import { PaperFramedSection } from '@/components/PaperFramedSection'
 import { PaperScrap } from '@/components/PaperScrap'
-import { PaperCard } from '@/components/PaperCard'
 import { Heading, Text } from '@radix-ui/themes'
 
 export function Creche() {
@@ -59,7 +58,7 @@ export function Creche() {
                   <img
                     style={{
                       position: 'absolute',
-                      bottom: '80%',
+                      bottom: '90%',
                       right: '80%',
                       width: '40%',
                     }}
@@ -67,7 +66,7 @@ export function Creche() {
                     alt=""
                     role="presentation"
                   />
-                  <Box p="8">
+                  <Box p="5">
                     <Heading
                       as="h3"
                       style={{
@@ -76,7 +75,13 @@ export function Creche() {
                       }}
                     >
                       Na Bahia, 7 em cada 10 crianças{' '}
-                      <strong style={{ color: '#523A30' }}>
+                      <strong
+                        style={
+                          {
+                            // color: '#523A30',
+                          }
+                        }
+                      >
                         não estavam matriculadas em creches*
                       </strong>
                     </Heading>

@@ -80,7 +80,7 @@ export function OutrosImpactos() {
               }}
             >
               No Brasil, quanto{' '}
-              <strong style={{ color: '#FF8A67' }}>
+              <strong style={{ color: 'var(--orange-text-dark-bg)' }}>
                 menor a renda da mulher, maior é o tempo dedicado
               </strong>{' '}
               aos trabalhos domésticos e de cuidados de pessoas.
