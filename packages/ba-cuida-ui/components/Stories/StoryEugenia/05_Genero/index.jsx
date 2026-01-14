@@ -65,7 +65,7 @@ export function Genero() {
                 }}
               >
                 <Heading
-                  as="h2"
+                  as="h3"
                   style={{
                     fontSize: '1.875rem',
                   }}

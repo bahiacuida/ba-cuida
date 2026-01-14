@@ -6,7 +6,9 @@ export default function HomePage() {
   return (
     <>
       <SiteHeader />
-      <Home />
+      <main tabIndex={-1} id="conteudo-principal">
+        <Home />
+      </main>
     </>
   )
 }

@@ -51,7 +51,7 @@ export function HomeAccordions() {
           </Flex>
         </Flex>
       </SiteWidthContainer>
-      <SiteWidthContainer pb="400px">
+      <SiteWidthContainer pb="200px">
         <Flex direction="column" gap="5" width="100%">
           <LargeToggleBlock
             number="1"

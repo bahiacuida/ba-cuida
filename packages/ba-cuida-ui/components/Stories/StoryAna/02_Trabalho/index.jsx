@@ -32,7 +32,7 @@ export function Trabalho() {
             }}
             gap="4"
           >
-            <Heading as="h2">
+            <Heading as="h3">
               Você sabia que esse{' '}
               <strong style={{ color: 'var(--orange-9)' }}>"cuidar"</strong>{' '}
               realizado pela Ana é, na verdade,{' '}
@@ -73,7 +73,7 @@ export function Trabalho() {
               alignItems="center"
               gap="6"
             >
-              <Heading as="h2">
+              <Heading as="h3">
                 Os chamados <strong>“trabalhos dos cuidados”</strong> são:
               </Heading>
               <Flex
@@ -124,7 +124,7 @@ export function Trabalho() {
 
           <Flex direction="column" gap="5">
             <Heading
-              as="h2"
+              as="h3"
               style={{
                 textAlign: 'center',
               }}

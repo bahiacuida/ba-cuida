@@ -3,15 +3,16 @@ import styled, { keyframes } from 'styled-components'
 import { Icon } from '@mdi/react'
 import { mdiMenuDown } from '@mdi/js'
 import { useEffect, useRef, useState } from 'react'
+import { Heading } from '@radix-ui/themes'
+
+const TRANSITION_DURATION = '300ms'
 
 export const CollapsibleContent = styled(Collapsible.Content)`
   overflow: hidden;
   opacity: 0;
 
-  transition:
-    height 300ms ease-out,
-    opacity 300ms ease-out;
-  transition-duration: 300ms !important;
+  transition: opacity ${TRANSITION_DURATION} ease-out;
+  transition-duration: ${TRANSITION_DURATION} !important;
 
   &[data-state='open'] {
     opacity: 1;
@@ -59,6 +60,8 @@ const TriggerLabel = styled.div`
 `
 
 const ToggleIcon = styled.div`
+  flex-shrink: 0;
+  flex-grow: 0;
   margin-left: 20px;
   background-color: #8c7d7d;
   border-radius: 8px;
@@ -78,17 +81,21 @@ export function LargeToggleBlock({ number, label, children, color, ...props }) {
       return
     }
 
-    contentRef.current?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
+    const raf = requestAnimationFrame(() => {
+      //
+      // Run in next af, so that content is already open
+      //
+      contentRef.current?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
     })
+
+    return () => cancelAnimationFrame(raf)
   }, [open])
   return (
     <Collapsible.Root open={open} onOpenChange={setOpen}>
-      <h2
-        ref={contentRef}
-        style={{ scrollMarginTop: 20, marginTop: 0, marginBottom: 0 }}
-      >
+      <Heading as="h2" ref={contentRef} style={{ scrollMarginTop: 20 }}>
         <Trigger {...props}>
           <TriggerLabel>
             <span>{number}. </span>
@@ -101,7 +108,7 @@ export function LargeToggleBlock({ number, label, children, color, ...props }) {
           >
             <Icon
               style={{
-                transition: 'transform .3s ease',
+                transition: `transform ${TRANSITION_DURATION} ease-out`,
                 transform: open ? 'rotate(180deg)' : '',
               }}
               path={mdiMenuDown}
@@ -110,7 +117,7 @@ export function LargeToggleBlock({ number, label, children, color, ...props }) {
             />
           </ToggleIcon>
         </Trigger>
-      </h2>
+      </Heading>
       <CollapsibleContent tabIndex={open ? '0' : '-1'} forceMount={true}>
         {children}
       </CollapsibleContent>

@@ -43,7 +43,7 @@ export function Emprego() {
               {/*<img alt=""
             role="presentation" />*/}
               <Heading
-                as="h2"
+                as="h3"
                 style={{
                   width: '70%',
                   fontSize: '2rem',

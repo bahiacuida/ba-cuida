@@ -1,12 +1,11 @@
-'use client'
 import { Sora } from 'next/font/google'
 
 import '@/app/globals.css'
 import '@radix-ui/themes/styles.css'
 import 'maplibre-gl/dist/maplibre-gl.css'
 
-import { GlobalProviders } from '@/components/GlobalProviders'
 import { StyledComponentsRegistry } from './StyledComponentsRegistry'
+import { LayoutClient } from './LayoutClient'
 const sora = Sora({ subsets: ['latin'], weight: ['400', '700'] })
 
 export default function RootLayout({
@@ -15,12 +14,23 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className={`${sora.className}`}>
+        <a href="#conteudo-principal" className="skip-link">
+          Pular para o conteúdo
+        </a>
         <StyledComponentsRegistry>
-          <GlobalProviders>{children}</GlobalProviders>
+          <LayoutClient>{children}</LayoutClient>
         </StyledComponentsRegistry>
       </body>
     </html>
   )
+}
+
+export const metadata = {
+  title: {
+    template: '%s | Bahia Cuida',
+    default: 'Bahia Cuida',
+  },
+  description: 'Observatório de dados do estado da Bahia',
 }

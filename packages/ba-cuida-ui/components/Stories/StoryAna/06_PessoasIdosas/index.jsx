@@ -39,6 +39,16 @@ export function PessoasIdosas() {
       <PaperFramedSection style={{ position: 'relative', overflow: 'hidden' }}>
         <SiteWidthContainer>
           <Flex direction="column" gap="8" py="9">
+            <Heading
+              as="h3"
+              style={{
+                fontSize: '2rem',
+                lineHeight: '1.2',
+              }}
+            >
+              O cuidado das{' '}
+              <strong style={{ color: '#FF8A67' }}>pessoas idosas</strong>
+            </Heading>
             <Flex
               direction={{
                 xs: 'column',
@@ -72,7 +82,7 @@ export function PessoasIdosas() {
                 >
                   <Box p="6">
                     <Heading
-                      as="h2"
+                      as="h3"
                       style={{
                         fontSize: '1.25rem',
                         lineHeight: '1.2',
@@ -129,25 +139,27 @@ export function PessoasIdosas() {
                 '182 Instituições públicas de Longa Permanência. '
               }
             />
-            <Heading
-              as="h2"
+            <Text
               style={{
                 maxWidth: '800px',
                 marginLeft: 'auto',
                 marginRight: 'auto',
                 textAlign: 'center',
+
+                fontSize: '1.5rem',
+                lineHeight: '1.2',
               }}
             >
               Quando o{' '}
               <strong style={{ color: '#FF8A67' }}>
                 Estado não assume sua parte nos cuidados
               </strong>
-              , ele transfere a responsabilidade para as famílias,
+              , ele transfere a responsabilidade para as famílias,{' '}
               <strong style={{ color: '#FF8A67' }}>
                 sobrecarregando ainda mais as mulheres
               </strong>
               .
-            </Heading>
+            </Text>
           </Flex>
         </SiteWidthContainer>
       </PaperFramedSection>

@@ -2,7 +2,7 @@ import { Box, Flex, Markdown } from '@orioro/react-ui-core'
 import { SiteWidthContainer } from '@/components/SiteWidthContainer'
 import { PaperFramedSection } from '@/components/PaperFramedSection'
 import { PaperCard } from '@/components/PaperCard'
-import { Text } from '@radix-ui/themes'
+import { Heading } from '@radix-ui/themes'
 
 export function Genero() {
   return (
@@ -38,7 +38,7 @@ export function Genero() {
       <PaperFramedSection style={{ position: 'relative', overflow: 'hidden' }}>
         <SiteWidthContainer>
           <Flex
-            py="7"
+            py="100px"
             direction={{
               xs: 'column',
               md: 'row',
@@ -63,21 +63,24 @@ export function Genero() {
                 textAlign: 'center',
               }}
             >
-              <div>Na Bahia, as mulheres gastam</div>
-              <strong
-                style={{
-                  background: '#E6DAEC',
-                  color: 'var(--marrom-texto)',
-                  padding: '0 20px',
-                  marginLeft: '-20px',
-                  marginRight: '-20px',
-                }}
-              >
-                mais do que o dobro de horas
-              </strong>{' '}
-              <div>
-                do que os homens em tarefas domésticas e de cuidado de pessoas.
-              </div>
+              <Heading as="h3">
+                <div>Na Bahia, as mulheres gastam</div>
+                <strong
+                  style={{
+                    background: '#E6DAEC',
+                    color: 'var(--marrom-texto)',
+                    padding: '0 20px',
+                    marginLeft: '-20px',
+                    marginRight: '-20px',
+                  }}
+                >
+                  mais do que o dobro de horas
+                </strong>{' '}
+                <div>
+                  do que os homens em tarefas domésticas e de cuidado de
+                  pessoas.
+                </div>
+              </Heading>
             </Box>
 
             <div
@@ -117,6 +120,8 @@ export function Genero() {
 
               <img
                 src="/assets/home/03_capitulo_ana/montagens_ana/Ana_Montagem_04.png"
+                alt=""
+                role="presentation"
                 style={{
                   width: '50%',
                   position: 'absolute',
@@ -129,6 +134,8 @@ export function Genero() {
               />
               <img
                 src="/assets/home/03_capitulo_ana/montagens_ana/Ana_Montagem_05.png"
+                alt=""
+                role="presentation"
                 style={{
                   width: '30%',
                   position: 'absolute',

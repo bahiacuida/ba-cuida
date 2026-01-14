@@ -57,7 +57,7 @@ export function Intro() {
               }}
             >
               <Heading
-                as="h2"
+                as="h3"
                 style={{
                   fontSize: '1.875rem',
                   width: '40%',

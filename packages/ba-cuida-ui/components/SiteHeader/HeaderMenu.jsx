@@ -1,8 +1,10 @@
+'use client'
 import { Flex } from '@orioro/react-ui-core'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import styled from 'styled-components'
 
-const HeaderLink = styled(Link)`
+const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
   position: relative;
@@ -22,6 +24,30 @@ const HeaderLink = styled(Link)`
   }
 `
 
+function normalizePath(p) {
+  if (!p) return '/'
+  // remove trailing slash (except root)
+  return p.length > 1 && p.endsWith('/') ? p.slice(0, -1) : p
+}
+
+function HeaderLink({ href, children, active }) {
+  const pathname = usePathname()
+  const computedActive =
+    typeof active !== 'boolean'
+      ? normalizePath(pathname) === normalizePath(href)
+      : !!active
+
+  return (
+    <StyledLink
+      href={href}
+      aria-current={computedActive ? 'page' : undefined}
+      className={computedActive ? 'active' : undefined}
+    >
+      {children}
+    </StyledLink>
+  )
+}
+
 const ITEMS = [
   {
     label: 'Quem cuida na Bahia',
@@ -29,7 +55,7 @@ const ITEMS = [
   },
   {
     label: 'Dados',
-    href: '/dados',
+    href: '/dados/',
   },
   // {
   //   label: 'Cuidados',
@@ -65,11 +91,7 @@ export function HeaderMenu() {
       }}
     >
       {ITEMS.map((item, idx) => (
-        <HeaderLink
-          key={idx}
-          href={item.href}
-          className={item.active ? 'active' : ''}
-        >
+        <HeaderLink key={idx} href={item.href}>
           {item.label}
         </HeaderLink>
       ))}

@@ -28,7 +28,7 @@ export function StoryCriseDosCuidados() {
             <PaperScrap>
               <Box p="5">
                 <Heading
-                  as="h2"
+                  as="h3"
                   style={{
                     color: 'var(--marrom-texto)',
                   }}
@@ -143,7 +143,7 @@ export function StoryCriseDosCuidados() {
                   color: 'var(--marrom-texto)',
                 }}
               >
-                <Heading>
+                <Heading as="h3">
                   Cuidado é uma necessidade de todas as pessoas:
                 </Heading>
                 <Text
@@ -221,7 +221,7 @@ export function StoryCriseDosCuidados() {
       </PaperFramedSection>
       <SiteWidthContainer>
         <Flex direction="column" gap="5">
-          <Heading as="h2">Cuidado deve ser um bem público coletivo</Heading>
+          <Heading as="h3">Cuidado deve ser um bem público coletivo</Heading>
           <Flex
             direction={{
               xs: 'column',

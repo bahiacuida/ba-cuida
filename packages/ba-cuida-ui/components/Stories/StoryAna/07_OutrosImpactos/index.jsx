@@ -71,7 +71,7 @@ export function OutrosImpactos() {
         <SiteWidthContainer>
           <Flex direction="column" gap="8" py="9">
             <Heading
-              as="h2"
+              as="h3"
               style={{
                 maxWidth: '800px',
                 marginLeft: 'auto',

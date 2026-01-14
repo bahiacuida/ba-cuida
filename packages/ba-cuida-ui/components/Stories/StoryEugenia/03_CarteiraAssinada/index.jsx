@@ -74,7 +74,7 @@ export function CarteiraAssinada() {
                   />
                 </Box>
                 <Heading
-                  as="h2"
+                  as="h3"
                   style={{
                     textAlign: 'center',
                   }}

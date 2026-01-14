@@ -69,7 +69,7 @@ export function Creche() {
                   />
                   <Box p="8">
                     <Heading
-                      as="h2"
+                      as="h3"
                       style={{
                         fontSize: '2rem',
                         lineHeight: '1.2',
