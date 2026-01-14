@@ -58,6 +58,8 @@ export function DataPageHighlight() {
       <SiteWidthContainer maxWidth="1000px">
         <img
           src="/assets/home/06_fundos_narrativa/bg_mancha_verde.svg"
+          alt=""
+          role="presentation"
           style={{
             position: 'absolute',
             top: '0',
@@ -70,6 +72,8 @@ export function DataPageHighlight() {
         />
         <img
           src="/assets/home/06_fundos_narrativa/bg_mancha_laranja.svg"
+          alt=""
+          role="presentation"
           style={{
             position: 'absolute',
             top: '0',
@@ -93,7 +97,10 @@ export function DataPageHighlight() {
           py="9"
           gap="6"
         >
-          <HighlightImg src="/assets/dados_bahia/montagens/Dados_Montagem_01.png" />
+          <HighlightImg
+            src="/assets/dados_bahia/montagens/Dados_Montagem_01.png"
+            alt="Montagem com Maria Felipa, figura história marisqueira e quilombola combatente na Guerra de Independência do Brasil, em pose séria, ao centro. Ela aparece em preto e branco, com um turbante na cabeça. Ao fundo, elementos coloridos remetem à culinária e à cultura baiana, como coco e um acarajé, além do Farol da Barra, monumento localizado em Salvador. Formas gráficas abstratas em tons vibrantes nas cores laranja, verde e roxa completam a composição. A montagem simboliza o estado da Bahia."
+          />
 
           <PaperScrap p="100px">
             <Flex
@@ -118,7 +125,11 @@ export function DataPageHighlight() {
         </Flex>
 
         <BottomImg>
-          <img src="/assets/paper_framed_section/bottom_1.png" />
+          <img
+            src="/assets/paper_framed_section/bottom_1.png"
+            alt=""
+            role="presentation"
+          />
         </BottomImg>
       </SiteWidthContainer>
     </section>

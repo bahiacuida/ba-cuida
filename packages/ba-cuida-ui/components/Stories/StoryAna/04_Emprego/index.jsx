@@ -24,6 +24,7 @@ export function Emprego() {
               height: 300,
             }}
             src="/assets/home/03_capitulo_ana/ilustracoes_ana/Ana_04.svg"
+            alt="Ilustração de Ana em pé, cercada por itens de limpeza e brinquedos espalhados. Ela segura a cabeça com uma das mãos e olha para o relógio no pulso, sugerindo sobrecarga de tarefas."
           />
           <Markdown
             style={{ fontSize: '1.25rem', fontWeight: 300 }}
@@ -39,7 +40,8 @@ export function Emprego() {
         <SiteWidthContainer>
           <Flex direction="column" gap="8" py="9">
             <Flex direction="row" justifyContent="flex-end">
-              <img />
+              {/*<img alt=""
+            role="presentation" />*/}
               <Heading
                 as="h2"
                 style={{
@@ -56,7 +58,10 @@ export function Emprego() {
               </Heading>
             </Flex>
             <PaperCard>
-              <img src="/assets/home/03_capitulo_ana/graficos_ana/Ana_Grafico_04.svg" />
+              <img
+                src="/assets/home/03_capitulo_ana/graficos_ana/Ana_Grafico_04.svg"
+                alt="Gráfico de barras horizontais “Motivos que levaram as pessoas a não procurarem emprego” por gênero. Em roxo, na lista de motivos que levaram mulheres a não buscarem emprego temos, em ordem de maior relevância: “Não havia trabalho na localidade”; “Tinha que cuidar de alguém ou dos afazeres domésticos”, em destaque, com 196 mil mulheres; e “Por problemas de saúde ou gravidez”. Em laranja, na lista de motivos que levaram homens a não buscarem emprego temos, em ordem de maior relevância: “Não havia trabalho na localidade”, “Por problema de saúde”, “estava estudando”."
+              />
             </PaperCard>
             <cite
               style={{

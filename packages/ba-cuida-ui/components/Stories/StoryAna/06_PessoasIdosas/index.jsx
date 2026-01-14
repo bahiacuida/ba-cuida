@@ -25,6 +25,7 @@ export function PessoasIdosas() {
               height: 300,
             }}
             src="/assets/home/03_capitulo_ana/ilustracoes_ana/Ana_06.svg"
+            alt="Ilustração de Ana ajudando sua mãe, uma mulher idosa, negra e de bengala, a vestir um casaco. As duas estão em um ambiente interno decorado com um quadro e elementos coloridos ao fundo."
           />
           <Markdown
             style={{ fontSize: '1.25rem', fontWeight: 300 }}
@@ -103,7 +104,10 @@ export function PessoasIdosas() {
                 gap="3"
               >
                 <PaperCard>
-                  <img src="/assets/home/03_capitulo_ana/graficos_ana/Ana_Grafico_06.svg" />
+                  <img
+                    src="/assets/home/03_capitulo_ana/graficos_ana/Ana_Grafico_06.svg"
+                    alt="Pirâmide etária comparando a população baiana entre 2013 e 2023. À esquerda estão as barras referentes às mulheres, na cor lilás representando 2013 e a cor roxa representando 2023. À direita estão as barras dos homens, com a cor bege representando 2013 e a cor laranja representando 2023. Cada barra indica a quantidade de pessoas em milhares distribuídas por faixas etárias, de 0 a 4 anos até 80 anos ou mais. O gráfico mostra que o envelhecimento populacional é mais acentuado entre as mulheres."
+                  />
                 </PaperCard>
                 <cite>
                   Fonte: IBGE. Pesquisa Nacional por Amostra de Domicílios

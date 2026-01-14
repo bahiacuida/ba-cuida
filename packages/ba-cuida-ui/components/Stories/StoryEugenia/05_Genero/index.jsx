@@ -24,6 +24,7 @@ export function Genero() {
               height: 300,
             }}
             src="/assets/home/04_capitulo_eugenia/ilustracoes_eugenia/Eugenia_05.svg"
+            alt="Ilustração de Eugênia lavando pratos enquanto seu marido, que poderia ajudá-la, está sentado no sofá e lê um livro sorridente. Ela parece cansada, e elementos decorativos coloridos aparecem ao fundo."
           />
           <Markdown
             style={{ fontSize: '1.25rem', fontWeight: 300 }}
@@ -102,9 +103,12 @@ export function Genero() {
                       transform: 'rotate(-15deg) translateY(-40%)',
                     }}
                     src="/assets/home/04_capitulo_eugenia/montagens_eugenia/Eugenia_Montagem_06.png"
+                    alt=""
+                    role="presentation"
                   />
                   <img
                     src="/assets/home/04_capitulo_eugenia/graficos_eugenia/Eugenia_Grafico_06.svg"
+                    alt="Gráfico de barras verticais comparando as horas semanais dedicadas às atividades de cuidados por mulheres e homens, empregados e desempregados. As barras roxas representam mulheres: desempregadas dedicam 25,9 horas e empregadas, 19 horas por semana. As barras laranja representam homens: desempregados dedicam 12 horas e empregados, 10,3 horas por semana."
                     style={{
                       width: '100%',
                     }}
@@ -136,6 +140,7 @@ export function Genero() {
               height: 300,
             }}
             src="/assets/home/04_capitulo_eugenia/ilustracoes_eugenia/Eugenia_06.svg"
+            alt="Ilustração de Eugênia guiando um menino branco com deficiência visual, que usa bengala e óculos escuros. Há elementos decorativos coloridos e um quadro ao fundo."
           />
           <Markdown
             style={{ fontSize: '1.25rem', fontWeight: 300 }}

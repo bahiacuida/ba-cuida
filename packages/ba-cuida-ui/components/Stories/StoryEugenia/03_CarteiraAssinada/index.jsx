@@ -25,6 +25,7 @@ export function CarteiraAssinada() {
               height: 300,
             }}
             src="/assets/home/04_capitulo_eugenia/ilustracoes_eugenia/Eugenia_03.svg"
+            alt="Ilustração de Eugênia com expressão de preocupação, segurando a cabeça com as mãos. Ao fundo aparece uma grande carteira de trabalho azul, simbolizando dificuldades e insegurança em relação ao trabalho. Elementos coloridos decoram o fundo."
           />
           <Markdown
             style={{ fontSize: '1.25rem', fontWeight: 300 }}
@@ -68,6 +69,8 @@ export function CarteiraAssinada() {
                       width: '100%',
                     }}
                     src="/assets/home/04_capitulo_eugenia/montagens_eugenia/Eugenia_Montagem_04.png"
+                    alt=""
+                    role="presentation"
                   />
                 </Box>
                 <Heading
@@ -96,6 +99,7 @@ export function CarteiraAssinada() {
                 <PaperCard>
                   <img
                     src="/assets/home/04_capitulo_eugenia/graficos_eugenia/Eugenia_Grafico_03.svg"
+                    alt="Pictograma mostrando a porcentagem de profissionais dos cuidados com carteira assinada. Três figuras na cor roxa representam 30% das trabalhadoras com carteira assinada. Sete figuras na cor laranja representam 70% que não têm carteira assinada."
                     style={{
                       width: '100%',
                     }}

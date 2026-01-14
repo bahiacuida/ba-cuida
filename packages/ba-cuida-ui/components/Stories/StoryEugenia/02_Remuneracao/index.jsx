@@ -24,6 +24,7 @@ export function Remuneracao() {
               height: 300,
             }}
             src="/assets/home/04_capitulo_eugenia/ilustracoes_eugenia/Eugenia_02.svg"
+            alt="Ilustração de Eugênia com expressão triste segurando uma carteira vazia, da qual saem apenas duas moedas. Uma mosquinha voa ao redor, simbolizando escassez e dificuldade financeira. Elementos coloridos decoram o fundo."
           />
           <Markdown
             style={{ fontSize: '1.25rem', fontWeight: 300 }}
@@ -78,6 +79,8 @@ export function Remuneracao() {
                     zIndex: 3,
                   }}
                   src="/assets/home/04_capitulo_eugenia/montagens_eugenia/Eugenia_Montagem_03.png"
+                  alt=""
+                  role="presentation"
                 />
                 <Flex
                   style={{
@@ -114,6 +117,7 @@ export function Remuneracao() {
                 <Box>
                   <img
                     src="/assets/home/04_capitulo_eugenia/graficos_eugenia/Eugenia_Grafico_02.svg"
+                    alt="Gráfico de pizza que mostra a faixa salarial das trabalhadoras dos cuidados. A maior fatia, em laranja, representa 73,2% das trabalhadoras que recebem até 1 salário mínimo. A fatia verde representa 17,5% que recebem entre 1 e 2 salários mínimos. A menor fatia, em azul, representa 9,3% que recebem acima de 2 salários mínimos."
                     style={{
                       width: '100%',
                     }}

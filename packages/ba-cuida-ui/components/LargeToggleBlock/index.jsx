@@ -1,9 +1,28 @@
 import { Collapsible } from 'radix-ui'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { Icon } from '@mdi/react'
 import { mdiMenuDown } from '@mdi/js'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
+export const CollapsibleContent = styled(Collapsible.Content)`
+  overflow: hidden;
+  opacity: 0;
+
+  transition:
+    height 300ms ease-out,
+    opacity 300ms ease-out;
+  transition-duration: 300ms !important;
+
+  &[data-state='open'] {
+    opacity: 1;
+    height: var(--radix-collapsible-content-height);
+  }
+
+  &[data-state='closed'] {
+    height: 0;
+    opacity: 0;
+  }
+`
 const Trigger = styled(Collapsible.Trigger)`
   width: 100%;
   background-color: #f9f9f9;
@@ -52,27 +71,49 @@ const ToggleIcon = styled.div`
 
 export function LargeToggleBlock({ number, label, children, color, ...props }) {
   const [open, setOpen] = useState(false)
+  const contentRef = useRef(null)
 
+  useEffect(() => {
+    if (!open) {
+      return
+    }
+
+    contentRef.current?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    })
+  }, [open])
   return (
     <Collapsible.Root open={open} onOpenChange={setOpen}>
-      <Trigger {...props}>
-        <TriggerLabel>
-          <span>{number}. </span>
-          <span>{label}</span>
-        </TriggerLabel>
-        <ToggleIcon>
-          <Icon
+      <h2
+        ref={contentRef}
+        style={{ scrollMarginTop: 20, marginTop: 0, marginBottom: 0 }}
+      >
+        <Trigger {...props}>
+          <TriggerLabel>
+            <span>{number}. </span>
+            <span>{label}</span>
+          </TriggerLabel>
+          <ToggleIcon
             style={{
-              transition: 'transform .3s ease',
-              transform: open ? 'rotate(180deg)' : '',
+              backgroundColor: color,
             }}
-            path={mdiMenuDown}
-            size="48px"
-            color="white"
-          />
-        </ToggleIcon>
-      </Trigger>
-      <Collapsible.Content>{children}</Collapsible.Content>
+          >
+            <Icon
+              style={{
+                transition: 'transform .3s ease',
+                transform: open ? 'rotate(180deg)' : '',
+              }}
+              path={mdiMenuDown}
+              size="48px"
+              color="white"
+            />
+          </ToggleIcon>
+        </Trigger>
+      </h2>
+      <CollapsibleContent tabIndex={open ? '0' : '-1'} forceMount={true}>
+        {children}
+      </CollapsibleContent>
     </Collapsible.Root>
   )
 }

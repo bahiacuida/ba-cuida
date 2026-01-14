@@ -25,10 +25,21 @@ export function HomeHighlight() {
               width: '70vw',
             }}
             src="/assets/home/01_banner/Banner-Home_Mulher.png"
+            alt={
+              'Fotografia de uma mulher negra com roupa e turbante ' +
+              'estampados em preto e branco, em destaque no centro, ' +
+              'tocando levemente a cabeça com as mãos. Atrás dela há ' +
+              'formas coloridas em roxo, laranja e verde e palavras ' +
+              'sobrepostas em estilo manuscrito, incluindo ‘tarefas domésticas’, ' +
+              '‘remunerar’, ‘reconhecer’, ‘auto cuidado’ e ‘PCD’. ' +
+              'Um recorte verde ao lado traz a frase ‘Quem cuida de quem cuida?’. ' +
+              'A composição tem tom reflexivo e aborda temas de cuidado e reconhecimento ' +
+              'do trabalho de quem cuida.'
+            }
           />
 
           <Flex
-            maxWidth="600px"
+            maxWidth="800px"
             alignItems="center"
             gap="4"
             style={{

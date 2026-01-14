@@ -66,6 +66,7 @@ export function StoryCriseDosCuidados() {
                   width: '100%',
                 }}
                 src="/assets/home/05_capitulo_crise_dos_cuidados/Conclusao_Montagem_01.png"
+                alt="Fotografia em preto e branco de uma jovem mulher negra careca, em posição frontal, com os braços cruzados e expressão firme. Ela usa blusa de alças com estampa floral. Ao fundo, há formas abstratas coloridas em tons de verde, roxo, rosa e laranja, criando contraste com a imagem."
               />
             </Box>
             <Text
@@ -96,7 +97,10 @@ export function StoryCriseDosCuidados() {
                 },
               }}
             >
-              <img src="/assets/home/05_capitulo_crise_dos_cuidados/Conclusao_Montagem_02.png" />
+              <img
+                src="/assets/home/05_capitulo_crise_dos_cuidados/Conclusao_Montagem_02.png"
+                alt="Montagem em preto e branco de uma idosa negra, de longos dreads, sentada em uma cadeira de rodas. Na composição, aparecem relógio e formas abstratas coloridas e parte de um olho humano em destaque, representando a atenção que as cuidadoras dão a grupos vulneráveis e prioritários."
+              />
             </Box>
             <Box
               style={{
@@ -116,6 +120,8 @@ export function StoryCriseDosCuidados() {
                   zIndex: 1,
                 }}
                 src="/assets/home/05_capitulo_crise_dos_cuidados/Conclusao_Montagem_03.png"
+                alt=""
+                role="presentation"
               />
               <img
                 style={{
@@ -123,6 +129,8 @@ export function StoryCriseDosCuidados() {
                   zIndex: 2,
                 }}
                 src="/assets/home/05_capitulo_crise_dos_cuidados/Conclusao_Montagem_04.png"
+                alt=""
+                role="presentation"
               />
 
               <Box
@@ -167,6 +175,8 @@ export function StoryCriseDosCuidados() {
                   transform: 'rotate(30deg)',
                 }}
                 src="/assets/home/05_capitulo_crise_dos_cuidados/Conclusao_Montagem_05.png"
+                alt=""
+                role="presentation"
               />
               <img
                 style={{
@@ -177,6 +187,8 @@ export function StoryCriseDosCuidados() {
                   zIndex: 1,
                 }}
                 src="/assets/home/05_capitulo_crise_dos_cuidados/Conclusao_Montagem_06.png"
+                alt=""
+                role="presentation"
               />
               <Box
                 style={{
@@ -199,7 +211,11 @@ export function StoryCriseDosCuidados() {
               marginRight: 'auto',
             }}
           >
-            <img src="/assets/home/05_capitulo_crise_dos_cuidados/infografia.png" />
+            <img
+              src="/assets/home/05_capitulo_crise_dos_cuidados/infografia.png"
+              alt=""
+              role="presentation"
+            />
           </Box>
         </Flex>
       </PaperFramedSection>
@@ -234,7 +250,10 @@ export function StoryCriseDosCuidados() {
                 },
               }}
             >
-              <img src="/assets/home/05_capitulo_crise_dos_cuidados/Conclusao_Montagem_07.png" />
+              <img
+                src="/assets/home/05_capitulo_crise_dos_cuidados/Conclusao_Montagem_07.png"
+                alt="Montagem em preto e branco de uma mulher negra levantando o braço direito com o punho fechado e de luva de limpeza, em gesto de força. Ela veste uma blusa de alças estampada. Ao fundo, há formas abstratas coloridas em tons de verde, roxo, rosa e laranja."
+              />
             </Box>
 
             <Box

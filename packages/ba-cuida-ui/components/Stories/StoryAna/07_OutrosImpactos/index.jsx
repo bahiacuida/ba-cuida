@@ -25,6 +25,7 @@ export function OutrosImpactos() {
                 height: 300,
               }}
               src="/assets/home/03_capitulo_ana/ilustracoes_ana/Ana_07.svg"
+              alt="Ilustração de Ana com olhos fechados e mãos abertas. Ao fundo aparecem elementos simbólicos, como um relógio, um haltere, um frasco de remédio e um ícone de batimentos cardíacos. A expressão de chateação sugere que ela não está conseguindo executar rotinas de autocuidado por falta de tempo, por estar sobrecarregada com atividades de cuidado de outras pessoas e atividades domésticas."
             />
             <Markdown
               style={{ fontSize: '1.25rem', fontWeight: 300 }}
@@ -52,6 +53,7 @@ export function OutrosImpactos() {
                 height: 300,
               }}
               src="/assets/home/03_capitulo_ana/ilustracoes_ana/Ana_08.svg"
+              alt="Ilustração de Ana caminhando em uma rua com casas simples ao fundo, carregando sua bebê no colo. A bebê usa chupeta e a mulher parece cansada e preocupada enquanto olha seu relógio de pulso. Elementos gráficos coloridos decoram o fundo."
             />
             <Markdown
               style={{ fontSize: '1.25rem', fontWeight: 300 }}
@@ -95,7 +97,10 @@ export function OutrosImpactos() {
               gap="5"
             >
               <PaperCard>
-                <img src="/assets/home/03_capitulo_ana/graficos_ana/Ana_Grafico_07.svg" />
+                <img
+                  src="/assets/home/03_capitulo_ana/graficos_ana/Ana_Grafico_07.svg"
+                  alt="Gráfico de barras horizontais que compara as horas semanais trabalhadas por mulheres e homens em tarefas domésticas e atividade de cuidado de outras pessoas, distribuídas por faixas de renda. As barras roxas representam as mulheres e as barras laranja representam os homens. Em todas as faixas de renda (de ‘Até 1/4 de salário mínimo’ até ‘Mais de 8 salários mínimos’), as mulheres dedicam mais horas de trabalho doméstico do que os homens, chegando a mais de 20 horas semanais nas faixas de menor renda."
+                />
               </PaperCard>
               <Markdown
                 style={{
@@ -146,6 +151,7 @@ export function OutrosImpactos() {
             height: 300,
           }}
           src="/assets/home/03_capitulo_ana/ilustracoes_ana/Ana_09.svg"
+          alt="Ilustração de duas mulheres negras e jovens, Eugênia e Ana, apoiando sua mãe idosa que usa bengala. As três estão de pé, próximas umas das outras, e há elementos decorativos coloridos e quadros ao fundo. As expressões das duas jovens são de preocupação e cansaço."
         />
         <Markdown
           style={{ fontSize: '1.25rem', fontWeight: 300 }}

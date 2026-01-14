@@ -34,6 +34,7 @@ export function SiteHeader() {
           style={{
             marginLeft: '-20px',
           }}
+          aria-label="Página inicial"
         >
           <BaCuidaLogo />
         </Link>

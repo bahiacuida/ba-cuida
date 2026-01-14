@@ -82,13 +82,21 @@ export function PaperFramedSection({
     >
       {topFrame && (
         <TopImg>
-          <img src="/assets/paper_framed_section/top_1.png" />
+          <img
+            src="/assets/paper_framed_section/top_1.png"
+            alt=""
+            role="presentation"
+          />
         </TopImg>
       )}
       {children}
       {bottomFrame && (
         <BottomImg>
-          <img src="/assets/paper_framed_section/bottom_1.png" />
+          <img
+            src="/assets/paper_framed_section/bottom_1.png"
+            alt=""
+            role="presentation"
+          />
         </BottomImg>
       )}
     </Container>

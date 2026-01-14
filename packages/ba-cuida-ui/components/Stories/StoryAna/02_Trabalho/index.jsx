@@ -116,6 +116,8 @@ export function Trabalho() {
                   width: '70%',
                 }}
                 src="/assets/home/03_capitulo_ana/montagens_ana/mao_placa.png"
+                alt=""
+                role="presentation"
               />
             </Flex>
           </PaperScrap>
@@ -166,6 +168,7 @@ export function Trabalho() {
                     width: '100%',
                   }}
                   src="/assets/home/03_capitulo_ana/graficos_ana/Ana_Grafico_01.svg"
+                  alt="Gráfico “Atividades de cuidados de pessoas mais realizadas na Bahia e por quantos milhões de pessoas” de barras horizontais laranjas. Em primeiro lugar e com maior recorrência, temos a atividade “Monitorar ou fazer companhia dentro do domicílio”, executada por 2,9 milhões de pessoas. Em seguida, temos a atividade “auxiliar nos cuidados pessoais”, executada por 2,6 milhões de pessoas. Depois, temos “Ler, jogar ou brincar”, atividade executada por 2,4 milhões de pessoas. “Auxiliar nas atividades educacionais” ocupa a quarta posição, com 2,1 milhões de pessoas executando-a. Por fim, e ocupando o quinto lugar de atividade de cuidado de pessoas mais realizada na Bahia, temos “transportar ou acompanhar (na escola, médico, exames, parque, praça, atividades sociais, culturais…)”, executada por 2,1 milhões de pessoas."
                 />
               </Box>
             </Flex>
@@ -205,6 +208,7 @@ export function Trabalho() {
                     width: '100%',
                   }}
                   src="/assets/home/03_capitulo_ana/graficos_ana/Ana_Grafico_02.svg"
+                  alt="Gráfico “Tarefas domésticas mais realizadas na Bahia e por quantos milhões de pessoas” de barras horizontais verdes. Em primeiro lugar e com maior recorrência, temos a atividade “Preparar ou servir alimentos, arrumar a mesa ou lavar a louça ”, executada por 8 milhões de pessoas. Em seguida, temos a atividade “Limpar ou arrumar domicílio, garagem, quintal ou jardim”, executada por 7,9 milhões de pessoas. Depois, temos “Cuidar da limpeza ou manutenção de roupas e sapatos”, atividade executada por 7,8 milhões de pessoas. “Cuidar da organização do domicílio (pagar contas, contratar serviços, orientar empregados, etc.” ocupa a quarta posição, com 7 milhões de pessoas executando-a. Em seguida, temos a atividade “Cuidar de animais domésticos”, executada por 4,5 milhões de pessoas. Por fim, e ocupando o sexto lugar de atividade doméstica mais realizada na Bahia, temos “Fazer pequenos reparos e manutenção (do domicílio, automóvel, eletrodoméstico ou outros equipamentos)”, executada por 3,8 milhões de pessoas."
                 />
               </Box>
             </Flex>

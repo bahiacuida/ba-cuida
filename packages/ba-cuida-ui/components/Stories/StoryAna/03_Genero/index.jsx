@@ -24,6 +24,7 @@ export function Genero() {
               height: 300,
             }}
             src="/assets/home/03_capitulo_ana/ilustracoes_ana/Ana_03.svg"
+            alt="Ilustração de Ana limpando um pequeno móvel com pano e spray, enquanto seu marido sentado no sofá, ao fundo, assiste televisão. Ana parece cansada e contrariada, porque só ela trabalha na casa enquanto ele tem um momento de lazer."
           />
           <Markdown
             style={{ fontSize: '1.25rem', fontWeight: 300 }}
@@ -99,6 +100,7 @@ export function Genero() {
                     position: 'relative',
                     zIndex: 2,
                   }}
+                  alt="Gráfico de barras verticais mostrando o tempo semanal dedicado às tarefas domésticas por gênero no ano de 2022. A barra roxa, representando as mulheres, indica 23,1 horas por semana. A barra laranja, representando os homens, indica 10,9 horas por semana."
                 />
                 <cite
                   style={{
@@ -141,34 +143,6 @@ export function Genero() {
           </Flex>
         </SiteWidthContainer>
       </PaperFramedSection>
-      <SiteWidthContainer>
-        <Flex
-          py="5"
-          direction="column"
-          gap="4"
-          alignItems="center"
-          maxWidth="600px"
-          style={{
-            margin: 'auto',
-            textAlign: 'center',
-          }}
-        >
-          <img
-            style={{
-              height: 300,
-            }}
-            src="/assets/home/03_capitulo_ana/ilustracoes_ana/Ana_04.svg"
-          />
-          <Markdown
-            style={{ fontSize: '1.25rem', fontWeight: 300 }}
-            children={
-              'Por conta da sobrecarga dos trabalhos dos cuidados, ' +
-              'Ana precisou deixar o seu emprego formal, pois não consegue ' +
-              'cumprir todos os horários exigidos.'
-            }
-          />
-        </Flex>
-      </SiteWidthContainer>
     </>
   )
 }

@@ -28,6 +28,7 @@ export function HomeAccordions() {
             style={{
               width: '40%',
             }}
+            alt="Ilustração de Ana, uma mulher negra e jovem, carregando uma bebê que chora, em frente a uma casa identificada como ‘Creche’. A mulher parece preocupada enquanto segura a criança nos braços."
           />
           <Flex
             style={{
@@ -50,41 +51,46 @@ export function HomeAccordions() {
           </Flex>
         </Flex>
       </SiteWidthContainer>
-      <Flex direction="column" gap="5" width="100%">
-        <LargeToggleBlock
-          number="1"
-          label="Ana, uma cuidadora não remunerada e invisibilizada"
-          style={{
-            maxWidth: 'var(--container-4)',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-          }}
-        >
-          <StoryAna />
-        </LargeToggleBlock>
-        <LargeToggleBlock
-          number="2"
-          label="Eugênia, uma cuidadora remunerada"
-          style={{
-            maxWidth: 'var(--container-4)',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-          }}
-        >
-          <StoryEugenia />
-        </LargeToggleBlock>
-        <LargeToggleBlock
-          number="3"
-          label="A Crise dos Cuidados"
-          style={{
-            maxWidth: 'var(--container-4)',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-          }}
-        >
-          <StoryCriseDosCuidados />
-        </LargeToggleBlock>
-      </Flex>
+      <SiteWidthContainer pb="400px">
+        <Flex direction="column" gap="5" width="100%">
+          <LargeToggleBlock
+            number="1"
+            label="Ana, uma cuidadora não remunerada e invisibilizada"
+            style={{
+              maxWidth: 'var(--container-4)',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+            color="#8C7D7D"
+          >
+            <StoryAna />
+          </LargeToggleBlock>
+          <LargeToggleBlock
+            number="2"
+            label="Eugênia, uma cuidadora remunerada"
+            style={{
+              maxWidth: 'var(--container-4)',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+            color="#816188"
+          >
+            <StoryEugenia />
+          </LargeToggleBlock>
+          <LargeToggleBlock
+            number="3"
+            label="A Crise dos Cuidados"
+            style={{
+              maxWidth: 'var(--container-4)',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+            color="#72937E"
+          >
+            <StoryCriseDosCuidados />
+          </LargeToggleBlock>
+        </Flex>
+      </SiteWidthContainer>
     </Flex>
   )
 }

@@ -19,6 +19,8 @@ export function PaperScrap({ children, style = {}, ...props }) {
           width: '100%',
           height: '100%',
         }}
+        alt=""
+        role="presentation"
         src="/assets/home/03_capitulo_ana/montagens_ana/Ana_Montagem_03.png"
       />
       <div

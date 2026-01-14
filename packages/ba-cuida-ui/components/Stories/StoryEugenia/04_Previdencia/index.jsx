@@ -25,6 +25,7 @@ export function Previdencia() {
               height: 300,
             }}
             src="/assets/home/04_capitulo_eugenia/ilustracoes_eugenia/Eugenia_04.svg"
+            alt="Ilustração de Eugênia com expressão triste ao lado de uma folha marcada com diversos itens ‘negado’. Há elementos decorativos ao fundo, reforçando a ideia de dificuldades financeiras."
           />
           <Markdown
             style={{ fontSize: '1.25rem', fontWeight: 300 }}
@@ -79,6 +80,8 @@ export function Previdencia() {
                     maxWidth: 'none',
                   }}
                   src="/assets/home/04_capitulo_eugenia/montagens_eugenia/Eugenia_Montagem_05.png"
+                  alt=""
+                  role="presentation"
                 />
                 <Flex
                   style={{
@@ -118,6 +121,7 @@ export function Previdencia() {
                   >
                     <img
                       src="/assets/home/04_capitulo_eugenia/graficos_eugenia/Eugenia_Grafico_04.svg"
+                      alt="Gráfico de pizza que mostra a porcentagem de diaristas que contribuem para a Previdência Social. A fatia verde representa 23,6% que contribuem, enquanto a fatia laranja representa 76,4% que não contribuem."
                       style={{
                         width: '100%',
                       }}
@@ -130,6 +134,7 @@ export function Previdencia() {
                   >
                     <img
                       src="/assets/home/04_capitulo_eugenia/graficos_eugenia/Eugenia_Grafico_05.svg"
+                      alt="Gráfico de pizza que mostra a porcentagem de mensalistas que contribuem para a Previdência Social. A fatia verde representa 43,8% que contribuem, enquanto a fatia laranja representa 56,2% que não contribuem."
                       style={{
                         width: '100%',
                       }}
@@ -156,7 +161,7 @@ export function Previdencia() {
             <cite
               style={{
                 maxWidth: '800px',
-                alignSelf: 'flex-end'
+                alignSelf: 'flex-end',
               }}
             >
               Fonte: DataCuidados - Observatório Nacional dos Cuidados,

@@ -48,6 +48,7 @@ export function IndicatorCard({
           <Flex direction="row" gap="3">
             <img
               src={`/assets/dados_bahia/icones_eixos/${axis.slug}.svg`}
+              alt={axis.iconAlt}
               style={{
                 width: 50,
                 height: 50,

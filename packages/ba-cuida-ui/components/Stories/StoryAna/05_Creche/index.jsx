@@ -25,6 +25,7 @@ export function Creche() {
               height: 300,
             }}
             src="/assets/home/03_capitulo_ana/ilustracoes_ana/Ana_05.svg"
+            alt="Ilustração de Ana carregando sua bebê que chora, em frente a uma casa identificada como ‘Creche’. A mulher parece preocupada enquanto segura a criança nos braços."
           />
           <Markdown
             style={{ fontSize: '1.25rem', fontWeight: 300 }}
@@ -63,6 +64,8 @@ export function Creche() {
                       width: '40%',
                     }}
                     src="/assets/home/03_capitulo_ana/montagens_ana/Ana_Montagem_07.png"
+                    alt=""
+                    role="presentation"
                   />
                   <Box p="8">
                     <Heading
@@ -98,7 +101,10 @@ export function Creche() {
                   },
                 }}
               >
-                <img src="/assets/home/03_capitulo_ana/graficos_ana/Ana_Grafico_05.svg" />
+                <img
+                  src="/assets/home/03_capitulo_ana/graficos_ana/Ana_Grafico_05.svg"
+                  alt="Pictograma mostrando a porcentagem de matrículas em creches em 2024: ícones laranja representam 70,5% das crianças não matriculadas e ícones verdes representam 29,5% matriculadas."
+                />
               </Box>
             </Flex>
           </Flex>

@@ -24,6 +24,7 @@ export function Intro() {
               height: 300,
             }}
             src="/assets/home/04_capitulo_eugenia/ilustracoes_eugenia/Eugenia_01.svg"
+            alt="Ilustração de Eugênia, uma jovem mulher negra, passando roupa com expressão frustrada. Um balão de pensamento mostra um diploma com selo, sugerindo que ela pensa no diploma que não conseguiu obter devido à sobrecarga com atividades de cuidados. Elementos coloridos decoram o fundo"
           />
           <Markdown
             style={{ fontSize: '1.25rem', fontWeight: 300 }}
@@ -88,9 +89,12 @@ export function Intro() {
                       zIndex: 3,
                     }}
                     src="/assets/home/04_capitulo_eugenia/montagens_eugenia/Eugenia_Montagem_01.png"
+                    alt=""
+                    role="presentation"
                   />
                   <img
                     src="/assets/home/04_capitulo_eugenia/graficos_eugenia/Eugenia_Grafico_01.svg"
+                    alt="Gráfico de barras empilhadas mostrando a composição de trabalhadores dos cuidados remunerados na Bahia. A maior parte é representada pela faixa roxa, referente a mulheres negras, que correspondem a 58,2% do total. A faixa laranja representa homens negros (27,3%), a faixa lilás representa mulheres brancas (10,1%) e a faixa bege representa homens brancos (4,4%). O destaque visual evidencia que mulheres negras são maioria nesse setor."
                     style={{
                       width: '100%',
                     }}
@@ -106,6 +110,8 @@ export function Intro() {
                     zIndex: 1,
                   }}
                   src="/assets/home/04_capitulo_eugenia/montagens_eugenia/Eugenia_Montagem_02.png"
+                  alt=""
+                  role="presentation"
                 />
                 <cite>
                   Fonte: Pesquisa Nacional por Amostra de Domicílios Contínua -

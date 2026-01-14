@@ -24,6 +24,7 @@ export function Intro() {
               height: 300,
             }}
             src="/assets/home/03_capitulo_ana/ilustracoes_ana/Ana_01.svg"
+            alt="Ilustração Ana cortando legumes em uma cozinha, com expressão cansada. Ao fundo, há um relógio e um berço. Um balão de pensamento mostra o rosto sorridente de um homem, sugerindo que ela está pensando nele chateada enquanto realiza a tarefa doméstica."
           />
           <Markdown
             style={{ fontSize: '1.25rem', fontWeight: 300 }}
@@ -34,9 +35,11 @@ export function Intro() {
         </Flex>
       </SiteWidthContainer>
       <PaperFramedSection style={{ position: 'relative', overflow: 'hidden' }}>
-        <SiteWidthContainer py="9" >
+        <SiteWidthContainer py="9">
           <img
             src="/assets/home/06_fundos_narrativa/bg_mancha_verde.svg"
+            alt=""
+            role="presentation"
             style={{
               position: 'absolute',
               top: '0',
@@ -49,6 +52,8 @@ export function Intro() {
           />
           <img
             src="/assets/home/06_fundos_narrativa/bg_mancha_laranja.svg"
+            alt=""
+            role="presentation"
             style={{
               position: 'absolute',
               top: '0',
@@ -77,6 +82,8 @@ export function Intro() {
           >
             <img
               src="/assets/home/03_capitulo_ana/montagens_ana/Ana_Montagem_01.png"
+              alt=""
+              role="presentation"
               style={{
                 width: 250,
                 position: 'relative',
@@ -143,6 +150,7 @@ export function Intro() {
               height: 300,
             }}
             src="/assets/home/03_capitulo_ana/ilustracoes_ana/Ana_02.svg"
+            alt="Ilustração Ana cuidando de uma pessoa idosa de sua família, servindo-lhe um prato de comida. Ao fundo, há um berço no qual há uma criança chorando. Ana está com uma expressão de cansaço, sobrecarregada das diversas tarefas que precisa realizar simultaneamente."
           />
           <Markdown
             style={{ fontSize: '1.25rem', fontWeight: 300 }}
