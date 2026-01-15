@@ -277,6 +277,7 @@ export function DataPageMap() {
         <Input
           schema={{
             type: 'select',
+            clearable: false,
             label: 'População prioritária',
             options: CENSO_VARIABLES.map((v) => ({
               value: v.id,
@@ -289,6 +290,7 @@ export function DataPageMap() {
         <Input
           schema={{
             type: 'select',
+            clearable: false,
             label: 'Equipamentos',
             options: EQUIPMENT_SPECS.map((eq) => ({
               value: eq.id,
