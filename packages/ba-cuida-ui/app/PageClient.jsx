@@ -1,13 +1,13 @@
 'use client'
 import { SiteHeader } from '@/components/SiteHeader'
-import { DataPage } from '@/components/DataPage'
+import { Home } from '@/components/Home'
 
 export function PageClient() {
   return (
     <>
       <SiteHeader />
       <main tabIndex={-1} id="conteudo-principal">
-        <DataPage />
+        <Home />
       </main>
     </>
   )

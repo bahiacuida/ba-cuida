@@ -1,8 +1,8 @@
-import { Home } from './index'
+import { CuidadosPage } from './index'
 
 const meta = {
-  title: 'Pages / Home',
-  component: Home,
+  title: 'Pages / CuidadosPage',
+  component: CuidadosPage,
   parameters: {
     layout: 'fullscreen',
   },

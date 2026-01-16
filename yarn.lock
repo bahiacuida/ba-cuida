@@ -4436,6 +4436,7 @@ __metadata:
     react-dom: "npm:^18"
     react-error-boundary: "npm:^6.0.0"
     react-in-viewport: "npm:^1.0.0-beta.8"
+    react-lite-youtube-embed: "npm:^3.3.3"
     react-map-gl: "npm:^8.0.0"
     recharts: "npm:^3.5.1"
     storybook: "npm:^10.0.4"
@@ -20122,6 +20123,16 @@ __metadata:
   version: 19.2.0
   resolution: "react-is@npm:19.2.0"
   checksum: a63cb346aeced8ac0e671b0f9b33720d2906de02a066ca067075d871a5d4c64cdb328f495baf9b5842d5868c0d5edd1ce18465a7358b52f4b6aa983479c9bfa2
+  languageName: node
+  linkType: hard
+
+"react-lite-youtube-embed@npm:^3.3.3":
+  version: 3.3.3
+  resolution: "react-lite-youtube-embed@npm:3.3.3"
+  peerDependencies:
+    react: ">=18.2.0"
+    react-dom: ">=18.2.0"
+  checksum: fb47a2c3ea55084308a7df6e435eacf4ce5b7abd4ac3261ef3ea98b043db672264d7102c68502b29447bd09ed639a30d38ce27d117cddb281bde031796fb53c5
   languageName: node
   linkType: hard
 

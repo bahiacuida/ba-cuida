@@ -13,10 +13,11 @@ import {
 import { Heading } from '@radix-ui/themes'
 import { useQuery } from '@tanstack/react-query'
 import { resolveDataSrc } from './data/resolveDataSrc'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { pick, uniq } from 'lodash-es'
 import { Icon } from '@mdi/react'
 import { mdiDownload } from '@mdi/js'
+import { useInView } from '@/components/useInView'
 
 const CHART_RENDERERS = {
   pie: PieChart,
@@ -38,6 +39,7 @@ export function Chart({
   data,
   ...props
 }) {
+  const containerRef = useRef(null)
   const ChartRenderer = CHART_RENDERERS[type]
 
   if (!ChartRenderer) {
@@ -69,16 +71,47 @@ export function Chart({
     placeholderData: (previousData) => previousData,
   })
 
+  // const inView = useInView(containerRef, {
+  //   root: null, // viewport
+  //   rootMargin: '-300px 0px 0px 0px',
+  //   threshold: 0,
+  // })
+
+  // console.log('inView', inView)
+
   return (
-    <Flex direction="column" gap="4">
+    <Flex
+      ref={containerRef}
+      direction="column"
+      gap="4"
+      style={{
+        scrollMarginTop: '60px',
+      }}
+      onFocus={() => {
+        const el = containerRef.current
+        if (!el) return
+
+        const rect = el.getBoundingClientRect()
+        const viewportHeight = window.innerHeight
+
+        const isAtLeast75vhAboveBottom = rect.top <= viewportHeight * (1 - 0.75)
+
+        if (!isAtLeast75vhAboveBottom) {
+          el.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          })
+        }
+      }}
+    >
       <Heading
         as="h3"
         size="4"
         style={{
-          color: '#FF6219',
+          color: 'var(--orange-11)',
         }}
       >
-        {title}
+        <strong>{title}</strong>
       </Heading>
 
       {userFilterSpec.length > 0 && dataSrcQuery.data && (

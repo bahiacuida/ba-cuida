@@ -5,5 +5,5 @@ export default function Page() {
 }
 
 export const metadata = {
-  title: 'Quem cuida na Bahia | Bahia Cuida',
+  title: 'O que são cuidados?',
 }

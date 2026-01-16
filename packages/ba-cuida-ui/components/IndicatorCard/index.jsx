@@ -40,6 +40,8 @@ export function IndicatorCard({
           maxWidth: '1000px',
           children: <IndicatorBody indicator={indicator} />,
         })
+
+        e.target.focus()
       }}
       {...props}
     >

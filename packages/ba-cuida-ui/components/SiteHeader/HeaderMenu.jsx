@@ -57,10 +57,10 @@ const ITEMS = [
     label: 'Dados',
     href: '/dados/',
   },
-  // {
-  //   label: 'Cuidados',
-  //   href: '',
-  // },
+  {
+    label: 'Cuidados',
+    href: '/cuidados/',
+  },
   // {
   //   label: 'Biblioteca',
   //   href: '',
@@ -69,10 +69,10 @@ const ITEMS = [
   //   label: 'Glossário',
   //   href: '',
   // },
-  // {
-  //   label: 'Sobre',
-  //   href: '',
-  // },
+  {
+    label: 'Sobre',
+    href: '/sobre/',
+  },
 ]
 
 export function HeaderMenu() {
