@@ -8,12 +8,30 @@ A aplicação publicada (produção) está em: **[https://bahiacuida.org/](https
 
 ## Contexto do projeto
 
+[TODO: introduzir contexto do projeto financiado]
+
 O Bahia Cuida se insere no debate sobre **trabalho de cuidado remunerado e não remunerado** e busca:
 
 - organizar e apresentar informações de forma acessível (narrativas, gráficos e mapas);
 - integrar indicadores e recortes intersetoriais (ex.: saúde, educação, assistência social, gênero e raça);
 - apoiar gestoras/es, pesquisadoras/es e sociedade civil com **informação qualificada** para planejamento e tomada de decisão.
 
+### Parcerias
+
+#### Idealização e Realização
+
+| <img src="assets/logos/ADR_Logo.svg" alt="Agência de Desenvolvimento Regional Sul da Bahia" height="48"> | <img src="assets/logos/Instituto_Foz_Logo.png" alt="Instituto Foz" height="48"> | <img src="assets/logos/OriOro_Logo.png" alt="ORI:ORO" height="48"> |
+|:--:|:--:|:--:|
+
+#### Apoio
+| <img src="assets/logos/NicBR_Logo.png" alt="Nic.BR" height="48"> | <img src="assets/logos/Ceweb_Logo.png" alt="Ceweb.BR" height="48"> |
+|:--:|:--:|
+
+
+#### Parceria Local
+
+| <img src="assets/logos/Prefeitura_de_Ilheus_Logo.png" alt="Prefeitura de Ilhéus" height="48"> | 
+|:--:|
 ---
 
 ## Visão geral do software

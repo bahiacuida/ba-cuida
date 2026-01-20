@@ -97,7 +97,7 @@ Atualmente, o Bahia Cuida concentra suas ações na região sul da Bahia, com at
               <Flex
                 direction="column"
                 style={{
-                  width: '66.66%',
+                  width: { xs: '100%', sm: '66.66%' },
                 }}
               >
                 <Heading as="h3" size="3">
@@ -121,7 +121,7 @@ Atualmente, o Bahia Cuida concentra suas ações na região sul da Bahia, com at
               <Flex
                 direction="column"
                 style={{
-                  width: '33.33%',
+                  width: { xs: '50%', sm: '33.33%' },
                 }}
               >
                 <Heading as="h3" size="3">
