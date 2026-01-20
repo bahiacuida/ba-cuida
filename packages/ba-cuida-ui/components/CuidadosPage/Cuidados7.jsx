@@ -22,6 +22,8 @@ export function Cuidados7() {
                 marginTop: -110,
               }}
               src="/assets/cuidados/montagens/Cuidados_Montagem01.png"
+              alt=""
+              role="presentation"
             />
           </Box>
           <Flex

@@ -1,5 +1,5 @@
 import { parseEnv } from '@orioro/parse-env'
-// import { extendExpressApp } from './extendExpressApp'
+import { extendExpressApp } from './extendExpressApp'
 
 const { CORS_ORIGINS } = parseEnv({
   CORS_ORIGINS: 'list:CORS_ORIGINS',
@@ -15,7 +15,7 @@ export function server({ port }) {
       optionsSuccessStatus: 204,
       credentials: true,
     },
-    // extendExpressApp: extendExpressApp(),
+    extendExpressApp: extendExpressApp(),
     maxFileSize: 500 * 1024 * 1024,
   }
 }

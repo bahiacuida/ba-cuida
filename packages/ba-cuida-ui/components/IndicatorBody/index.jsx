@@ -1,13 +1,12 @@
 import { Box, EvenSpacedList, Flex, Markdown } from '@orioro/react-ui-core'
-import { Heading } from '@radix-ui/themes'
+import { Heading, Dialog } from '@radix-ui/themes'
 import { Chart } from '../Chart'
 
 export function IndicatorBody({ indicator }) {
   const { title, summaryCards, details, charts } = indicator
   return (
     <Flex direction="column" gap="6">
-      <Heading
-        as="h2"
+      <Dialog.Title
         style={{
           textTransform: 'uppercase',
           fontWeight: 'bold',
@@ -15,15 +14,16 @@ export function IndicatorBody({ indicator }) {
         }}
       >
         {title}
-      </Heading>
+      </Dialog.Title>
 
       {Array.isArray(summaryCards) && (
         <EvenSpacedList columns={2} gap="4">
-          {summaryCards.map(({ children, ...props }) => (
+          {summaryCards.map(({ children, ...props }, index) => (
             <Flex
               p="3"
               direction="row"
               alignItems="center"
+              key={index}
               style={{
                 background: '#FFECE5',
                 borderRadius: '20px',
@@ -57,7 +57,7 @@ export function IndicatorBody({ indicator }) {
 
       <Flex gap="5">
         {charts.map((chart, index) => (
-          <Chart {...chart} />
+          <Chart {...chart} key={index} />
         ))}
       </Flex>
     </Flex>

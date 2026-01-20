@@ -50,7 +50,7 @@ export function Previdencia() {
             <Flex
               direction={{
                 xs: 'column',
-                md: 'row',
+                sm: 'row',
               }}
               gap="4"
               alignItems="center"
@@ -65,10 +65,10 @@ export function Previdencia() {
                   backgroundColor: '#F9EFD9',
                   maxWidth: '700px',
                   maxHeight: '700px',
-                  width: '50vw',
-                  height: '50vw',
+                  width: { xs: '90vw', sm: '50vw' },
+                  height: { xs: '100vw', sm: '50vw' },
                   flexShrink: 0,
-                  borderRadius: '100%',
+                  borderRadius: { xs: '80px', sm: '100%' },
                 }}
               >
                 <img
@@ -109,7 +109,7 @@ export function Previdencia() {
                 direction="column"
                 gap="4"
                 style={{
-                  width: '40%',
+                  width: { xs: '100%', sm: '40%' },
                   position: 'relative',
                 }}
               >

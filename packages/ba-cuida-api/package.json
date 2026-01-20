@@ -1,5 +1,5 @@
 {
-  "name": "@orioro/ba-cuida-api",
+  "name": "@ba-cuida/ba-cuida-api",
   "version": "1.0.3",
   "private": true,
   "scripts": {
@@ -14,6 +14,7 @@
     "@orioro/keystone-util": "^0.0.5",
     "@orioro/parse-env": "^1.0.1",
     "dotenv": "^17.2.1",
+    "heroku-ssl-redirect": "^0.1.1",
     "lodash": "^4.17.21",
     "ms": "^2.1.3",
     "typescript": "^5.5.0"

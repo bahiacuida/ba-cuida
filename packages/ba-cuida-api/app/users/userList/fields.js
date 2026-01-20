@@ -25,17 +25,6 @@ export function userListFields() {
       },
     }),
 
-    avatar: json({
-      defaultValue: {},
-    }),
-    schoolId: text(),
-    classroomId: text(),
-    studentId: text(),
-
-    notes: json({
-      defaultValue: []
-    }),
-
     isSystemAdmin: checkbox({
       defaultValue: false,
       access: {
@@ -47,14 +36,5 @@ export function userListFields() {
         update: () => false,
       },
     }),
-
-    // // we can use this field to see what Posts this User has authored
-    // //   more on that in the Post list below
-    // posts: relationship({ ref: 'Post.author', many: true }),
-
-    // createdAt: timestamp({
-    //   // this sets the timestamp to Date.now() when the user is first created
-    //   defaultValue: { kind: 'now' },
-    // }),
   }
 }

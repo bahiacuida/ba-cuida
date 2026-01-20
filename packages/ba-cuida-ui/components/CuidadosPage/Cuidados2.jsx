@@ -72,20 +72,29 @@ export function Cuidados2() {
               }}
             >
               <Flex direction="column" gap="3">
-                <img src="/assets/cuidados/montagens/Cuidados_Montagem02.png" />
+                <img
+                  src="/assets/cuidados/montagens/Cuidados_Montagem02.png"
+                  alt="Montagem em preto e branco de duas mulheres caminhando lado a lado. Uma mulher idosa usa bengala e segura o braço da mulher mais jovem, que a apoia enquanto carrega uma sacola de pão. Ao fundo, há formas gráficas abstratas coloridas em tons de roxo, laranja e rosa."
+                />
                 <Text>
                   Uma mulher que faz companhia à avó nas atividades, é cuidado?
                 </Text>
               </Flex>
               <Flex direction="column" gap="3">
-                <img src="/assets/cuidados/montagens/Cuidados_Montagem03.png" />
+                <img
+                  src="/assets/cuidados/montagens/Cuidados_Montagem03.png"
+                  alt="Montagem em preto e branco de uma mulher e uma criança lendo juntas. A mulher segura o livro enquanto as duas olham para a página. Ao fundo, há formas gráficas abstratas em tons de verde e roxo"
+                />
                 <Text>
                   ... e a oferta de creches públicas nas comunidades é
                   considerado cuidado?
                 </Text>
               </Flex>
               <Flex direction="column" gap="3">
-                <img src="/assets/cuidados/montagens/Cuidados_Montagem04.png" />
+                <img
+                  src="/assets/cuidados/montagens/Cuidados_Montagem04.png"
+                  alt="Montagem em preto e branco de uma mulher lavando um prato com expressão de cansaço e desânimo. Ela usa luvas de limpeza e segura uma esponja. Ao fundo, há formas gráficas abstratas coloridas em tons de verde, laranja e roxo."
+                />
                 <Text>
                   ...e uma diarista executando atividades domésticas é
                   considerado cuidado?
@@ -124,10 +133,7 @@ export function Cuidados2() {
                 width: '100%',
               }}
             >
-              <LiteYouTubeEmbed
-                id=""
-                title=""
-              />
+              <LiteYouTubeEmbed id="" title="" />
             </div>
             <Markdown
               style={{ textAlign: 'center' }}

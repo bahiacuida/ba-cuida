@@ -14,7 +14,11 @@ export function About6() {
         <Flex direction="column" gap="8">
           <Flex direction={{ xs: 'column', sm: 'row' }} alignItems="center">
             <Box>
-              <img src="/assets/sobre/montagens/Sobre_Montagem_06.png" />
+              <img
+                src="/assets/sobre/montagens/Sobre_Montagem_06.png"
+                alt=""
+                role="presentation"
+              />
             </Box>
 
             <Flex
@@ -63,7 +67,11 @@ Outro aspecto central do software livre é seu potencial para ampliar a inclusã
               />
             </Flex>
             <Box>
-              <img src="/assets/sobre/montagens/Sobre_Montagem_07.png" />
+              <img
+                src="/assets/sobre/montagens/Sobre_Montagem_07.png"
+                alt=""
+                role="presentation"
+              />
             </Box>
           </Flex>
         </Flex>

@@ -48,7 +48,7 @@ export function CarteiraAssinada() {
             <Flex
               direction={{
                 xs: 'column',
-                md: 'row',
+                sm: 'row',
               }}
               gap="4"
               alignItems="center"
@@ -60,10 +60,10 @@ export function CarteiraAssinada() {
               <Flex
                 direction="column"
                 style={{
-                  width: '45%',
+                  width: { xs: '100%', sm: '45%' },
                 }}
               >
-                <Box style={{}}>
+                <Box>
                   <img
                     style={{
                       width: '100%',
@@ -82,8 +82,8 @@ export function CarteiraAssinada() {
                   No Brasil,{' '}
                   <strong style={{ color: 'var(--orange-text-dark-bg)' }}>
                     7 em cada 10
-                  </strong>
-                  {' '}trabalhadoras dos cuidados não possuem{' '}
+                  </strong>{' '}
+                  trabalhadoras dos cuidados não possuem{' '}
                   <strong style={{ color: 'var(--orange-text-dark-bg)' }}>
                     carteira assinada
                   </strong>
@@ -94,7 +94,7 @@ export function CarteiraAssinada() {
                 direction="column"
                 gap="4"
                 style={{
-                  width: '45%',
+                  width: { xs: '100%', sm: '45%' },
                   position: 'relative',
                 }}
               >

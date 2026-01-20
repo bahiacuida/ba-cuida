@@ -52,7 +52,10 @@ export function Cuidados1() {
                 },
               }}
             >
-              <img src="/assets/cuidados/montagens/Cuidados_Montagem01.png" />
+              <img
+                src="/assets/cuidados/montagens/Cuidados_Montagem01.png"
+                alt="Montagem em preto e branco de uma mulher jovem negra sentada no chão com expressão pensativa, apoiando o queixo sobre a mão. Ela tem tranças longas e veste camiseta e calça. Atrás dela aparecem pontos de interrogação e formas gráficas coloridas em tons de laranja, roxo e verde, sugerindo dúvida ou reflexão."
+              />
             </Box>
           </div>
         </Flex>

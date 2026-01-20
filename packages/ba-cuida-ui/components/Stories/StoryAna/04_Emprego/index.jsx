@@ -42,20 +42,25 @@ export function Emprego() {
             <Flex direction="row" justifyContent="flex-end">
               {/*<img alt=""
             role="presentation" />*/}
-              <Heading
-                as="h3"
+              <Box
                 style={{
-                  width: '70%',
-                  fontSize: '2rem',
-                  lineHeight: '1.2',
+                  width: { xs: '100%', sm: '70%' },
                 }}
               >
-                Na Bahia, o 2o maior motivo para mulheres não procurarem emprego
-                é{' '}
-                <strong style={{ color: 'var(--orange-text-dark-bg)' }}>
-                  cuidar dos afazeres domésticos e de seus filhos.
-                </strong>
-              </Heading>
+                <Heading
+                  as="h3"
+                  style={{
+                    fontSize: '2rem',
+                    lineHeight: '1.2',
+                  }}
+                >
+                  Na Bahia, o 2o maior motivo para mulheres não procurarem
+                  emprego é{' '}
+                  <strong style={{ color: 'var(--orange-text-dark-bg)' }}>
+                    cuidar dos afazeres domésticos e de seus filhos.
+                  </strong>
+                </Heading>
+              </Box>
             </Flex>
             <PaperCard>
               <img

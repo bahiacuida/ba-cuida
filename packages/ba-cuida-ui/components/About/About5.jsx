@@ -52,7 +52,10 @@ Paralelamente, o projeto se prepara para expandir sua metodologia para outros mu
                 flexShrink: 0,
               }}
             >
-              <img src="/assets/sobre/montagens/Sobre_Montagem_05.png" />
+              <img
+                src="/assets/sobre/montagens/Sobre_Montagem_05.png"
+                alt="Colagem artística que representa o município de Ilhéus. No centro está Mãe Ilza Mukalê, importante líder religiosa e matriarca do candomblé na região, usando turbante e roupas tradicionais enquanto segura um microfone. À direita, aparecem mãos segurando sementes de cacau, com um fruto de cacau ao fundo. À esquerda, vê-se uma tilápia e, abaixo dela, a Igreja de São Sebastião, monumento religioso histórico da cidade. Os elementos — o cacau, o peixe e a igreja — simbolizam pilares econômicos locais, como agricultura, pesca e turismo, compondo uma imagem que sintetiza aspectos culturais e produtivos de Ilhéus."
+              />
               <cite>
                 Nosso muito obrigada à{' '}
                 <a

@@ -1,3 +1,4 @@
+import { STATIC_INDICATORS } from '../IndicatorSpecs'
 import { DataPage } from './index'
 
 const meta = {
@@ -9,4 +10,8 @@ const meta = {
 }
 
 export default meta
-export const Basic = {}
+export const Basic = {
+  fetchIndicators: () => {
+    return STATIC_INDICATORS
+  },
+}

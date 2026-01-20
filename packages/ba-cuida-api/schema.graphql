@@ -5,11 +5,6 @@ type User {
   id: ID!
   email: String
   password: PasswordState
-  avatar: JSON
-  schoolId: String
-  classroomId: String
-  studentId: String
-  notes: JSON
   isSystemAdmin: Boolean
 }
 
@@ -28,9 +23,6 @@ input UserWhereInput {
   NOT: [UserWhereInput!]
   id: IDFilter
   email: StringFilter
-  schoolId: StringFilter
-  classroomId: StringFilter
-  studentId: StringFilter
   isSystemAdmin: BooleanFilter
 }
 
@@ -56,7 +48,13 @@ input StringFilter {
   contains: String
   startsWith: String
   endsWith: String
+  mode: QueryMode
   not: NestedStringFilter
+}
+
+enum QueryMode {
+  default
+  insensitive
 }
 
 input NestedStringFilter {
@@ -81,9 +79,6 @@ input BooleanFilter {
 input UserOrderByInput {
   id: OrderDirection
   email: OrderDirection
-  schoolId: OrderDirection
-  classroomId: OrderDirection
-  studentId: OrderDirection
   isSystemAdmin: OrderDirection
 }
 
@@ -95,11 +90,6 @@ enum OrderDirection {
 input UserUpdateInput {
   email: String
   password: String
-  avatar: JSON
-  schoolId: String
-  classroomId: String
-  studentId: String
-  notes: JSON
   isSystemAdmin: Boolean
 }
 
@@ -111,47 +101,92 @@ input UserUpdateArgs {
 input UserCreateInput {
   email: String
   password: String
-  avatar: JSON
-  schoolId: String
-  classroomId: String
-  studentId: String
-  notes: JSON
   isSystemAdmin: Boolean
 }
 
-type Dataset {
+type Indicator {
   id: ID!
-  name: String
+  title: String
+  slug: String
+  summaryCards: JSON
+  details: String
+  charts: JSON
+  cardTitle: String
+  cardDescription: String
+  axis: String
+  categories: [String!]
 }
 
-input DatasetWhereUniqueInput {
+input IndicatorWhereUniqueInput {
   id: ID
+  slug: String
 }
 
-input DatasetWhereInput {
-  AND: [DatasetWhereInput!]
-  OR: [DatasetWhereInput!]
-  NOT: [DatasetWhereInput!]
+input IndicatorWhereInput {
+  AND: [IndicatorWhereInput!]
+  OR: [IndicatorWhereInput!]
+  NOT: [IndicatorWhereInput!]
   id: IDFilter
-  name: StringFilter
+  title: StringFilter
+  slug: StringFilter
+  details: StringFilter
+  cardTitle: StringFilter
+  cardDescription: StringFilter
+  axis: StringNullableFilter
 }
 
-input DatasetOrderByInput {
+input StringNullableFilter {
+  equals: String
+  in: [String!]
+  notIn: [String!]
+  lt: String
+  lte: String
+  gt: String
+  gte: String
+  contains: String
+  startsWith: String
+  endsWith: String
+  mode: QueryMode
+  not: StringNullableFilter
+}
+
+input IndicatorOrderByInput {
   id: OrderDirection
-  name: OrderDirection
+  title: OrderDirection
+  slug: OrderDirection
+  details: OrderDirection
+  cardTitle: OrderDirection
+  cardDescription: OrderDirection
+  axis: OrderDirection
 }
 
-input DatasetUpdateInput {
-  name: String
+input IndicatorUpdateInput {
+  title: String
+  slug: String
+  summaryCards: JSON
+  details: String
+  charts: JSON
+  cardTitle: String
+  cardDescription: String
+  axis: String
+  categories: [String!]
 }
 
-input DatasetUpdateArgs {
-  where: DatasetWhereUniqueInput!
-  data: DatasetUpdateInput!
+input IndicatorUpdateArgs {
+  where: IndicatorWhereUniqueInput!
+  data: IndicatorUpdateInput!
 }
 
-input DatasetCreateInput {
-  name: String
+input IndicatorCreateInput {
+  title: String
+  slug: String
+  summaryCards: JSON
+  details: String
+  charts: JSON
+  cardTitle: String
+  cardDescription: String
+  axis: String
+  categories: [String!]
 }
 
 """
@@ -166,12 +201,12 @@ type Mutation {
   updateUsers(data: [UserUpdateArgs!]!): [User]
   deleteUser(where: UserWhereUniqueInput!): User
   deleteUsers(where: [UserWhereUniqueInput!]!): [User]
-  createDataset(data: DatasetCreateInput!): Dataset
-  createDatasets(data: [DatasetCreateInput!]!): [Dataset]
-  updateDataset(where: DatasetWhereUniqueInput!, data: DatasetUpdateInput!): Dataset
-  updateDatasets(data: [DatasetUpdateArgs!]!): [Dataset]
-  deleteDataset(where: DatasetWhereUniqueInput!): Dataset
-  deleteDatasets(where: [DatasetWhereUniqueInput!]!): [Dataset]
+  createIndicator(data: IndicatorCreateInput!): Indicator
+  createIndicators(data: [IndicatorCreateInput!]!): [Indicator]
+  updateIndicator(where: IndicatorWhereUniqueInput!, data: IndicatorUpdateInput!): Indicator
+  updateIndicators(data: [IndicatorUpdateArgs!]!): [Indicator]
+  deleteIndicator(where: IndicatorWhereUniqueInput!): Indicator
+  deleteIndicators(where: [IndicatorWhereUniqueInput!]!): [Indicator]
   endSession: Boolean!
   authenticateUserWithPassword(email: String!, password: String!): UserAuthenticationWithPasswordResult
   createInitialUser(data: CreateInitialUserInput!): UserAuthenticationWithPasswordSuccess!
@@ -197,9 +232,9 @@ type Query {
   user(where: UserWhereUniqueInput!): User
   users(where: UserWhereInput! = {}, orderBy: [UserOrderByInput!]! = [], take: Int, skip: Int! = 0, cursor: UserWhereUniqueInput): [User!]
   usersCount(where: UserWhereInput! = {}): Int
-  dataset(where: DatasetWhereUniqueInput!): Dataset
-  datasets(where: DatasetWhereInput! = {}, orderBy: [DatasetOrderByInput!]! = [], take: Int, skip: Int! = 0, cursor: DatasetWhereUniqueInput): [Dataset!]
-  datasetsCount(where: DatasetWhereInput! = {}): Int
+  indicator(where: IndicatorWhereUniqueInput!): Indicator
+  indicators(where: IndicatorWhereInput! = {}, orderBy: [IndicatorOrderByInput!]! = [], take: Int, skip: Int! = 0, cursor: IndicatorWhereUniqueInput): [Indicator!]
+  indicatorsCount(where: IndicatorWhereInput! = {}): Int
   keystone: KeystoneMeta!
   authenticatedItem: AuthenticatedItem
 }
@@ -292,11 +327,6 @@ enum KeystoneAdminUIFieldMetaItemViewFieldMode {
 enum KeystoneAdminUIFieldMetaItemViewFieldPosition {
   form
   sidebar
-}
-
-enum QueryMode {
-  default
-  insensitive
 }
 
 type KeystoneAdminUIFieldGroupMeta {

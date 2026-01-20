@@ -97,7 +97,11 @@ No território, a atuação do Bahia Cuida também se dá por meio de articulaç
                     flexShrink: 0,
                   }}
                 >
-                  <img src="/assets/sobre/montagens/Sobre_Montagem_03.png" />
+                  <img
+                    src="/assets/sobre/montagens/Sobre_Montagem_03.png"
+                    alt=""
+                    role="presentation"
+                  />
                 </Box>
               </Flex>
             </Flex>

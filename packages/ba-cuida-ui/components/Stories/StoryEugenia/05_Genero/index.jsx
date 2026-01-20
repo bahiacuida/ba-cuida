@@ -83,7 +83,7 @@ export function Genero() {
                 direction="column"
                 gap="4"
                 style={{
-                  width: '50%',
+                  width: { xs: '100%', sm: '50%' },
                   position: 'relative',
                 }}
               >

@@ -49,7 +49,7 @@ export function Remuneracao() {
             <Flex
               direction={{
                 xs: 'column',
-                md: 'row',
+                sm: 'row',
               }}
               gap="4"
               alignItems="center"
@@ -64,30 +64,38 @@ export function Remuneracao() {
                   backgroundColor: '#F9EFD9',
                   maxWidth: '700px',
                   maxHeight: '700px',
-                  width: '50vw',
-                  height: '50vw',
+                  width: { xs: '90vw', sm: '50vw' },
+                  height: { xs: '100vw', sm: '50vw' },
                   flexShrink: 0,
-                  borderRadius: '100%',
+                  borderRadius: { xs: '80px', sm: '100%' },
                 }}
               >
-                <img
+                <Box
                   style={{
                     position: 'absolute',
                     top: 0,
-                    right: '45%',
+                    right: { xs: '60%', sm: '45%' },
                     height: '100%',
                     zIndex: 3,
                   }}
-                  src="/assets/home/04_capitulo_eugenia/montagens_eugenia/Eugenia_Montagem_03.png"
-                  alt=""
-                  role="presentation"
-                />
+                >
+                  <img
+                    style={{
+                      height: '100%',
+                      width: 'auto',
+                      maxWidth: 'none',
+                    }}
+                    src="/assets/home/04_capitulo_eugenia/montagens_eugenia/Eugenia_Montagem_03.png"
+                    alt=""
+                    role="presentation"
+                  />
+                </Box>
                 <Flex
                   style={{
                     position: 'absolute',
                     top: '50%',
                     transform: 'translateY(-50%)',
-                    left: '50%',
+                    left: { xs: '35%', sm: '50%' },
                     right: '10%',
                     color: 'var(--marrom-texto)',
                   }}
@@ -110,7 +118,7 @@ export function Remuneracao() {
                 direction="column"
                 gap="4"
                 style={{
-                  width: '40%',
+                  width: { xs: '100%', sm: '40%' },
                   position: 'relative',
                 }}
               >

@@ -134,33 +134,35 @@ export function OutrosImpactos() {
           </Flex>
         </SiteWidthContainer>
       </PaperFramedSection>
-      <Flex
-        direction="column"
-        gap="4"
-        pt="4"
-        pb="8"
-        alignItems="center"
-        maxWidth="600px"
-        style={{
-          margin: 'auto',
-          textAlign: 'center',
-        }}
-      >
-        <img
+      <SiteWidthContainer>
+        <Flex
+          direction="column"
+          gap="4"
+          pt="4"
+          pb="8"
+          alignItems="center"
+          maxWidth="600px"
           style={{
-            height: 300,
+            margin: 'auto',
+            textAlign: 'center',
           }}
-          src="/assets/home/03_capitulo_ana/ilustracoes_ana/Ana_09.svg"
-          alt="Ilustração de duas mulheres negras e jovens, Eugênia e Ana, apoiando sua mãe idosa que usa bengala. As três estão de pé, próximas umas das outras, e há elementos decorativos coloridos e quadros ao fundo. As expressões das duas jovens são de preocupação e cansaço."
-        />
-        <Markdown
-          style={{ fontSize: '1.25rem', fontWeight: 300 }}
-          children={
-            'Quando não consegue cuidar da sua mãe, Ana conta ' +
-            'com a ajuda de sua irmã, **Eugênia, que é diarista.**'
-          }
-        />
-      </Flex>
+        >
+          <img
+            style={{
+              height: 300,
+            }}
+            src="/assets/home/03_capitulo_ana/ilustracoes_ana/Ana_09.svg"
+            alt="Ilustração de duas mulheres negras e jovens, Eugênia e Ana, apoiando sua mãe idosa que usa bengala. As três estão de pé, próximas umas das outras, e há elementos decorativos coloridos e quadros ao fundo. As expressões das duas jovens são de preocupação e cansaço."
+          />
+          <Markdown
+            style={{ fontSize: '1.25rem', fontWeight: 300 }}
+            children={
+              'Quando não consegue cuidar da sua mãe, Ana conta ' +
+              'com a ajuda de sua irmã, **Eugênia, que é diarista.**'
+            }
+          />
+        </Flex>
+      </SiteWidthContainer>
     </>
   )
 }

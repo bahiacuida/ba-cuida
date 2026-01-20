@@ -7,8 +7,9 @@
     "changeset": "changeset",
     "?publish": "changeset does not support yarn@3+. Track: https://github.com/changesets/changesets/issues/432",
     "publish": "yarn workspaces foreach --no-private --all npm publish",
-    "build_": "yarn workspaces foreach --all --parallel --interlaced --topological-dev run build",
-    "dev": "yarn workspace @orioro/ba-cuida-ui dev"
+    "build": "yarn workspaces foreach --all --parallel --interlaced --topological-dev run build",
+    "start": "yarn workspaces foreach --all --parallel --interlaced --topological-dev run start",
+    "dev": "yarn workspaces foreach --verbose --all --parallel --interlaced run dev"
   },
   "workspaces": [
     "packages/*"

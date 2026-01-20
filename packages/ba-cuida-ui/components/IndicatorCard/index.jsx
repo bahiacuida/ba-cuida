@@ -43,7 +43,7 @@ export function IndicatorCard({
 
         e.target.focus()
       }}
-      {...props}
+      // {...props}
     >
       <Flex direction="column" gap="20px">
         {axis && (

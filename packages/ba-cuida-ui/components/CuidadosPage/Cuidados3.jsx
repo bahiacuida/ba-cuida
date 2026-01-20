@@ -16,7 +16,10 @@ export function Cuidados3() {
                 marginTop: '-70px',
               }}
             >
-              <img src="/assets/cuidados/montagens/Cuidados_Montagem05.png" />
+              <img
+                src="/assets/cuidados/montagens/Cuidados_Montagem05.png"
+                alt="Montagem em preto e branco de uma mulher em pé apoiando com cuidado os ombros de um homem idoso que está sentado em uma cadeira de rodas. Ao fundo, há formas gráficas abstratas em tons de verde, roxo, rosa e laranja."
+              />
             </Box>
             <Flex
               style={{

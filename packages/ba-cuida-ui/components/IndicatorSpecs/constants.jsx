@@ -1,3 +1,5 @@
+import { keyBy } from 'lodash-es'
+
 export const POPULACAO_PRIORITARIA = {
   label: 'População Prioritária',
   slug: 'populacao_prioritaria',
@@ -18,6 +20,11 @@ export const CUIDADO_NAO_REMUNERADO = {
   iconAlt:
     'Ícone de círculo verde com uma forma orgânica em forma de flor na cor rosa claro ao centro, representando a categoria (eixo) ‘cuidado não remunerado’.',
 }
+
+export const AXIS_BY_SLUG = keyBy(
+  [POPULACAO_PRIORITARIA, CUIDADO_REMUNERADO, CUIDADO_NAO_REMUNERADO],
+  'slug',
+)
 
 export const TRABALHO_E_RENDA = 'Trabalho e renda'
 export const PERFIL_POPULACIONAL = 'Perfil populacional'

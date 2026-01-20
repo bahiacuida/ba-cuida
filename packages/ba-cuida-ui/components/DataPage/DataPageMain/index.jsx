@@ -4,7 +4,7 @@ import { SiteWidthContainer } from '../../SiteWidthContainer'
 import { DataPageIndicators } from '../DataPageIndicators'
 import { DataPageMap } from '../DataPageMap'
 
-export function DataPageMain() {
+export function DataPageMain({ fetchIndicators }) {
   return (
     <section>
       <SiteWidthContainer>
@@ -45,7 +45,7 @@ export function DataPageMain() {
 
             <Box pb="100px">
               <Tabs.Content value="indicadores">
-                <DataPageIndicators />
+                <DataPageIndicators fetchIndicators={fetchIndicators} />
               </Tabs.Content>
 
               <Tabs.Content value="mapa">

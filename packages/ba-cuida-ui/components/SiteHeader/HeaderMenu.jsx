@@ -61,14 +61,10 @@ const ITEMS = [
     label: 'Cuidados',
     href: '/cuidados/',
   },
-  // {
-  //   label: 'Biblioteca',
-  //   href: '',
-  // },
-  // {
-  //   label: 'Glossário',
-  //   href: '',
-  // },
+  {
+    label: 'Biblioteca',
+    href: '/biblioteca/',
+  },
   {
     label: 'Sobre',
     href: '/sobre/',

@@ -1,14 +1,14 @@
 export * from './constants'
 
 import { KeystoneConfig } from '@keystone-6/core/types'
-import { DATASET_LIST_NAME } from './constants'
-import { datasetList } from './datasetList'
+import { INDICATOR_LIST_NAME } from './constants'
+import { indicatorList } from './indicatorList'
 
-export function datasetLists(
+export function indicatorLists(
   lists: KeystoneConfig['lists'],
 ): KeystoneConfig['lists'] {
   return {
     ...lists,
-    [DATASET_LIST_NAME]: datasetList(),
+    [INDICATOR_LIST_NAME]: indicatorList(),
   }
 }

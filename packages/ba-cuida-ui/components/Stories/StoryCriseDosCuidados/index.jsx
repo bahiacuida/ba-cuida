@@ -109,6 +109,10 @@ export function StoryCriseDosCuidados() {
                   md: '40%',
                 },
                 position: 'relative',
+                overflow: {
+                  xs: 'hidden',
+                  md: 'visible',
+                },
               }}
             >
               <img

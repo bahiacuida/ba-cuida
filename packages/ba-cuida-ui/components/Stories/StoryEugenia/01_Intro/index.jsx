@@ -1,4 +1,4 @@
-import { Flex, Markdown } from '@orioro/react-ui-core'
+import { Flex, Markdown, Box } from '@orioro/react-ui-core'
 import { SiteWidthContainer } from '@/components/SiteWidthContainer'
 import { PaperFramedSection } from '@/components/PaperFramedSection'
 import { PaperCard } from '@/components/PaperCard'
@@ -56,24 +56,45 @@ export function Intro() {
                 color: 'white',
               }}
             >
-              <Heading
-                as="h3"
+              <Box
                 style={{
-                  fontSize: '1.875rem',
-                  width: '40%',
+                  width: { xs: '100%', md: '40%' },
                 }}
               >
-                Na Bahia, as mulheres negras representam 58,2% das pessoas
-                trabalhadoras dos cuidados remunerados.
-              </Heading>
+                <Heading
+                  as="h3"
+                  style={{
+                    fontSize: '1.875rem',
+                  }}
+                >
+                  Na Bahia, as mulheres negras representam 58,2% das pessoas
+                  trabalhadoras dos cuidados remunerados.
+                </Heading>
+              </Box>
               <Flex
                 direction="column"
                 gap="4"
                 style={{
-                  width: '50%',
+                  width: { xs: '100%', md: '50%' },
                   position: 'relative',
                 }}
               >
+                <Box
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    right: 'calc(100% - 100px)',
+                    width: '240px',
+                    zIndex: { xs: 1, sm: 3 },
+                  }}
+                >
+                  <img
+                    style={{}}
+                    src="/assets/home/04_capitulo_eugenia/montagens_eugenia/Eugenia_Montagem_01.png"
+                    alt=""
+                    role="presentation"
+                  />
+                </Box>
                 <PaperCard
                   style={{
                     position: 'relative',
@@ -81,22 +102,12 @@ export function Intro() {
                   }}
                 >
                   <img
-                    style={{
-                      position: 'absolute',
-                      top: 0,
-                      right: 'calc(100% - 100px)',
-                      width: '240px',
-                      zIndex: 3,
-                    }}
-                    src="/assets/home/04_capitulo_eugenia/montagens_eugenia/Eugenia_Montagem_01.png"
-                    alt=""
-                    role="presentation"
-                  />
-                  <img
                     src="/assets/home/04_capitulo_eugenia/graficos_eugenia/Eugenia_Grafico_01.svg"
                     alt="Gráfico de barras empilhadas mostrando a composição de trabalhadores dos cuidados remunerados na Bahia. A maior parte é representada pela faixa roxa, referente a mulheres negras, que correspondem a 58,2% do total. A faixa laranja representa homens negros (27,3%), a faixa lilás representa mulheres brancas (10,1%) e a faixa bege representa homens brancos (4,4%). O destaque visual evidencia que mulheres negras são maioria nesse setor."
                     style={{
                       width: '100%',
+                      zIndex: 2,
+                      position: 'relative',
                     }}
                   />
                 </PaperCard>

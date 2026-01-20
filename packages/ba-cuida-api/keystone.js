@@ -11,8 +11,8 @@ const { withAuth, session } = auth()
 
 export default withAuth(
   config({
-    // db: postgresql(),
-    db: sqlite(),
+    db: postgresql(),
+    // db: sqlite(),
     lists: allLists(),
     server: server({
       port: process.env.PORT,

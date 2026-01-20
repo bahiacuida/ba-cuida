@@ -23,7 +23,8 @@ export function Cuidados5() {
             >
               <img
                 src="/assets/cuidados/montagens/Cuidados_Montagem09.png"
-                alt="ORI:ORO"
+                alt=""
+                role="presentation"
               />
             </Box>
             <Flex

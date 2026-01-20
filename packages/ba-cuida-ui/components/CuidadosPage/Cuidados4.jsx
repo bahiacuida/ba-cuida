@@ -93,7 +93,10 @@ export function Cuidados4() {
                     marginRight: '-100px',
                   }}
                 >
-                  <img src="/assets/cuidados/montagens/Cuidados_Montagem06.png" />
+                  <img
+                    src="/assets/cuidados/montagens/Cuidados_Montagem06.png"
+                    alt="Montagem em preto e branco de uma mulher limpando um móvel com expressão cansada. Ela usa luvas e segura um frasco de produto de limpeza enquanto passa um pano na superfície. Ao fundo, há formas gráficas abstratas em tons de verde, laranja e roxo."
+                  />
                 </Box>
               </Flex>
             </PaperCard>
@@ -141,7 +144,10 @@ export function Cuidados4() {
                     marginRight: '-100px',
                   }}
                 >
-                  <img src="/assets/cuidados/montagens/Cuidados_Montagem07.png" />
+                  <img
+                    src="/assets/cuidados/montagens/Cuidados_Montagem07.png"
+                    alt=""
+                  />
                 </Box>
               </Flex>
             </PaperCard>
@@ -237,6 +243,7 @@ export function Cuidados4() {
                     height: 'auto',
                   }}
                   src="/assets/cuidados/icones/icon_Rs_Reconhecer.png"
+                  alt="Ícone Reconhecer"
                 />
                 <HighlightBox>
                   <Heading
@@ -269,6 +276,7 @@ export function Cuidados4() {
                     height: 'auto',
                   }}
                   src="/assets/cuidados/icones/icon_Rs_Reduzir.png"
+                  alt="Ícone Reduzir"
                 />
                 <HighlightBox>
                   <Heading
@@ -296,6 +304,7 @@ export function Cuidados4() {
                     height: 'auto',
                   }}
                   src="/assets/cuidados/icones/icon_Rs_Redistribuir.png"
+                  alt="Ícone Redistribuir"
                 />
                 <HighlightBox>
                   <Heading
@@ -324,6 +333,7 @@ export function Cuidados4() {
                     height: 'auto',
                   }}
                   src="/assets/cuidados/icones/icon_Rs_Representar.png"
+                  alt="Ícone Representar"
                 />
                 <HighlightBox>
                   <Heading
@@ -351,6 +361,7 @@ export function Cuidados4() {
                     height: 'auto',
                   }}
                   src="/assets/cuidados/icones/icon_Rs_Remunerar.png"
+                  alt="Ícone Remunerar"
                 />
                 <HighlightBox>
                   <Heading
@@ -407,7 +418,10 @@ export function Cuidados4() {
             </Flex>
 
             <Box>
-              <img src="/assets/cuidados/infograficos/Diamante_dos_cuidados.svg" />
+              <img
+                src="/assets/cuidados/infograficos/Diamante_dos_cuidados.svg"
+                alt="Diagrama conhecido como ‘diamante dos cuidados’, composto por quatro esferas que representam os setores responsáveis pelas atividades de cuidado na sociedade: família (em verde), setores públicos e Estado (em laranja), setores sem fins lucrativos e comunidade (em roxo) e mercado (em rosa). No centro, há a forma de um diamante conectando esses quatro setores. Entre esses campos, apenas o Estado não tem o trabalho de cuidado realizado majoritariamente por mulheres"
+              />
             </Box>
           </Flex>
           <div
