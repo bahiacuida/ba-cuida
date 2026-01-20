@@ -20,7 +20,7 @@ O Bahia Cuida se insere no debate sobre **trabalho de cuidado remunerado e não 
 
 #### Idealização e Realização
 
-| <img src="assets/logos/ADR_Logo.svg" alt="Agência de Desenvolvimento Regional Sul da Bahia" height="48"> | <img src="assets/logos/Instituto_Foz_Logo.png" alt="Instituto Foz" height="48"> | <img src="assets/logos/OriOro_Logo.png" alt="ORI:ORO" height="48"> |
+| <img src="assets/logos/ADR_Logo.png" alt="Agência de Desenvolvimento Regional Sul da Bahia" height="48"> | <img src="assets/logos/Instituto_Foz_Logo.png" alt="Instituto Foz" height="48"> | <img src="assets/logos/OriOro_Logo.png" alt="ORI:ORO" height="48"> |
 |:--:|:--:|:--:|
 
 #### Apoio
