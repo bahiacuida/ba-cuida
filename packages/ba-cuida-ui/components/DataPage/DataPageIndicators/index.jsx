@@ -71,8 +71,12 @@ export function DataPageIndicators({
             justifyContent="center"
             gap="4"
           >
-            {cardsQuery.data.map((card) => (
-              <IndicatorCard {...card} key={card.id} indicator={card} />
+            {cardsQuery.data.map((card, index) => (
+              <IndicatorCard
+                {...card}
+                key={card.id || card.title || index}
+                indicator={card}
+              />
             ))}
           </EvenSpacedList>
         )}

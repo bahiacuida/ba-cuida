@@ -983,6 +983,7 @@ __metadata:
     maplibre-gl: "npm:^5.1.0"
     next: "npm:14.2.31"
     react: "npm:^18"
+    react-cookie-consent: "npm:^10.0.1"
     react-dom: "npm:^18"
     react-error-boundary: "npm:^6.0.0"
     react-in-viewport: "npm:^1.0.0-beta.8"
@@ -16145,6 +16146,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"js-cookie@npm:^3.0.5":
+  version: 3.0.5
+  resolution: "js-cookie@npm:3.0.5"
+  checksum: 04a0e560407b4489daac3a63e231d35f4e86f78bff9d792011391b49c59f721b513411cd75714c418049c8dc9750b20fcddad1ca5a2ca616c3aca4874cce5b3a
+  languageName: node
+  linkType: hard
+
 "js-tokens@npm:^3.0.0 || ^4.0.0, js-tokens@npm:^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0"
@@ -19920,6 +19928,18 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
   checksum: 7240cfc64b2b1615d1aa4ea050d8aa9c5a427d871eab94cf7e39dba737d89554edb46a53da26c6096cc04d58a29779222bd3790ffb8d21eaa57a85492eaed31b
+  languageName: node
+  linkType: hard
+
+"react-cookie-consent@npm:^10.0.1":
+  version: 10.0.1
+  resolution: "react-cookie-consent@npm:10.0.1"
+  dependencies:
+    js-cookie: "npm:^3.0.5"
+  peerDependencies:
+    react: ">=18"
+    react-dom: ">=18"
+  checksum: 76977fea75885a815d002a279845e892dc42c3b9c0482859f0ab2077ac1ada68a07192557731b2b4393796f753770a30319905d184896fcc623d5fa69d2a0f8c
   languageName: node
   linkType: hard
 

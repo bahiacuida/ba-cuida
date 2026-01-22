@@ -54,11 +54,19 @@ const TriggerLabel = styled.div`
   > span:nth-child(1) {
     font-size: 2.5rem;
     margin-right: 10px;
+
+    @media (max-width: 500px) {
+      font-size: 2rem;
+    }
   }
 
   > span:nth-child(2) {
     font-size: 1.75rem;
     text-transform: uppercase;
+
+    @media (max-width: 500px) {
+      font-size: 1.25rem;
+    }
   }
 `
 
@@ -68,8 +76,8 @@ const ToggleIcon = styled.div`
   margin-left: 20px;
   background-color: #8c7d7d;
   border-radius: 8px;
-  width: 56px;
-  height: 56px;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,7 +124,7 @@ export function LargeToggleBlock({ number, label, children, color, ...props }) {
                   transform: open ? 'rotate(180deg)' : '',
                 }}
                 path={mdiMenuDown}
-                size="48px"
+                size="40px"
                 color="white"
               />
             </ToggleIcon>
