@@ -9,6 +9,11 @@ const HighlightImg = styled.img`
   max-width: 400px;
   width: 50%;
   margin-right: -100px;
+
+  @media (max-width: 600px) {
+    margin-right: 0;
+    width: 100%;
+  }
 `
 
 const BottomImg = styled.div`
@@ -102,7 +107,15 @@ export function DataPageHighlight() {
             alt="Montagem com Maria Felipa, figura história marisqueira e quilombola combatente na Guerra de Independência do Brasil, em pose séria, ao centro. Ela aparece em preto e branco, com um turbante na cabeça. Ao fundo, elementos coloridos remetem à culinária e à cultura baiana, como coco e um acarajé, além do Farol da Barra, monumento localizado em Salvador. Formas gráficas abstratas em tons vibrantes nas cores laranja, verde e roxa completam a composição. A montagem simboliza o estado da Bahia."
           />
 
-          <PaperScrap p="100px">
+          <PaperScrap
+            style={{
+              width: {
+                xs: 'calc(100% + 60px)',
+              },
+            }}
+            py="100px"
+            px={{ xs: '50px', sm: '100px' }}
+          >
             <Flex
               direction="column"
               gap="3"

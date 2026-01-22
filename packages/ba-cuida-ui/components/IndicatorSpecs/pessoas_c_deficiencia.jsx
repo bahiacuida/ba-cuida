@@ -100,6 +100,10 @@ Para melhorar esse indicador, é fundamental aperfeiçoar a coleta de dados, amp
     },
 
     {
+      yAxis: {
+        width: 150,
+      },
+      style: { minHeight: 600 },
       title: 'Pessoas com deficiência por idade',
       source: 'Elaboração própria, a partir dos dados do Censo 2022',
       description: `O gráfico mostra o número de pessoas com deficiência na Bahia em cada grupo de idade.

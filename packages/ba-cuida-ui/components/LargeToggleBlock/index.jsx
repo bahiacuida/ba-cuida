@@ -38,6 +38,8 @@ const Trigger = styled(Collapsible.Trigger)`
   padding: 8px 24px;
   min-height: 100px;
   cursor: pointer;
+  color: var(--marrom-texto);
+  font-family: var(--font-sora);
 
   &:hover {
     background-color: #e9e9e9;
