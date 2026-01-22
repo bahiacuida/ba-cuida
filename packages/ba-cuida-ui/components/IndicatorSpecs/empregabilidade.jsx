@@ -17,6 +17,13 @@ Esse indicador apresenta os principais motivos que impediram que a população f
 Ele mostra as razões declaradas por essas pessoas para não estarem em busca que emprego. Entre os motivos estão: a falta de trabalho naquela localidade; obrigação de cuidar de alguém ou de afazeres domésticos; por problemas de saúde ou gravidez; falta de experiência profissional ou qualificação etc.`,
   charts: [
     {
+      style: {
+        // minWidth: 500,
+        minHeight: 600,
+        aspectRatio: 1,
+      },
+      maxCharPerLine: 20,
+      fontSize: 12,
       title:
         'Motivos que levaram mulheres e homens desocupados a não procurar por trabalho',
       description:

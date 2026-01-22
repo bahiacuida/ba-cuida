@@ -79,6 +79,7 @@ export function Previdencia() {
                     height: '120%',
                     maxWidth: 'none',
                   }}
+                  loading="lazy"
                   src="/assets/home/04_capitulo_eugenia/montagens_eugenia/Eugenia_Montagem_05.png"
                   alt=""
                   role="presentation"

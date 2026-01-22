@@ -60,7 +60,7 @@ export function Cuidados6() {
                   width: { xs: '100%', sm: '60%' },
                 }}
               >
-                <PaperCard>
+                <PaperCard backdropAngle="-3deg">
                   <Box p="5">
                     <Markdown
                       style={{
@@ -85,7 +85,7 @@ Em 2023, foi criada a Secretaria Nacional de Cuidados e Família (SNCF) — hoje
               Para orientar essa política, foi definido um marco conceitual que
               descreve cuidado como:
             </Text>
-            <PaperCard style={{ maxWidth: '700px' }}>
+            <PaperCard backdropAngle="2deg" style={{ maxWidth: '700px' }}>
               <Box p="5">
                 <Markdown
                   style={{

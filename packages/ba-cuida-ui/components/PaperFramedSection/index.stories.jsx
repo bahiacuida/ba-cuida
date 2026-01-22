@@ -1,7 +1,7 @@
 import { PaperFramedSection } from './index'
 
 const meta = {
-  title: 'PaperFramedSection',
+  title: 'Components / PaperFramedSection',
   component: PaperFramedSection,
 }
 

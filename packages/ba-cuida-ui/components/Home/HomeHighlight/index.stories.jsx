@@ -1,7 +1,7 @@
 import { HomeHighlight } from './index'
 
 const meta = {
-  title: 'HomeHighlight',
+  title: 'Pages / Home / HomeHighlight',
   component: HomeHighlight,
   parameters: {
     layout: 'fullscreen',

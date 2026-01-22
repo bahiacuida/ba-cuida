@@ -140,6 +140,13 @@ Para melhorar esse indicador, é fundamental aperfeiçoar a coleta de dados, amp
     },
 
     {
+      style: {
+        // minWidth: 500,
+        minHeight: 500,
+        aspectRatio: 1,
+      },
+      maxCharPerLine: 20,
+      fontSize: 12,
       title: 'Tipos de dificuldades funcionais de pessoas com deficiência',
       source: 'Elaboração própria, a partir dos dados do Censo 2022',
       description: `O gráfico mostra o número de pessoas com deficiência pelo tipo de dificuldade funcional que elas enfrentam em seu dia a dia, além do nível de dificuldade.

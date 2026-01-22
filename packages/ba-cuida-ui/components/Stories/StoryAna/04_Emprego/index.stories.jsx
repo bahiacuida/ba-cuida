@@ -1,7 +1,7 @@
 import { Emprego } from './index'
 
 const meta = {
-  title: 'StoryAna / Emprego',
+  title: 'Pages / Home / StoryAna / Emprego',
   component: Emprego,
   parameters: {
     layout: 'fullscreen',

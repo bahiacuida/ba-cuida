@@ -2,7 +2,7 @@ import { Text } from '@radix-ui/themes'
 import { PaperCard } from './index'
 
 const meta = {
-  title: 'PaperCard',
+  title: 'Components / PaperCard',
   component: PaperCard,
 }
 

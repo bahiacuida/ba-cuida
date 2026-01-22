@@ -1,7 +1,7 @@
 import { CarteiraAssinada } from './index'
 
 const meta = {
-  title: 'StoryEugenia / CarteiraAssinada',
+  title: 'Pages / Home / StoryEugenia / CarteiraAssinada',
   component: CarteiraAssinada,
   parameters: {
     layout: 'fullscreen',

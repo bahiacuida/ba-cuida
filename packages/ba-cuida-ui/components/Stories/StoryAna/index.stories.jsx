@@ -1,7 +1,7 @@
 import { StoryAna } from './index'
 
 const meta = {
-  title: 'StoryAna',
+  title: 'Pages / Home / StoryAna',
   component: StoryAna,
   parameters: {
     layout: 'fullscreen',

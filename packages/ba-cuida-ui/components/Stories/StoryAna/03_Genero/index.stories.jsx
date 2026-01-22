@@ -1,7 +1,7 @@
 import { Genero } from './index'
 
 const meta = {
-  title: 'StoryAna / Genero',
+  title: 'Pages / Home / StoryAna / Genero',
   component: Genero,
   parameters: {
     layout: 'fullscreen',

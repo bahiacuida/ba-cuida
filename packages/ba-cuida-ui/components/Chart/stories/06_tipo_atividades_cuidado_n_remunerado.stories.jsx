@@ -2,7 +2,7 @@ import { TIPO_ATV_CUIDADO_N_REMUNERADO } from '../../IndicatorSpecs/tipo_atv_cui
 import { Chart } from '../Chart'
 
 const meta = {
-  title: 'Chart / 06_tipo_atividades_cuidado_n_remunerado',
+  title: 'Components / Chart / 06_tipo_atividades_cuidado_n_remunerado',
   component: Chart,
   parameters: {
     // layout: 'fullscreen',

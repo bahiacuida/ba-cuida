@@ -50,6 +50,7 @@ export function Cuidados4() {
             }}
           >
             <PaperCard
+              backdropAngle="-2deg"
               style={{
                 overflow: {
                   xs: 'hidden',
@@ -162,6 +163,7 @@ export function Cuidados4() {
           />
 
           <PaperCard
+            backdropAngle="4deg"
             style={{
               color: 'var(--marrom-texto)',
               maxWidth: '850px',
@@ -200,7 +202,10 @@ export function Cuidados4() {
                   marginBottom: { xs: 0, sm: '-80px' },
                 }}
               >
-                <img src="/assets/cuidados/montagens/Cuidados_Montagem08.png" />
+                <img
+                  src="/assets/cuidados/montagens/Cuidados_Montagem08.png"
+                  alt="Montagem em preto e branco de uma mulher lavando louça na pia, inclinada sobre o prato e com a mão na testa, sugerindo cansaço e sobrecarga. A água corre da torneira enquanto ela esfrega o prato. Ao fundo, há formas gráficas abstratas em tons de laranja, roxo e rosa."
+                />
               </Box>
             </Flex>
           </PaperCard>

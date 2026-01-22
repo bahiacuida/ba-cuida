@@ -6,7 +6,7 @@ import {
 import { IndicatorBody } from './index'
 
 const meta = {
-  title: 'IndicatorBody',
+  title: 'Components / IndicatorBody',
   component: IndicatorBody,
 }
 

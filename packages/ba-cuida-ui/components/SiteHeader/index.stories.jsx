@@ -2,7 +2,7 @@ import { fn } from 'storybook/test'
 import { SiteHeader } from './index'
 
 const meta = {
-  title: 'SiteHeader',
+  title: 'Components / SiteHeader',
   component: SiteHeader,
   parameters: {
     layout: 'fullscreen',

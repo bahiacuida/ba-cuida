@@ -2,7 +2,7 @@ import { EMPREGABILIDADE } from '../../IndicatorSpecs'
 import { Chart } from '../Chart'
 
 const meta = {
-  title: 'Chart / 01_motivo_nao_procurar_trabalho',
+  title: 'Components / Chart / 01_motivo_nao_procurar_trabalho',
   component: Chart,
   parameters: {
     // layout: 'fullscreen',

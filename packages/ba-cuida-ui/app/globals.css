@@ -53,7 +53,8 @@ img {
   --marrom-texto: #523a30;
   --roxo: #7c5c8b;
   --orange: var(--orange-9);
-  --verde: #079034;
+  /*--verde: #079034; substitute for higher contrast */
+  --verde: #066526;
 
   /* Orange palette */
   --orange-1: #f3f1f0;

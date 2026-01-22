@@ -1,7 +1,7 @@
 import { DataPageMap } from './index'
 
 const meta = {
-  title: 'DataPage / DataPageMap',
+  title: 'Pages / DataPage / DataPageMap',
   component: DataPageMap,
   parameters: {
     // layout: 'fullscreen',

@@ -37,7 +37,11 @@ export function PessoasIdosas() {
         </Flex>
       </SiteWidthContainer>
       <PaperFramedSection style={{ position: 'relative', overflow: 'hidden' }}>
-        <SiteWidthContainer>
+        <SiteWidthContainer
+          style={{
+            position: 'relative',
+          }}
+        >
           <Flex direction="column" gap="8" py="9">
             <Heading
               as="h3"
@@ -62,13 +66,45 @@ export function PessoasIdosas() {
                 direction="column"
                 gap="4"
                 style={{
+                  position: 'relative',
                   width: {
                     xs: '100%',
                     md: '40%',
                   },
                 }}
+                pl={{
+                  xs: '0',
+                  md: '80px',
+                }}
               >
+                <Box
+                  style={{
+                    display: {
+                      xs: 'none',
+                      md: 'block',
+                    },
+                    position: 'absolute',
+                    left: '0',
+                    top: '60%',
+                    height: '800px',
+                    transform: 'translate(-50%, -50%)',
+                  }}
+                >
+                  <img
+                    src="/assets/home/03_capitulo_ana/montagens_ana/Ana_Montagem_08.png"
+                    alt=""
+                    role="presentation"
+                    style={{
+                      height: '100%',
+                      width: 'auto',
+                    }}
+                  />
+                </Box>
                 <Markdown
+                  style={{
+                    position: 'relative',
+                    zIndex: 2,
+                  }}
                   children={
                     'A população baiana envelheceu, mas esse processo não aconteceu da ' +
                     'mesma forma para todos. As mulheres estão vivendo mais do que os homens e, ' +
@@ -80,6 +116,7 @@ export function PessoasIdosas() {
                   style={{
                     color: 'var(--marrom-texto)',
                     position: 'relative',
+                    zIndex: 2,
                   }}
                 >
                   <Box>
@@ -99,6 +136,10 @@ export function PessoasIdosas() {
                   </Box>
                 </PaperScrap>
                 <Markdown
+                  style={{
+                    position: 'relative',
+                    zIndex: 2,
+                  }}
                   children={
                     'Isso significa que muitas mulheres idosas, ' +
                     'que deveriam estar sendo cuidadas, continuam ' +
@@ -115,7 +156,7 @@ export function PessoasIdosas() {
                 }}
                 gap="3"
               >
-                <PaperCard>
+                <PaperCard backdropAngle="-2deg">
                   <img
                     src="/assets/home/03_capitulo_ana/graficos_ana/Ana_Grafico_06.svg"
                     alt="Pirâmide etária comparando a população baiana entre 2013 e 2023. À esquerda estão as barras referentes às mulheres, na cor lilás representando 2013 e a cor roxa representando 2023. À direita estão as barras dos homens, com a cor bege representando 2013 e a cor laranja representando 2023. Cada barra indica a quantidade de pessoas em milhares distribuídas por faixas etárias, de 0 a 4 anos até 80 anos ou mais. O gráfico mostra que o envelhecimento populacional é mais acentuado entre as mulheres."

@@ -100,6 +100,7 @@ export function Intro() {
                 o trabalho não remunerado é:
               </Text>
               <PaperCard
+                backdropAngle="3deg"
                 style={{
                   marginLeft: {
                     md: '-70px',

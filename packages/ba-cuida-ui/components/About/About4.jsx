@@ -39,7 +39,7 @@ A implementação segue três etapas complementares. A primeira consiste no leva
 
 O processo é conduzido de forma participativa, com ênfase na intersetorialidade, na transparência e no fortalecimento das capacidades locais. Essa metodologia garante que o Bahia Cuida não apenas produza dados, mas também fomente aprendizados, redes e políticas sustentáveis no campo dos cuidados.`}
           />
-          <PaperCard>
+          <PaperCard backdropAngle="-2deg">
             <Flex
               p="6"
               style={{

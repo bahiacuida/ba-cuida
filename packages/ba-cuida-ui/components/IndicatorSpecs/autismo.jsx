@@ -72,6 +72,10 @@ Também é possível filtrar os dados e ver os número para cada município.`,
     },
 
     {
+      yAxis: {
+        width: 150,
+      },
+      style: { minHeight: 600 },
       title: 'pessoas diagnosticadas com autismo por grupo de idade',
       source: 'Elaboração própria, a partir dos dados do Censo 2022',
       description: `O gráfico nos mostra o número de pessoas diagnosticadas com autismo na Bahia por gênero. Podemos observar que, em sua maioria, são homens.

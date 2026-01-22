@@ -90,6 +90,7 @@ export function Genero() {
               }}
             >
               <PaperCard
+                backdropAngle="-2deg"
                 style={{
                   width: '70%',
                   position: 'relative',
@@ -121,6 +122,7 @@ export function Genero() {
               </PaperCard>
 
               <img
+                loading="lazy"
                 src="/assets/home/03_capitulo_ana/montagens_ana/Ana_Montagem_04.png"
                 alt=""
                 role="presentation"

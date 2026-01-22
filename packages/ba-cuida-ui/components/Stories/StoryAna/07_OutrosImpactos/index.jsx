@@ -93,27 +93,68 @@ export function OutrosImpactos() {
                   xs: '100%',
                   md: '80%',
                 },
+                position: 'relative',
               }}
               gap="5"
             >
-              <PaperCard>
+              <img
+                style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: '0',
+                  width: '40%',
+                  transform: 'translate(-50%, -50%)',
+                  zIndex: 1,
+                }}
+                loading="lazy"
+                src="/assets/home/06_fundos_narrativa/bg_flor.svg"
+                alt=""
+                role="presentation"
+              />
+              <PaperCard
+                backdropAngle="3deg"
+                style={{
+                  position: 'relative',
+                  zIndex: 2,
+                }}
+              >
                 <img
                   src="/assets/home/03_capitulo_ana/graficos_ana/Ana_Grafico_07.svg"
                   alt="Gráfico de barras horizontais que compara as horas semanais trabalhadas por mulheres e homens em tarefas domésticas e atividade de cuidado de outras pessoas, distribuídas por faixas de renda. As barras roxas representam as mulheres e as barras laranja representam os homens. Em todas as faixas de renda (de ‘Até 1/4 de salário mínimo’ até ‘Mais de 8 salários mínimos’), as mulheres dedicam mais horas de trabalho doméstico do que os homens, chegando a mais de 20 horas semanais nas faixas de menor renda."
                 />
               </PaperCard>
-              <Markdown
+              <Box
                 style={{
-                  fontSize: '1.5rem',
-                  textAlign: 'center',
+                  position: 'relative',
+                  zIndex: 3,
                 }}
-                children={
-                  'É por isso que o cuidado comunitário em locais vulneráveis, ' +
-                  'onde as mulheres possuem os menores salários, por vezes se ' +
-                  'torna uma solução para que mães possam trabalhar e organizar ' +
-                  'outras  tarefas cotidianas.'
-                }
-              />
+              >
+                <img
+                  style={{
+                    position: 'absolute',
+                    bottom: '100%',
+                    left: '90%',
+                    width: '30%',
+                    zIndex: 1,
+                  }}
+                  loading="lazy"
+                  src="/assets/home/03_capitulo_ana/montagens_ana/Ana_Montagem_09.png"
+                  alt=""
+                  role="presentation"
+                />
+                <Markdown
+                  style={{
+                    fontSize: '1.5rem',
+                    textAlign: 'center',
+                  }}
+                  children={
+                    'É por isso que o cuidado comunitário em locais vulneráveis, ' +
+                    'onde as mulheres possuem os menores salários, por vezes se ' +
+                    'torna uma solução para que mães possam trabalhar e organizar ' +
+                    'outras  tarefas cotidianas.'
+                  }
+                />
+              </Box>
             </Flex>
             <cite
               style={{

@@ -1,7 +1,7 @@
 import { HomeAccordions } from './index'
 
 const meta = {
-  title: 'HomeAccordions',
+  title: 'Pages / Home / HomeAccordions',
   component: HomeAccordions,
   parameters: {
     layout: 'fullscreen',

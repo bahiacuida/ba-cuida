@@ -18,8 +18,45 @@ const ColorBox = styled(Box)`
 
 export function Trabalho() {
   return (
-    <PaperFramedSection>
-      <SiteWidthContainer py="40px">
+    <PaperFramedSection style={{ overflow: 'hidden' }}>
+      <SiteWidthContainer py="80px">
+        <Box
+          style={{
+            position: 'absolute',
+            top: '50px',
+            right: '50px',
+            width: '50%',
+            zIndex: 2,
+          }}
+        >
+          <img
+            style={{
+              position: 'absolute',
+              top: '0',
+              right: '0',
+              width: '25%',
+              zIndex: 2,
+            }}
+            loading="lazy"
+            src="/assets/home/06_fundos_narrativa/bg_flor.svg"
+            alt=""
+            role="presentation"
+          />
+          <img
+            style={{
+              position: 'absolute',
+              top: '0',
+              left: '60%',
+              width: '100%',
+              transform: 'scale(2) translate(0, -30%)',
+              zIndex: 1,
+            }}
+            loading="lazy"
+            src="/assets/home/06_fundos_narrativa/bg_mancha_verde.svg"
+            alt=""
+            role="presentation"
+          />
+        </Box>
         <Flex direction="column" gap="8">
           <Flex
             style={{
@@ -34,9 +71,14 @@ export function Trabalho() {
           >
             <Heading as="h3">
               Você sabia que esse{' '}
-              <strong style={{ color: 'var(--orange-text-dark-bg)' }}>"cuidar"</strong>{' '}
+              <strong style={{ color: 'var(--orange-text-dark-bg)' }}>
+                "cuidar"
+              </strong>{' '}
               realizado pela Ana é, na verdade,{' '}
-              <strong style={{ color: 'var(--orange-text-dark-bg)' }}>um trabalho</strong>?
+              <strong style={{ color: 'var(--orange-text-dark-bg)' }}>
+                um trabalho
+              </strong>
+              ?
             </Heading>
             <Markdown
               children={
@@ -107,18 +149,29 @@ export function Trabalho() {
                   Tarefas domésticas
                 </ColorBox>
               </Flex>
-              <img
+              <Box
                 style={{
+                  display: {
+                    xs: 'none',
+                    sm: 'block',
+                  },
                   position: 'absolute',
                   zIndex: -2,
-                  bottom: '80%',
+                  bottom: '95%',
                   left: '35%',
-                  width: '70%',
+                  width: {
+                    xs: '100%',
+                    sm: '70%',
+                  },
                 }}
-                src="/assets/home/03_capitulo_ana/montagens_ana/mao_placa.png"
-                alt=""
-                role="presentation"
-              />
+              >
+                <img
+                  loading="lazy"
+                  src="/assets/home/03_capitulo_ana/montagens_ana/mao_placa.png"
+                  alt=""
+                  role="presentation"
+                />
+              </Box>
             </Flex>
           </PaperScrap>
 

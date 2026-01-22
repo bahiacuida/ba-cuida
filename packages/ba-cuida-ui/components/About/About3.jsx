@@ -72,7 +72,7 @@ export function About3() {
               children={`O público usuário principal do observatório do Bahia Cuida são gestoras e gestores que atuam em temáticas de gênero e dos cuidados, além de pesquisadoras/es sobre o tema dos cuidados. Já o público atingido pelas ações de toda a iniciativa do Bahia Cuida é diverso, englobando tanto quem cuida quanto quem é cuidado. No grupo de quem cuida, temos as cuidadoras não-remuneradas e profissionais remuneradas, além do público prioritário da Política Nacional de Cuidados: crianças, adolescentes, pessoas com deficiência e idosos.`}
             />
           </Flex>
-          <PaperCard>
+          <PaperCard backdropAngle="2deg">
             <Flex direction="column" gap="6" p="5">
               <Heading
                 style={{

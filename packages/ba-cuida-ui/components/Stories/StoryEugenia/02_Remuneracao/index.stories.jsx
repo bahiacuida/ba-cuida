@@ -1,7 +1,7 @@
 import { Remuneracao } from './index'
 
 const meta = {
-  title: 'StoryEugenia / Remuneracao',
+  title: 'Pages / Home / StoryEugenia / Remuneracao',
   component: Remuneracao,
   parameters: {
     layout: 'fullscreen',

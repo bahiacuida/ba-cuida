@@ -2,7 +2,7 @@ import { PERFIL_TRAB_CUIDADO_N_REMUNERADO } from '../../IndicatorSpecs/perfil_tr
 import { Chart } from '../Chart'
 
 const meta = {
-  title: 'Chart / 04_perfil_trabalhadoras_cuidado_n_remunerado',
+  title: 'Components / Chart / 04_perfil_trabalhadoras_cuidado_n_remunerado',
   component: Chart,
   parameters: {
     // layout: 'fullscreen',

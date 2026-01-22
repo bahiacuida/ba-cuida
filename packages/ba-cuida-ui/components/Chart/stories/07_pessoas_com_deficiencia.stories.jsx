@@ -2,7 +2,7 @@ import { PESSOAS_C_DEFICIENCIA } from '../../IndicatorSpecs/pessoas_c_deficienci
 import { Chart } from '../Chart'
 
 const meta = {
-  title: 'Chart / 07_pessoas_com_deficiencia',
+  title: 'Components / Chart / 07_pessoas_com_deficiencia',
   component: Chart,
   parameters: {
     // layout: 'fullscreen',

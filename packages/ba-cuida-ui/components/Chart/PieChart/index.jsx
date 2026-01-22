@@ -1,6 +1,14 @@
 import { useMemo } from 'react'
-import { Cell, Legend, Pie, PieChart as PieChart_, Tooltip } from 'recharts'
+import {
+  Cell,
+  Legend,
+  Pie,
+  PieChart as PieChart_,
+  Tooltip,
+  ResponsiveContainer,
+} from 'recharts'
 import { CHART_COLORS } from '../constants'
+import { useMediaQuery } from '@/components/useMediaQuery'
 
 const RADIAN = Math.PI / 180
 
@@ -33,6 +41,8 @@ const renderCustomizedLabel = ({
 }
 
 export function PieChart({ isAnimationActive = true, data, dataLabelKey }) {
+  const isMobile = useMediaQuery('(max-width: 600px)')
+
   const _data = useMemo(() => {
     let parsedData = null
 
@@ -59,9 +69,9 @@ export function PieChart({ isAnimationActive = true, data, dataLabelKey }) {
     <PieChart_
       style={{
         width: '100%',
-        maxWidth: '700px',
+        // maxWidth: '700px',
         maxHeight: '80vh',
-        aspectRatio: 1,
+        aspectRatio: isMobile ? 0.5 : 1.6,
       }}
       responsive
     >
@@ -83,8 +93,15 @@ export function PieChart({ isAnimationActive = true, data, dataLabelKey }) {
       <Legend
         itemSorter={(item) => item.__order}
         layout="vertical"
-        verticalAlign="middle"
-        align="right"
+        {...(isMobile
+          ? {
+              verticalAlign: 'bottom',
+              align: 'center',
+            }
+          : {
+              verticalAlign: 'middle',
+              align: 'right',
+            })}
       />
       <Tooltip itemSorter={(item) => item.__order} />
     </PieChart_>

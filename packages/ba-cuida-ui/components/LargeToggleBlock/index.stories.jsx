@@ -1,7 +1,7 @@
 import { LargeToggleBlock } from './index'
 
 const meta = {
-  title: 'LargeToggleBlock',
+  title: 'Components / LargeToggleBlock',
   component: LargeToggleBlock,
 }
 

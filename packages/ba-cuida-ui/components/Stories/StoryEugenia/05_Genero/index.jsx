@@ -88,6 +88,7 @@ export function Genero() {
                 }}
               >
                 <PaperCard
+                  backdropAngle="-2deg"
                   style={{
                     position: 'relative',
                     zIndex: 2,
@@ -102,6 +103,7 @@ export function Genero() {
                       zIndex: 3,
                       transform: 'rotate(-15deg) translateY(-40%)',
                     }}
+                    loading="lazy"
                     src="/assets/home/04_capitulo_eugenia/montagens_eugenia/Eugenia_Montagem_06.png"
                     alt=""
                     role="presentation"

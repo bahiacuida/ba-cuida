@@ -1,7 +1,7 @@
 import { DataPageHighlight } from './index'
 
 const meta = {
-  title: 'DataPage / DataPageHighlight',
+  title: 'Pages / DataPage / DataPageHighlight',
   component: DataPageHighlight,
   parameters: {
     layout: 'fullscreen',

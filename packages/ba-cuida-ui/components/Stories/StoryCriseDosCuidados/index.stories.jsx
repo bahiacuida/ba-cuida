@@ -1,7 +1,7 @@
 import { StoryCriseDosCuidados } from './index'
 
 const meta = {
-  title: 'StoryCriseDosCuidados',
+  title: 'Pages / Home / StoryCriseDosCuidados',
   component: StoryCriseDosCuidados,
   parameters: {
     layout: 'fullscreen',

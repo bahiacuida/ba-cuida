@@ -1,7 +1,7 @@
 import { Trabalho } from './index'
 
 const meta = {
-  title: 'StoryAna / Trabalho',
+  title: 'Pages / Home / StoryAna / Trabalho',
   component: Trabalho,
   parameters: {
     layout: 'fullscreen',

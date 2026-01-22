@@ -62,7 +62,7 @@ export function Cuidados2() {
               children={`Embora as pessoas saibam na prática o que é cuidar, chegar a uma definição objetiva costuma ser desafiador. Isso porque o conceito ainda está em disputa, envolve diferentes agentes e, portanto, reúne muitas interpretações e narrativas.`}
             />
           </Flex>
-          <PaperCard>
+          <PaperCard backdropAngle="-3deg">
             <EvenSpacedList
               gap="6"
               p="5"

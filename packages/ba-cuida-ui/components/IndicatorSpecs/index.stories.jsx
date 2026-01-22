@@ -4,7 +4,7 @@ import { slugify } from '@orioro/util'
 import { fetchGql } from '@/components/fetchGql'
 
 const meta = {
-  title: 'DataPage / CreateIndicators',
+  title: 'Pages / DataPage / CreateIndicators',
   parameters: {
     // layout: 'fullscreen',
   },

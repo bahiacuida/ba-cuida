@@ -2,7 +2,7 @@ import { AUTISMO } from '../../IndicatorSpecs/autismo'
 import { Chart } from '../Chart'
 
 const meta = {
-  title: 'Chart / 08_autismo',
+  title: 'Components / Chart / 08_autismo',
   component: Chart,
   parameters: {
     // layout: 'fullscreen',

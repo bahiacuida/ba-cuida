@@ -1,4 +1,4 @@
-import { Box, Flex, Markdown } from '@orioro/react-ui-core'
+import { Box, Flex, Markdown, Button } from '@orioro/react-ui-core'
 import { SiteWidthContainer } from '@/components/SiteWidthContainer'
 import { PaperFramedSection } from '@/components/PaperFramedSection'
 import { PaperCard } from '@/components/PaperCard'
@@ -65,6 +65,7 @@ export function StoryCriseDosCuidados() {
                 style={{
                   width: '100%',
                 }}
+                loading="lazy"
                 src="/assets/home/05_capitulo_crise_dos_cuidados/Conclusao_Montagem_01.png"
                 alt="Fotografia em preto e branco de uma jovem mulher negra careca, em posição frontal, com os braços cruzados e expressão firme. Ela usa blusa de alças com estampa floral. Ao fundo, há formas abstratas coloridas em tons de verde, roxo, rosa e laranja, criando contraste com a imagem."
               />
@@ -95,9 +96,24 @@ export function StoryCriseDosCuidados() {
                   xs: '100%',
                   md: '40%',
                 },
+                position: 'relative',
               }}
             >
+              <Text
+                style={{
+                  position: 'absolute',
+                  left: 20,
+                  top: -20,
+                  width: '230px',
+                  backgroundColor: '#EEC6CF',
+                  color: 'black',
+                  padding: 10,
+                }}
+              >
+                ... do outro lado, a população que necessita de cuidados.
+              </Text>
               <img
+                loading="lazy"
                 src="/assets/home/05_capitulo_crise_dos_cuidados/Conclusao_Montagem_02.png"
                 alt="Montagem em preto e branco de uma idosa negra, de longos dreads, sentada em uma cadeira de rodas. Na composição, aparecem relógio e formas abstratas coloridas e parte de um olho humano em destaque, representando a atenção que as cuidadoras dão a grupos vulneráveis e prioritários."
               />
@@ -123,6 +139,7 @@ export function StoryCriseDosCuidados() {
                   width: '200px',
                   zIndex: 1,
                 }}
+                loading="lazy"
                 src="/assets/home/05_capitulo_crise_dos_cuidados/Conclusao_Montagem_03.png"
                 alt=""
                 role="presentation"
@@ -137,7 +154,7 @@ export function StoryCriseDosCuidados() {
                 role="presentation"
               />*/}
 
-              <Box
+              <Flex
                 style={{
                   position: 'relative',
                   // top: '30%',
@@ -148,6 +165,7 @@ export function StoryCriseDosCuidados() {
                   background: 'white',
                 }}
                 p="6"
+                gap="4"
               >
                 <Heading as="h3">
                   Cuidado é uma necessidade de todas as pessoas:
@@ -169,7 +187,7 @@ export function StoryCriseDosCuidados() {
                   não é exceção, mas parte essencial da nossa condição e da
                   interdependência que nos define.
                 </Text>
-              </Box>
+              </Flex>
 
               <img
                 style={{
@@ -180,6 +198,7 @@ export function StoryCriseDosCuidados() {
                   zIndex: 1,
                   transform: 'rotate(30deg)',
                 }}
+                loading="lazy"
                 src="/assets/home/05_capitulo_crise_dos_cuidados/Conclusao_Montagem_05.png"
                 alt=""
                 role="presentation"
@@ -192,6 +211,7 @@ export function StoryCriseDosCuidados() {
                   width: '200px',
                   zIndex: 1,
                 }}
+                loading="lazy"
                 src="/assets/home/05_capitulo_crise_dos_cuidados/Conclusao_Montagem_06.png"
                 alt=""
                 role="presentation"
@@ -218,6 +238,7 @@ export function StoryCriseDosCuidados() {
             }}
           >
             <img
+              loading="lazy"
               src="/assets/home/05_capitulo_crise_dos_cuidados/infografia.png"
               alt=""
               role="presentation"
@@ -225,7 +246,7 @@ export function StoryCriseDosCuidados() {
           </Box>
         </Flex>
       </PaperFramedSection>
-      <SiteWidthContainer>
+      <SiteWidthContainer pb="200px">
         <Flex direction="column" gap="5">
           <Heading as="h3">Cuidado deve ser um bem público coletivo</Heading>
           <Flex
@@ -257,6 +278,7 @@ export function StoryCriseDosCuidados() {
               }}
             >
               <img
+                loading="lazy"
                 src="/assets/home/05_capitulo_crise_dos_cuidados/Conclusao_Montagem_07.png"
                 alt="Montagem em preto e branco de uma mulher negra levantando o braço direito com o punho fechado e de luva de limpeza, em gesto de força. Ela veste uma blusa de alças estampada. Ao fundo, há formas abstratas coloridas em tons de verde, roxo, rosa e laranja."
               />
@@ -277,13 +299,14 @@ export function StoryCriseDosCuidados() {
             </Box>
           </Flex>
           <PaperCard
+            backdropAngle="-3deg"
             style={{
               maxWidth: '600px',
               marginLeft: 'auto',
               marginRight: 'auto',
             }}
           >
-            <Box p="6">
+            <Flex p="6">
               <Text
                 style={{
                   fontSize: '1.875rem',
@@ -293,7 +316,24 @@ export function StoryCriseDosCuidados() {
                 Vamos juntas para que essa{' '}
                 <strong>mudança seja efetiva!</strong>
               </Text>
-            </Box>
+
+              <Text
+                style={{
+                  textAlign: 'center',
+                }}
+              >
+                Para ver mais informações dos cuidados na Bahia acesse a página
+                de dados.
+              </Text>
+              <Button
+                style={{
+                  alignSelf: 'center',
+                }}
+                href="/dados"
+              >
+                Conhecer os dados do Estado Bahia
+              </Button>
+            </Flex>
           </PaperCard>
         </Flex>
       </SiteWidthContainer>

@@ -2,7 +2,7 @@ import { EMPREGABILIDADE } from '../IndicatorSpecs/empregabilidade'
 import { IndicatorCard } from './index'
 
 const meta = {
-  title: 'IndicatorCard',
+  title: 'Components / IndicatorCard',
   component: IndicatorCard,
 }
 

@@ -62,6 +62,7 @@ export function Creche() {
                       right: '80%',
                       width: '40%',
                     }}
+                    loading="lazy"
                     src="/assets/home/03_capitulo_ana/montagens_ana/Ana_Montagem_07.png"
                     alt=""
                     role="presentation"

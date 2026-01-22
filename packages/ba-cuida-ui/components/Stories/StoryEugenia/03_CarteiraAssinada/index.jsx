@@ -98,7 +98,7 @@ export function CarteiraAssinada() {
                   position: 'relative',
                 }}
               >
-                <PaperCard>
+                <PaperCard backdropAngle="-3deg">
                   <img
                     src="/assets/home/04_capitulo_eugenia/graficos_eugenia/Eugenia_Grafico_03.svg"
                     alt="Pictograma mostrando a porcentagem de profissionais dos cuidados com carteira assinada. Três figuras na cor roxa representam 30% das trabalhadoras com carteira assinada. Sete figuras na cor laranja representam 70% que não têm carteira assinada."

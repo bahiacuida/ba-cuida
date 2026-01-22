@@ -1,7 +1,7 @@
 import { OutrosImpactos } from './index'
 
 const meta = {
-  title: 'StoryAna / OutrosImpactos',
+  title: 'Pages / Home / StoryAna / OutrosImpactos',
   component: OutrosImpactos,
   parameters: {
     layout: 'fullscreen',

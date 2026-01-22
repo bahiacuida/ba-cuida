@@ -2,7 +2,7 @@ import { TEMPO_GASTO_CUIDADO_N_REMUNERADO } from '../../IndicatorSpecs/tempo_gas
 import { Chart } from '../Chart'
 
 const meta = {
-  title: 'Chart / 05_tempo_gasto_cuidado_n_remunerado',
+  title: 'Components / Chart / 05_tempo_gasto_cuidado_n_remunerado',
   component: Chart,
   parameters: {
     // layout: 'fullscreen',

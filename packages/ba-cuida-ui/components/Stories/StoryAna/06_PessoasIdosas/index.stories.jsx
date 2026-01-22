@@ -1,7 +1,7 @@
 import { PessoasIdosas } from './index'
 
 const meta = {
-  title: 'StoryAna / PessoasIdosas',
+  title: 'Pages / Home / StoryAna / PessoasIdosas',
   component: PessoasIdosas,
   parameters: {
     layout: 'fullscreen',

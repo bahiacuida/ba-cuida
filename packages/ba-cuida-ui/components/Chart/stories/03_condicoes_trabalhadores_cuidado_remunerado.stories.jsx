@@ -2,7 +2,7 @@ import { CONDICOES_TRAB_CUIDADO_REMUNERADO } from '../../IndicatorSpecs/condicoe
 import { Chart } from '../Chart'
 
 const meta = {
-  title: 'Chart / 03_condicoes_trabalhadores_cuidado_remunerado',
+  title: 'Components / Chart / 03_condicoes_trabalhadores_cuidado_remunerado',
   component: Chart,
   parameters: {
     // layout: 'fullscreen',

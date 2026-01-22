@@ -90,12 +90,14 @@ export function Intro() {
                 >
                   <img
                     style={{}}
+                    loading="lazy"
                     src="/assets/home/04_capitulo_eugenia/montagens_eugenia/Eugenia_Montagem_01.png"
                     alt=""
                     role="presentation"
                   />
                 </Box>
                 <PaperCard
+                  backdropAngle="2deg"
                   style={{
                     position: 'relative',
                     zIndex: 2,
@@ -120,6 +122,7 @@ export function Intro() {
                     transform: 'rotate(15deg)',
                     zIndex: 1,
                   }}
+                  loading="lazy"
                   src="/assets/home/04_capitulo_eugenia/montagens_eugenia/Eugenia_Montagem_02.png"
                   alt=""
                   role="presentation"

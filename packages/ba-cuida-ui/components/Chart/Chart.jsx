@@ -154,7 +154,7 @@ export function Chart({
         {dataQuery.data && <ChartRenderer data={dataQuery.data} {...props} />}
       </Box>
 
-      <Flex direction="row" gap="3">
+      <Flex direction={{ xs: 'column', sm: 'row' }} gap="3">
         {description && (
           <Box
             style={{

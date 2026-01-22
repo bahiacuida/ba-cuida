@@ -1,7 +1,7 @@
 import { Previdencia } from './index'
 
 const meta = {
-  title: 'StoryEugenia / Previdencia',
+  title: 'Pages / Home / StoryEugenia / Previdencia',
   component: Previdencia,
   parameters: {
     layout: 'fullscreen',
